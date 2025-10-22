@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.1.0/dist/font-face.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>NeoTechShop|ثبت سفارش</title>
+  </head>
+
+  <body class="checkout-page">
+    <!-- لیست سفارشات -->
+    <section class="product-briefe">
+      <h3>🛒 لیست سفارشات شما</h3>
+      <div id="cartItemsContainer"></div>
+      <div class="cart-summary">
+        <strong>جمع کل: <span id="cartTotal">0</span> افغانی</strong>
+      </div>
+    </section>
+
+    <!-- 👤 اطلاعات کاربر -->
+    <section class="checkout-user-info">
+      <h3>مشخصات:</h3>
+      <p>مشتری عزیز، لطفا مشخصات خود را با دقت وارد نمایید.</p>
+      <form id="checkoutForm" novalidate>
+        <label for="name">نام:</label>
+        <input type="text" id="name" name="name" />
+
+        <label for="phone">شماره تماس:</label>
+        <input type="tel" id="phone" name="phone" />
+
+        <label for="email">ایمیل:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="address">آدرس:</label>
+        <input type="text" id="address" name="address" />
+
+        <button type="submit" class="btn primary">ثبت و ادامه</button>
+      </form>
+    </section>
+
+    <!-- 💳 انتخاب روش پرداخت -->
+    <section class="payment-method">
+      <h3>نحوه پرداخت:</h3>
+      <label class="payment-option">
+        <input type="radio" name="payment" value="online" id="online" /> پرداخت
+        آنلاین
+      </label>
+      <label class="payment-option">
+        <input type="radio" name="payment" value="cash" id="cash" /> پرداخت
+        هنگام تحویل
+      </label>
+      <button id="placeOrderBtn" class="btn primary">ثبت سفارش</button>
+    </section>
+
+    <!-- 💰 مودال پرداخت آنلاین -->
+    <div
+      id="paymentModal"
+      class="modal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="pmTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <button class="modal-close" id="closeModal" aria-label="بستن">
+          &times;
+        </button>
+        <h2 id="pmTitle">پرداخت آنلاین</h2>
+
+        <form id="paymentForm" class="product-form" novalidate>
+          <div class="price-row">
+            <span class="label">مبلغ قابل پرداخت</span>
+            <strong id="amountLabel"></strong>
+          </div>
+
+          <div class="field">
+            <label for="cardName">نام صاحب کارت</label>
+            <input
+              type="text"
+              id="cardName"
+              name="cardName"
+              placeholder="نام و تخلص"
+              autocomplete="cc-name"
+              required
+            />
+            <div class="err" id="errName"></div>
+          </div>
+
+          <div class="field">
+            <label for="cardNumber">شماره کارت</label>
+            <input
+              id="cardNumber"
+              name="cardNumber"
+              inputmode="numeric"
+              pattern="[0-9 ]*"
+              maxlength="19"
+              placeholder="4444 3333 2222 1111"
+              autocomplete="cc-number"
+              required
+            />
+            <div class="err" id="errNumber"></div>
+          </div>
+
+          <div class="row">
+            <div class="field small">
+              <label for="expDate">تاریخ انقضا (MM/YY)</label>
+              <input
+                id="expDate"
+                name="expDate"
+                inputmode="numeric"
+                placeholder="MM/YY"
+                maxlength="5"
+                autocomplete="cc-exp"
+                required
+              />
+              <div class="err" id="errExp"></div>
+            </div>
+
+            <div class="field small">
+              <label for="cvv">CVV2</label>
+              <input
+                id="cvv"
+                name="cvv"
+                inputmode="numeric"
+                placeholder="3 رقمی"
+                maxlength="4"
+                autocomplete="cc-csc"
+                required
+              />
+              <div class="err" id="errCvv"></div>
+            </div>
+          </div>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">
+              پرداخت و ثبت سفارش
+            </button>
+            <button type="button" class="btn ghost" id="cancelBtn">
+              انصراف
+            </button>
+          </div>
+
+          <div
+            id="formMessage"
+            class="form-message"
+            role="status"
+            aria-live="polite"
+          ></div>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      // ---------------------------
+      // 🛒 ۱. بررسی و نمایش سبد خرید
+      // ---------------------------
+      document.addEventListener("DOMContentLoaded", () => {
+        const cart = JSON.parse(localStorage.getItem("cart")) || [];
+        const container = document.getElementById("cartItemsContainer");
+        const totalEl = document.getElementById("cartTotal");
+
+        if (cart.length === 0) {
+          alert("سبد خرید شما خالی است!");
+          window.location.href = "cart-page.html";
+          return;
+        }
+
+        // نمایش محصولات سبد خرید
+        container.innerHTML = cart
+          .map((item) => {
+            const subtotal = item.price * item.quantity;
+            return `
+      <div class="checkout-item">
+        <img src="${item.image}" alt="${item.name}" class="checkout-item-img" />
+        <div class="checkout-item-info">
+          <h4>${item.name}</h4>
+          <div class="checkout-item-details">
+            <p>قیمت واحد: ${item.price.toLocaleString()} افغانی</p>
+            <p>تعداد: ${item.quantity}</p>
+            <p>جمع: ${subtotal.toLocaleString()} افغانی</p>
+          </div>
+        </div>
+      </div>
+    `;
+          })
+          .join("");
+
+        const total = cart.reduce(
+          (sum, item) => sum + item.price * item.quantity,
+          0
+        );
+        totalEl.textContent = total.toLocaleString();
+      });
+
+      // ---------------------------
+      // 👤 ۲. اعتبارسنجی فرم مشخصات کاربر
+      // ---------------------------
+      const checkoutForm = document.getElementById("checkoutForm");
+
+      checkoutForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        clearErrors();
+
+        const user = getUserFormValues();
+        let valid = validateUserInfo(user);
+
+        if (valid) {
+          alert("مشخصات با موفقیت ثبت شد ✅");
+        }
+      });
+
+      function getUserFormValues() {
+        return {
+          name: document.getElementById("name").value.trim(),
+          phone: document.getElementById("phone").value.trim(),
+          email: document.getElementById("email").value.trim(),
+          address: document.getElementById("address").value.trim(),
+        };
+      }
+
+      function clearErrors() {
+        document.querySelectorAll(".error-msg").forEach((el) => el.remove());
+        document
+          .querySelectorAll(".invalid")
+          .forEach((el) => el.classList.remove("invalid"));
+      }
+
+      function showError(input, msg) {
+        const err = document.createElement("div");
+        err.className = "error-msg";
+        err.textContent = msg;
+        input.classList.add("invalid");
+        input.insertAdjacentElement("afterend", err);
+      }
+
+      function validateUserInfo({ name, phone, email, address }) {
+        let ok = true;
+
+        if (!name) {
+          showError(document.getElementById("name"), "نام الزامی است.");
+          ok = false;
+        }
+        if (!phone) {
+          showError(document.getElementById("phone"), "شماره تماس الزامی است.");
+          ok = false;
+        } else if (!/^(\+93|0)?7\d{8}$/.test(phone)) {
+          showError(document.getElementById("phone"), "شماره تماس معتبر نیست.");
+          ok = false;
+        }
+
+        if (!email) {
+          showError(document.getElementById("email"), "ایمیل الزامی است.");
+          ok = false;
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+          showError(document.getElementById("email"), "ایمیل معتبر نیست.");
+          ok = false;
+        }
+
+        if (address.length < 5) {
+          showError(
+            document.getElementById("address"),
+            "آدرس حداقل باید ۵ کاراکتر باشد."
+          );
+          ok = false;
+        }
+
+        return ok;
+      }
+
+      // ---------------------------
+      // 💳 ۳. مدیریت مودال پرداخت آنلاین
+      // ---------------------------
+      const modal = document.getElementById("paymentModal");
+      const closeModalBtn = document.getElementById("closeModal");
+      const cancelBtn = document.getElementById("cancelBtn");
+      const paymentForm = document.getElementById("paymentForm");
+      const formMessage = document.getElementById("formMessage");
+
+      function showModal() {
+        modal.style.display = "flex";
+        modal.setAttribute("aria-hidden", "false");
+      }
+
+      function hideModal() {
+        modal.style.display = "none";
+        modal.setAttribute("aria-hidden", "true");
+        clearFormErrors();
+      }
+
+      function clearFormErrors() {
+        formMessage.textContent = "";
+        document
+          .querySelectorAll(".err")
+          .forEach((el) => (el.textContent = ""));
+      }
+
+      modal.addEventListener("click", (e) => {
+        const dialog = modal.querySelector(".modal-dialog");
+        if (!dialog.contains(e.target)) hideModal();
+      });
+      closeModalBtn.addEventListener("click", hideModal);
+      cancelBtn.addEventListener("click", hideModal);
+      document.addEventListener(
+        "keydown",
+        (e) => e.key === "Escape" && hideModal()
+      );
+
+      // ---------------------------
+      // 💳 ۴. اعتبارسنجی اطلاعات کارت بانکی
+      // ---------------------------
+      const fields = {
+        name: document.getElementById("cardName"),
+        number: document.getElementById("cardNumber"),
+        exp: document.getElementById("expDate"),
+        cvv: document.getElementById("cvv"),
+        errName: document.getElementById("errName"),
+        errNumber: document.getElementById("errNumber"),
+        errExp: document.getElementById("errExp"),
+        errCvv: document.getElementById("errCvv"),
+      };
+
+      fields.number.addEventListener("input", (e) => {
+        let val = e.target.value.replace(/\D/g, "").slice(0, 16);
+        e.target.value = val.replace(/(\d{4})(?=\d)/g, "$1 ").trim();
+      });
+      fields.exp.addEventListener("input", (e) => {
+        let v = e.target.value.replace(/\D/g, "").slice(0, 4);
+        e.target.value = v.length > 2 ? v.slice(0, 2) + "/" + v.slice(2) : v;
+      });
+      fields.cvv.addEventListener("input", (e) => {
+        e.target.value = e.target.value.replace(/\D/g, "").slice(0, 4);
+      });
+
+      function luhnCheck(num) {
+        return (
+          [...num].reverse().reduce((sum, n, i) => {
+            n = +n;
+            if (i % 2) n = n * 2 > 9 ? n * 2 - 9 : n * 2;
+            return sum + n;
+          }, 0) %
+            10 ===
+          0
+        );
+      }
+
+      function validateExpiry(mmYY) {
+        if (!/^\d{2}\/\d{2}$/.test(mmYY)) return false;
+        const [mm, yy] = mmYY.split("/").map(Number);
+        const now = new Date();
+        const thisYear = now.getFullYear() % 100;
+        const thisMonth = now.getMonth() + 1;
+        return (
+          mm >= 1 &&
+          mm <= 12 &&
+          (yy > thisYear || (yy === thisYear && mm >= thisMonth))
+        );
+      }
+
+      function validateCardForm() {
+        clearFormErrors();
+        let ok = true;
+        const cardNum = fields.number.value.replace(/\s/g, "");
+        if (fields.name.value.trim().length < 3) {
+          fields.errName.textContent = "نام معتبر نیست";
+          ok = false;
+        }
+        if (!/^\d{13,16}$/.test(cardNum) || !luhnCheck(cardNum)) {
+          fields.errNumber.textContent = "شماره کارت معتبر نیست";
+          ok = false;
+        }
+        if (!validateExpiry(fields.exp.value)) {
+          fields.errExp.textContent = "تاریخ انقضا نامعتبر است";
+          ok = false;
+        }
+        if (!/^\d{3,4}$/.test(fields.cvv.value)) {
+          fields.errCvv.textContent = "CVV باید ۳ یا ۴ رقم باشد";
+          ok = false;
+        }
+        return ok;
+      }
+
+      // ---------------------------
+      // 💰 ۵. ارسال فرم پرداخت
+      // ---------------------------
+      paymentForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+        formMessage.textContent = "";
+
+        if (!validateCardForm()) {
+          formMessage.textContent = "لطفاً خطاهای فرم را برطرف کنید.";
+          return;
+        }
+
+        formMessage.textContent = "در حال پردازش پرداخت...";
+        const btn = paymentForm.querySelector('button[type="submit"]');
+        btn.disabled = true;
+
+        setTimeout(() => {
+          const success = fields.number.value.startsWith("4"); // نمونه تستی
+          if (success) {
+            formMessage.textContent = "✅ پرداخت موفق بود. در حال انتقال...";
+            setTimeout(() => {
+              hideModal();
+              window.location.href = "confirmation.html";
+            }, 1000);
+          } else {
+            formMessage.textContent = "❌ پرداخت ناموفق بود.";
+            btn.disabled = false;
+          }
+        }, 1200);
+      });
+
+      // ---------------------------
+      // 📦 ۶. ثبت سفارش نهایی
+      // ---------------------------
+      document
+        .getElementById("placeOrderBtn")
+        .addEventListener("click", (e) => {
+          e.preventDefault();
+          const user = getUserFormValues();
+          const valid = validateUserInfo(user);
+          if (!valid) return;
+
+          const payment = document.querySelector(
+            'input[name="payment"]:checked'
+          );
+          if (!payment) return alert("لطفاً روش پرداخت را انتخاب کنید.");
+
+          localStorage.setItem(
+            "checkoutUserInfo",
+            JSON.stringify({ ...user, payment: payment.value })
+          );
+          payment.value === "online"
+            ? showModal()
+            : (window.location.href = "confirmation.html");
+        });
+    </script>
+  </body>
+</html>

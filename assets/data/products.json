@@ -1,0 +1,1176 @@
+[
+  {
+    "id": 1,
+    "shortName": "لپ تاپ HP OmniBook 5",
+    "name": "Laptop HP OmniBook 5 16- Intel® Core™ i5",
+    "memory": "16GB RAM",
+    "storage": "512GB SSD",
+    "processor": "Intel® Core™ i5",
+    "display": "16 inch Full-HD",
+    "graphics": "Intel Iris Xe Graphics",
+    "touchscreen": false,
+    "color": "Silver",
+    "brand": "HP",
+    "category": "laptop",
+    "stock": 12,
+    "images": [
+      "assets/images/hp-omniBook-1.avif",
+      "assets/images/hp-omniBook-2.webp",
+      "assets/images/hp-omniBook-3.avif"
+    ],
+    "price": 400,
+    "currency": "USD",
+    "shortDesc": "مناسب برای دانش آموزان و خانواده ها.",
+    "longDesc": "ظاهری زیبا و عملکردی بی‌نظیر با پردازنده Intel® Core™ i5 و حافظه 16 گیگابایت. مناسب برای دانش آموزان و خانواده ها.",
+    "rating": {
+      "average": 4.1,
+      "count": 23
+    },
+    "reviews": [
+      {
+        "user": "Ali",
+        "comment": "لپ‌تاپ خیلی عالیه، مخصوصاً برای کارهای دانشجویی.",
+        "rating": 5,
+        "date": "2025-09-08"
+      },
+      {
+        "user": "Sara",
+        "comment": "باطریش می‌توانست بهتر باشد.",
+        "rating": 3,
+        "date": "2025-09-07"
+      }
+    ],
+    "specialOffer": true,
+    "bestSeller": false,
+    "relatedProducts": [2, 3]
+  },
+
+  {
+    "id": 2,
+    "shortName": "لپ تاپ HP OmniBook6",
+    "name": "Laptop HP OmniBook 5 16- Intel® Core™ i5",
+    "memory": "16GB RAM",
+    "storage": "512GB SSD",
+    "processor": "Intel® Core™ i5",
+    "display": "15.6 inch Full-HD",
+    "graphics": "Intel Iris Xe Graphics",
+    "touchscreen": false,
+    "color": "white",
+    "brand": "HP",
+    "category": "laptop",
+    "stock": 5,
+    "images": [
+      "assets/images/hp-proBook-1.avif",
+      "assets/images/hp-proBook-2.avif",
+      "assets/images/hp-proBook-3.avif"
+    ],
+    "price": 890,
+    "currency": "USD",
+    "shortDesc": "بهره‌وری روزمره. امنیت، عملکرد و دوام برای کار روزانه شما. مناسب برای کار های روزانه و استفاده‌های چندرسانه‌ای.",
+    "longDesc": " بهره‌وری روزمره. امنیت، عملکرد و دوام برای کار روزانه شما. با پردازنده Intel® Core™ i5 و حافظه 16 گیگابایت، این لپ‌تاپ مناسب برای کارهای روزمره و استفاده‌های چندرسانه‌ای است.",
+    "rating": {
+      "average": 4.5,
+      "count": 128
+    },
+    "reviews": [
+      {
+        "user": "Taheri",
+        "comment": "بسیار عالی و سریع",
+        "rating": 5,
+        "date": "2025-02-21"
+      },
+      {
+        "user": "Ehsan",
+        "comment": " کاش قیمت پایین تر برای این مشخصات بود",
+        "rating": 3.8,
+        "date": "2025-07-07"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": true,
+    "relatedProducts": [1, 3]
+  },
+
+  {
+    "id": 3,
+    "shortName": "لپ تاپ HP OmniBook",
+    "name": "HP Pavilion 14 x360 Laptop - Intel® Core™ i5, 8GB, Touchscreen",
+    "memory": "8GB RAM",
+    "storage": "512GB SSD",
+    "processor": "Intel® Core™ i5 1335U (13th Generation)",
+    "display": "14 inch Full-HD Touchscreen",
+    "graphics": "Intel Iris Xe Graphics",
+    "touchscreen": true,
+    "color": "white",
+    "brand": "HP",
+    "category": "laptop",
+    "stock": 8,
+    "images": [
+      "assets/images/hp-pavilion-1.webp",
+      "assets/images/hp-pavilion-2.avif",
+      "assets/images/hp-pavilion-3.webp",
+      "assets/images/hp-pavilion-4.webp"
+    ],
+    "price": 600,
+    "currency": "USD",
+    "shortDesc": " تعادل بین کار و تفریح",
+    "longDesc": " لپ‌تاپ HP Pavilion x360 برای انعطاف‌پذیری طراحی شده است. با چرخاندن 360 درجه صفحه نمایش، زاویه ایده‌آل خود را پیدا کنید، به علاوه با بلندگوهای باکیفیت و تنظیم‌شده سفارشی، خود را در سرگرمی غرق کنید. با پردازنده Intel® و HP Network Booster دستگاه خود، به طور قابل اعتماد و قدرتمندی متصل بمانید. علاوه بر این، این لپ‌تاپ با مواد بازیافتی ساخته شده است.",
+    "rating": {
+      "average": 4.4,
+      "count": 42
+    },
+    "reviews": [
+      {
+        "user": "Narges",
+        "comment": "صفحه نمایش لمسی خیلی خوبه، مخصوصاً برای طراحی.",
+        "rating": 4.5,
+        "date": "2024-12-21"
+      },
+      {
+        "user": "Masoud",
+        "comment": "من این لپ‌تاپ را یک ماه پیش خریدم و تا الان از خریدم خیلی راضی بوده‌ام. تنظیمات لپ‌تاپ خیلی ساده بود و خود لپ‌تاپ کاملاً برای نیازهای من عالی است. صفحه لمسی کاملاً کار می‌کند. دکمه پاور حالا دسترسی راحت‌تری دارد.",
+        "rating": 4,
+        "date": "2025-05-18"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [1, 2]
+  },
+
+  {
+    "id": 4,
+    "shortName": "لپ تاپ HP OMEN Gaming",
+    "name": "OMEN Gaming Laptop 17-db0012na - NVIDIA® GeForce RTX™ 4070",
+    "memory": "16GB RAM",
+    "storage": "1TB SSD",
+    "processor": "AMD Ryzen™ 7 8845HS",
+    "display": "17 inch QHD 165Hz",
+    "graphics": "NVIDIA® GeForce RTX™ 4070 (8 GB)",
+    "touchscreen": false,
+    "color": "black",
+    "brand": "HP",
+    "category": "laptop",
+    "stock": 14,
+    "images": [
+      "assets/images/hp-OMENGaming-1.webp",
+      "assets/images/hp-OMENGaming-2.webp",
+      "assets/images/hp-OMENGaming-3.webp"
+    ],
+    "price": 1499,
+    "currency": "USD",
+    "shortDesc": "بازی در سطح دسکتاپ در لپ‌تاپی با نمایشگر بزرگ برای فراگیرترین تجربه بازی",
+    "longDesc": "با جدیدترین لپ‌تاپ گیمینگ OMEN 17.3 اینچی، بازی خود را ارتقا دهید و از هر کجا با بهترین کیفیت بازی کنید. آینده بازی با پردازنده‌های جدید سری AMD Ryzen™ 8040 مجهز به هوش مصنوعی و پردازنده‌های گرافیکی سری NVIDIA® RTX™ 40 از راه رسیده است. با یک صفحه نمایش IPS چشمگیر ۱۷.۳ اینچی با VRR و ۱۰۰٪ sRGB، این تمام صفحه نمایشی است که نیاز دارید. با یک کیبورد عددی با نور پس زمینه RGB تک ناحیه‌ای، OMEN 17 جدید برای هر کاری آماده است.",
+    "rating": {
+      "average": 3.2,
+      "count": 6
+    },
+    "reviews": [
+      {
+        "user": "Baran",
+        "comment": "۴ ستاره به جای ۵ ستاره برای باتری. اچ‌پی = لطفاً باتری با عمر طولانی‌تر دارید؟ جدا از این، یک لپ‌تاپ عالی. با قدرت و ویژگی‌هایی که نیاز دارم.",
+        "rating": 3,
+        "date": "2025-03-10"
+      },
+      {
+        "user": "Temor",
+        "comment": "نه خیلی، وقتی پردازنده حداقل اشغال را دارد، فن خیلی پر سر و صدا است. مشکل مشابهی در لپ‌تاپ قبلی شرکت شما وجود داشت.",
+        "rating": 2.5,
+        "date": "2025-05-16"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [5, 6]
+  },
+
+  {
+    "id": 5,
+    "shortName": "لپ تاپ Dell 14",
+    "name": "Dell 14 Premium Laptop",
+    "memory": "32 GB LPDDR5X",
+    "storage": "1TB SSD",
+    "processor": "Intel® Core™ Ultra 7 255H, 16 cores",
+    "display": "14.5 inch 3.2K OLED",
+    "graphics": "NVIDIA® GeForce RTX™ 4050",
+    "touchscreen": false,
+    "color": "white",
+    "brand": "DELL",
+    "category": "laptop",
+    "stock": 12,
+    "images": [
+      "assets/images/dell-14-premium-1.avif",
+      "assets/images/dell-14-premium-2.avif",
+      "assets/images/dell-14-premium-3.avif"
+    ],
+    "price": 1400,
+    "currency": "USD",
+    "shortDesc": " لپ‌تاپ باریک و سبک برای کار و بازی در هر کجا",
+    "longDesc": " لپ‌تاپ Dell 14 اینچی با طراحی باریک و سبک خود، برای کار و بازی در هر کجا که می‌روید ایده‌آل است. با پردازنده Intel® Core™ i7 نسل دوازدهم و حافظه 16 گیگابایت، این لپ‌تاپ عملکرد سریع و چندوظیفه‌ای را ارائه می‌دهد. همچنین با گرافیک Intel Iris Xe، تجربه بصری بی‌نظیری را ارائه می‌دهد. این لپ‌تاپ با دوام و قابل حمل، انتخابی عالی برای دانشجویان و حرفه‌ای‌ها است.",
+    "rating": {
+      "average": 3.8,
+      "count": 14
+    },
+    "reviews": [
+      {
+        "user": "Mansor",
+        "comment": " با توجه به قیمت، این لپ‌تاپ ارزش خرید دارد.",
+        "rating": 4,
+        "date": "2025-06-01"
+      },
+      {
+        "user": "Zahra",
+        "comment": " صفحه نمایش OLED کیفیت تصویر فوق‌العاده‌ای دارد. اما باتری می‌توانست بهتر باشد.",
+        "rating": 3.5,
+        "date": "2025-01-07"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [4, 6]
+  },
+
+  {
+    "id": 6,
+    "shortName": "لپ تاپ Dell 15",
+    "name": "Dell 15 Laptop",
+    "memory": "8GB RAM",
+    "storage": "512GB SSD",
+    "processor": "Intel® Core™ 3 100U",
+    "display": "15.6 inch Full-HD",
+    "graphics": "Intel® UHD Graphics",
+    "touchscreen": false,
+    "color": "white",
+    "brand": "DELL",
+    "category": "laptop",
+    "stock": 20,
+    "images": [
+      "assets/images/dell-15-1.avif",
+      "assets/images/dell-15-2.avif",
+      "assets/images/dell-15-3.avif"
+    ],
+    "price": 330,
+    "currency": "USD",
+    "shortDesc": "یک لپ‌تاپ ۱۵ اینچی با دوربین داخلی تا کیفیت FHD، صفحه‌کلید ارگونومیک بزرگ و پردازنده‌های Intel®.",
+    "longDesc": " یک لپ‌تاپ ۱۵ اینچی با دوربین داخلی تا کیفیت FHD، صفحه‌کلید ارگونومیک بزرگ و پردازنده‌های Intel®. با پردازنده Intel® Core™ i3 و حافظه 8 گیگابایت، این لپ‌تاپ برای کارهای روزمره و استفاده‌های چندرسانه‌ای مناسب است. طراحی باریک و سبک آن، حمل و نقل را آسان می‌کند.",
+    "rating": {
+      "average": 4.6,
+      "count": 52
+    },
+    "reviews": [
+      {
+        "user": "Faez",
+        "comment": " صفحه نمایش بزرگ و کیفیت ساخت خوب.",
+        "rating": 4.5,
+        "date": "2025-08-21"
+      },
+      {
+        "user": "Tamana",
+        "comment": " قیمت مناسب برای مشخصات ارائه شده.",
+        "rating": 4,
+        "date": "2025-07-11"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [4, 5]
+  },
+
+  {
+    "id": 7,
+    "shortName": "لپ تاپ Dell 16",
+    "name": "Dell 16 Laptop",
+    "memory": "16GB RAM DDR5",
+    "storage": "1TB SSD",
+    "processor": "Intel® Core™ 7-150U, 10 cores",
+    "display": "16 Touch FHD+",
+    "graphics": "Intel® Graphics",
+    "touchscreen": true,
+    "color": "white",
+    "brand": "DELL",
+    "category": "laptop",
+    "stock": 16,
+    "images": [
+      "assets/images/dell-16-1.avif",
+      "assets/images/dell-16-2.avif",
+      "assets/images/dell-16-3.avif"
+    ],
+    "price": 550,
+    "currency": "USD",
+    "shortDesc": "لپ‌تاپ  ۱۶ اینچی با طراحی مدرن و پردازنده‌ها و گرافیک Intel® Core™ که بهره‌وری آسان و سرگرمی‌های جذاب  ",
+    "longDesc": " لپ‌تاپ جمع‌وجور ۱۶ اینچی با طراحی مدرن و پردازنده‌ها و گرافیک Intel® Core™ که بهره‌وری آسان و سرگرمی‌های جذاب را ارائه می‌دهد. با پردازنده Intel® Core™ i7 و حافظه 16 گیگابایت، این لپ‌تاپ برای کارهای چندوظیفه‌ای و استفاده‌های چندرسانه‌ای مناسب است. صفحه نمایش لمسی آن تجربه کاربری بهتری را فراهم می‌کند.",
+    "rating": {
+      "average": 2.9,
+      "count": 22
+    },
+    "reviews": [
+      {
+        "user": "Nahid",
+        "comment": " صفحه نمایش لمسی خیلی خوب کار نمی‌کند.  ",
+        "rating": 2.7,
+        "date": "2025-07-21"
+      }
+    ],
+    "specialOffer": true,
+    "offerHours": 12,
+    "bestSeller": false,
+    "relatedProducts": [8, 9]
+  },
+
+  {
+    "id": 8,
+    "shortName": "لپ تاپ Asus",
+    "name": "Asus ProArt PZ13 (HT5306)",
+    "memory": "16GB RAM",
+    "storage": "1TB SSD",
+    "processor": "Snapdragon® processor",
+    "display": "13.3 inch 3K OLED 16:10 display",
+    "graphics": "Adreno™ GPU",
+    "touchscreen": true,
+    "color": "black",
+    "brand": "ASUS",
+    "category": "laptop",
+    "stock": 7,
+    "images": [
+      "assets/images/asus-proArtPZ13-1.png",
+      "assets/images/asus-proArtPZ13-2.png",
+      "assets/images/asus-proArtPZ13-3.png",
+      "../images/asus-proArtPZ13-4.png"
+    ],
+    "price": 1200,
+    "currency": "USD",
+    "shortDesc": " لپ‌تاپ ۱۳ اینچی با صفحه نمایش OLED 3K برای خلاقیت در حرکت",
+    "longDesc": " لپ‌تاپ Asus ProArt PZ13 با صفحه نمایش OLED 3K و نسبت تصویر 16:10، برای خلاقیت در حرکت طراحی شده است. با پردازنده Snapdragon® و حافظه 16 گیگابایت، این لپ‌تاپ عملکرد سریع و چندوظیفه‌ای را ارائه می‌دهد. صفحه نمایش لمسی آن تجربه بصری بی‌نظیری را ارائه می‌دهد و برای طراحان و هنرمندان دیجیتال ایده‌آل است.",
+    "rating": {
+      "average": 4,
+      "count": 10
+    },
+    "reviews": [
+      {
+        "user": "Sina",
+        "comment": " صفحه نمایش OLED کیفیت تصویر فوق‌العاده‌ای دارد. برای ویرایش عکس عالی است.",
+        "rating": 4,
+        "date": "2024-12-21"
+      },
+      {
+        "user": "Ehsan",
+        "comment": " لپ‌تاپ سبک و قابل حمل است. برای کارهای روزمره مناسب است.",
+        "rating": 4,
+        "date": "2025-04-07"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [7, 9]
+  },
+
+  {
+    "id": 9,
+    "shortName": "لپ تاپ Lenovo 3i",
+    "name": "Lenovo 3i Chromebook (15” Intel) ",
+    "memory": "8GB RAM",
+    "storage": "128GB SSD",
+    "processor": "Intel® Celeron® N4500 Processor",
+    "display": "15.6 inch Full-HD",
+    "graphics": " Intel® UHD Graphics",
+    "touchscreen": false,
+    "color": "black",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "stock": 22,
+    "images": [
+      "assets/images/lenovo-chromebook-1.webp",
+      "assets/images/lenovo-chromebook-2.webp",
+      "assets/images/lenovo-chromebook-3.avif"
+    ],
+    "price": 250,
+    "currency": "USD",
+    "shortDesc": "یک کروم‌بوک ۱۵ اینچی با طراحی باریک و سبک برای کارهای روزمره و استفاده‌های چندرسانه‌ای.",
+    "longDesc": " یک کروم‌بوک ۱۵ اینچی با طراحی باریک و سبک برای کارهای روزمره و استفاده‌های چندرسانه‌ای. با پردازنده Intel® Celeron® و حافظه 8 گیگابایت، این کروم‌بوک برای مرور وب، کارهای اداری و استفاده از برنامه‌های اندروید مناسب است. صفحه نمایش بزرگ آن تجربه بصری بهتری را فراهم می‌کند.",
+    "rating": {
+      "average": 4.5,
+      "count": 44
+    },
+    "reviews": [
+      {
+        "user": "Sana",
+        "comment": "خیلی خوشحالم از خرید این کروم‌بوک. برای کارهای روزمره عالی است.",
+        "rating": 5,
+        "date": "2025-09-11"
+      },
+      {
+        "user": "Reza",
+        "comment": " قیمت مناسب برای مشخصات ارائه شده. فقط حافظه می‌توانست بیشتر باشد.",
+        "rating": 3.8,
+        "date": "2025-02-01"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [7, 8]
+  },
+
+
+  {
+    "id": 10,
+    "shortName": "مانیتور Dell 32 Curved",
+    "name": "Dell 32 Curved Gaming Monitor – S3222DGM",
+    "size": "32 inch",
+    "resolution": "QHD 2560 x 1440",
+    "refreshRate": "165 Hz",
+    "panelType": "VA",
+    "ports": ["HDMI", "VGA"],
+    "color": "black",
+    "brand": "DELL",
+    "category": "monitor",
+    "stock": 15,
+    "images": [
+      "assets/images/monitor-dell32CurvedGaming-1.avif",
+      "assets/images/monitor-dell32CurvedGaming-2.avif",
+      "assets/images/monitor-dell32CurvedGaming-3.avif"
+    ],
+    "price": 330,
+    "currency": "USD",
+    "shortDesc": "مانیتور ۲۴ اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز.",
+    "longDesc": " مانیتور Dell 24 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز، برای کارهای روزمره و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "rating": {
+      "average": 4.7,
+      "count": 48
+    },
+    "reviews": [
+      {
+        "user": "Hamed",
+        "comment": "مانیتور خوبی برای کارهای روزمره. کیفیت تصویر عالی است.",
+        "rating": 4,
+        "date": "2025-06-15"
+      },
+      {
+        "user": "Lina",
+        "comment": "قیمت مناسب برای مشخصات ارائه شده. فقط پایه می‌توانست بهتر باشد.",
+        "rating": 3.5,
+        "date": "2025-03-22"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [11, 12]
+  },
+
+  {
+    "id": 11,
+    "shortName": "مانیتور Dell 34 Curved",
+    "name": "Dell UltraSharp 34 Curved Thunderbolt™ Hub Monitor - U3425WE",
+    "size": "34 inch",
+    "resolution": "3440 x 1440 at 120 Hz",
+    "refreshRate": "165 Hz",
+    "panelType": "VA",
+    "ports": ["HDMI", "DP"],
+    "color": "white",
+    "brand": "DELL",
+    "category": "monitor",
+    "stock": 10,
+    "images": [
+      "assets/images/monitor-dell-ultrasharp-1.avif",
+      "assets/images/monitor-dell-ultrasharp-2.avif",
+      "assets/images/monitor-dell-ultrasharp-3.avif"
+    ],
+    "price": 890,
+    "currency": "USD",
+    "shortDesc": "مانیتور ۲۴ اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز.",
+    "longDesc": " مانیتور Dell 24 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز، برای کارهای روزمره و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "rating": {
+      "average": 3.1,
+      "count": 20
+    },
+    "reviews": [
+      {
+        "user": "Amir",
+        "comment": "میتوانست بهتر باشد",
+        "rating": 2,
+        "date": "2025-07-15"
+      },
+      {
+        "user": "Ali",
+        "comment": "قیمت بالا ولی ارزشش رو داره.",
+        "rating": 4.2,
+        "date": "2025-03-22"
+      }
+    ],
+    "specialOffer": true,
+    "offerHours": 48,
+    "bestSeller": false,
+    "relatedProducts": [10, 12]
+  },
+
+  {
+    "id": 12,
+    "shortName": "مانیتور Samsung Neo G7",
+    "name": "Samsung  Odyssey Neo G7 - Quantum HDR2000 Curved Gaming Monitor",
+    "size": "32 inch",
+    "resolution": "3840 x 2160 (UHD)",
+    "refreshRate": "165Hz",
+    "panelType": "IPS",
+    "ports": ["HDMI", "VGA"],
+    "color": "black",
+    "brand": "Samsung",
+    "category": "monitor",
+    "stock": 10,
+    "images": [
+      "assets/images/monitor-odysseyNeoG7-1.webp",
+      "assets/images/monitor-odysseyNeoG7-2.webp",
+      "assets/images/monitor-odysseyNeoG7-3.webp"
+    ],
+    "price": 649,
+    "currency": "USD",
+    "shortDesc": " مانیتور 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز.",
+    "longDesc": " مانیتور Samsung 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز، برای بازی و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "rating": {
+      "average": 4.6,
+      "count": 18
+    },
+    "reviews": [
+      {
+        "user": "Aslan",
+        "comment": "مانیتور خیلی خوبه، مخصوصاً برای بازی.",
+        "rating": 4.5,
+        "date": "2025-08-10"
+      },
+      {
+        "user": "Hesam",
+        "comment": "کیفیت تصویر عالیه، مخصوصاً با HDR2000.",
+        "rating": 4,
+        "date": "2025-01-22"
+      }
+    ],
+    "specialOffer": true,
+    "bestSeller": false,
+    "relatedProducts": [10, 11]
+  },
+
+  {
+    "id": 13,
+    "shortName": "مانیتور Samsung S8",
+    "name": "ViewFinity S8 (S80UD) 4K UHD HDR10 Monitor",
+    "size": "37 inch",
+    "resolution": "3840 x 2160 (UHD)",
+    "refreshRate": "165Hz",
+    "panelType": "IPS",
+    "ports": ["HDMI", "VGA"],
+    "color": "black",
+    "brand": "Samsung",
+    "category": "monitor",
+    "stock": 10,
+    "images": [
+      "assets/images/monitor-viewfinity-s8-1.webp",
+      "assets/images/monitor-viewfinity-s8-2.webp",
+      "assets/images/monitor-viewfinity-s8-3.webp"
+    ],
+    "price": 430,
+    "currency": "USD",
+    "shortDesc": " مانیتور 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز.",
+    "longDesc": " مانیتور Samsung 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز، برای بازی و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "rating": {
+      "average": 4.6,
+      "count": 18
+    },
+    "reviews": [
+      {
+        "user": "Mohammad",
+        "comment": "سوئیچ KVM یکپارچه + حالت‌های PBP/PIP به من این امکان را می‌دهد که دو کامپیوتر را با یک کیبورد و ماوس کنترل کنم. این برای تنظیمات کار از راه دور من ایده‌آل است.",
+        "rating": 5,
+        "date": "2025-09-10"
+      },
+      {
+        "user": "Hesam",
+        "comment": "مثل همه محصولات سامسونگ من بی‌عیب و نقص. مستقیماً از جعبه خارج کنید و استفاده کنید",
+        "rating": 5,
+        "date": "2025-06-22"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [14, 11]
+  },
+
+  {
+    "id": 14,
+    "shortName": "مانیتور HP Series 5",
+    "name": "HP Series 5 23.8 Inch FHD White Monitor - 524sw",
+    "size": "23.8 inch",
+    "resolution": "1920 x 1080 (FHD)",
+    "refreshRate": "165Hz",
+    "panelType": "IPS",
+    "ports": ["HDMI", "VGA"],
+    "color": "white",
+    "brand": "HP",
+    "category": "monitor",
+    "stock": 16,
+    "images": [
+      "assets/images/mnitor-HP-Series5-1.avif",
+      "assets/images/mnitor-HP-Series5-2.webp",
+      "assets/images/mnitor-HP-Series5-3.avif"
+    ],
+    "price": 110,
+    "currency": "USD",
+    "shortDesc": "طراحی شده برای کسانی که می‌خواهند افق دید خود را گسترش دهند و از روزهای خود نهایت استفاده را ببرند.",
+    "longDesc": " طراحی شده برای کسانی که می‌خواهند افق دید خود را گسترش دهند و از روزهای خود نهایت استفاده را ببرند. با صفحه نمایش بزرگ ۲۳.۸ اینچی، کیفیت تصویر Full HD و طراحی باریک و مدرن، این مانیتور تجربه بصری بی‌نظیری را ارائه می‌دهد. ویژگی‌های اضافی مانند تنظیم ارتفاع، چرخش و شیب، راحتی بیشتری را برای استفاده طولانی مدت فراهم می‌کند. با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "rating": {
+      "average": 4.7,
+      "count": 20
+    },
+    "reviews": [
+      {
+        "user": "Mahsa",
+        "comment": "می‌خواهم بگویم که صفحه نمایش جدیدم در کل خیلی خوب است و از خریدش خوشحالم.",
+        "rating": 4.5,
+        "date": "2025-08-18"
+      },
+      {
+        "user": "Farhad",
+        "comment": " نصب آسان. کیفیت تصویر عالی با توجه به قیمت. من از خرید این مانیتور بسیار راضی هستم. ",
+        "rating": 5,
+        "date": "2025-06-22"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": true,
+    "relatedProducts": [13, 11]
+  },
+
+  {
+    "id": 15,
+    "shortName": "هدفون Sony WH-1000XM5",
+    "name": "Sony WH-1000XM5 Wireless Noise-Canceling Overhead Headphones",
+    "connectivity": "Wireless (Bluetooth)",
+    "batteryLife": "30 hours",
+    "color": "black",
+    "brand": "Sony",
+    "category": "audio",
+    "stock": 25,
+    "images": [
+      "assets/images/audio-sonyWH1000XM5-1.webp",
+      "assets/images/audio-sonyWH1000XM5-2.webp",
+      "assets/images/audio-sonyWH1000XM5-3.webp"
+    ],
+    "price": 350,
+    "currency": "USD",
+    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
+    "longDesc": " هدفون Sony WH-1000XM5 با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 30 ساعت، این هدفون برای استفاده طولانی مدت مناسب است. طراحی راحت و سبک آن، استفاده روزمره را آسان می‌کند.",
+    "rating": {
+      "average": 4.8,
+      "count": 150
+    },
+    "reviews": [
+      {
+        "user": "Reza",
+        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای سفرهای طولانی عالی است.",
+        "rating": 5,
+        "date": "2025-05-10"
+      },
+      {
+        "user": "Nina",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 4.5,
+        "date": "2025-03-15"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [16, 17]
+  },
+
+  {
+    "id": 16,
+    "shortName": "هدفون HP Stereo G2",
+    "name": "HP Stereo USB Headset G2",
+    "type": "Overhead",
+    "connectivity": "Wireless (Bluetooth)",
+    "batteryLife": "30 hours",
+    "color": "black",
+    "brand": "HP",
+    "category": "audio",
+    "stock": 32,
+    "images": [
+      "assets/images/audio-Headset-G2-1.webp",
+      "assets/images/audio-Headset-G2-2.webp"
+    ],
+    "price": 20,
+    "currency": "USD",
+    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
+    "longDesc": " هدفون Sony WH-1000XM5 با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 30 ساعت، این هدفون برای استفاده طولانی مدت مناسب است. طراحی راحت و سبک آن، استفاده روزمره را آسان می‌کند.",
+    "rating": {
+      "average": 4.8,
+      "count": 150
+    },
+    "reviews": [
+      {
+        "user": "hasib",
+        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای سفرهای طولانی عالی است.",
+        "rating": 5,
+        "date": "2025-05-10"
+      },
+      {
+        "user": "Ahmad",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 4.5,
+        "date": "2025-03-15"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [15, 17]
+  },
+
+  {
+    "id": 17,
+    "shortName": "هدفون HyperX MIX 2",
+    "name": "HyperX Cloud MIX 2 - Gaming Headset",
+    "connectivity": ["Wireless (Bluetooth)", "Wired (3.5mm)"],
+    "batteryLife": "30 hours",
+    "color": "black",
+    "brand": "HP",
+    "category": "audio",
+    "stock": 28,
+    "images": [
+      "assets/images/audio-HyperX-Cloud-1.webp",
+      "assets/images/audio-HyperX-Cloud-2.webp",
+      "assets/images/audio-HyperX-Cloud-3.webp",
+      "assets/images/audio-HyperX-Cloud-4.webp"
+    ],
+    "price": 100,
+    "currency": "USD",
+    "shortDesc": "هدفون نسل بعدی، با عمر باتری بهبود یافته برای بازی، موسیقی و تماس، تطبیق‌پذیری را از نو تعریف می‌کند.",
+    "longDesc": " هدفون HyperX Cloud MIX 2 با عمر باتری بهبود یافته، برای بازی، موسیقی و تماس طراحی شده است. با اتصال بی‌سیم از طریق بلوتوث یا اتصال سیمی با جک 3.5 میلی‌متری، این هدفون تطبیق‌پذیری بالایی را ارائه می‌دهد. کیفیت صدای عالی و طراحی راحت آن، تجربه صوتی بی‌نظیری را فراهم می‌کند.",
+    "rating": {
+      "average": 3,
+      "count": 40
+    },
+    "reviews": [
+      {
+        "user": "Hadya",
+        "comment": "قیمت بالا داره اما کیفیت خوب.",
+        "rating": 3,
+        "date": "2025-05-10"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": true,
+    "relatedProducts": [16, 17]
+  },
+
+  {
+    "id": 18,
+    "shortName": "هدفون Poly Voyager",
+    "name": "Poly Voyager Free 60 Earbuds",
+    "connectivity": "Wireless (Bluetooth)",
+    "batteryLife": "50 hours",
+    "color": "black",
+    "brand": "HP",
+    "category": "audio",
+    "stock": 30,
+    "images": [
+      "assets/images/audio-PolyVoyager-1.webp",
+      "assets/images/audio-PolyVoyager-2.webp",
+      "assets/images/audio-PolyVoyager-3.webp"
+    ],
+    "price": 139,
+    "currency": "USD",
+    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
+    "longDesc": " چه در حال مکالمه ویدیویی باشید و چه در حال گوش دادن به لیست پخش خود، این هدفون‌های بی‌سیم طوری طراحی شده‌اند که شما را پربار، متصل و سرگرم نگه دارند. با عمر باتری تا 50 ساعت، می‌توانید بدون نگرانی از شارژ مجدد، از موسیقی و تماس‌های خود لذت ببرید. طراحی راحت و سبک آن، استفاده روزمره را آسان می‌کند.",
+    "rating": {
+      "average": 4.9,
+      "count": 14
+    },
+    "reviews": [
+      {
+        "user": "Madina",
+        "comment": " کیفیت صدا و میکروفون عالی. با چندین لپ‌تاپ و تلفن من به خوبی کار می‌کند. آنها همچنین بادوام هستند، من به طور تصادفی یکی از آنها را در سینک پر از آب ظرفشویی انداختم و کمی طول کشید تا آن را پیدا کنم، اما بعداً هیچ مشکلی پیش نیامد. ",
+        "rating": 5,
+        "date": "2025-08-10"
+      },
+      {
+        "user": "Kiana",
+        "comment": "میکروفون افتضاح، صدا قابل قبول است ",
+        "rating": 2,
+        "date": "2025-06-15"
+      }
+    ],
+    "specialOffer": true,
+    "bestSeller": false,
+    "relatedProducts": [19, 20]
+  },
+
+  {
+    "id": 19,
+    "shortName": "ایرپاد Pro 2",
+    "name": "Airpods Pro 2",
+    "connectivity": "Wireless (Bluetooth)",
+    "batteryLife": "24 hours",
+    "color": "white",
+    "brand": "Apple",
+    "category": "audio",
+    "stock": 40,
+    "images": [
+      "assets/images/audio-airpodsPro-1.jpg",
+      "assets/images/audio-airpodsPro-2.jpg"
+    ],
+    "price": 249,
+    "currency": "USD",
+    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
+    "longDesc": " هدفون Apple AirPods Pro 2 با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 24 ساعت با کیس شارژ، این هدفون برای استفاده روزمره مناسب است. طراحی راحت و سبک آن، استفاده طولانی مدت را آسان می‌کند.",
+    "rating": {
+      "average": 4.5,
+      "count": 200
+    },
+    "reviews": [
+      {
+        "user": "Sara",
+        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای استفاده روزمره عالی است.",
+        "rating": 5,
+        "date": "2025-04-10"
+      },
+      {
+        "user": "Ali",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 4,
+        "date": "2025-02-15"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [18, 20]
+  },
+
+  {
+    "id": 20,
+    "shortName": "هدفون JBL 230NC",
+    "name": "JBL Tune 230NC TWS - True Wireless Noise Cancelling Earbuds",
+    "connectivity": "Wireless (Bluetooth)",
+    "batteryLife": "40 hours",
+    "color": "black",
+    "brand": "JBL",
+    "category": "audio",
+    "stock": 35,
+    "images": [
+      "assets/images/audio-JBL-Tune230NC-1.png",
+      "assets/images/audio-JBL-Tune230NC-2.webp"
+    ],
+    "price": 100,
+    "currency": "USD",
+    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
+    "longDesc": " هدفون JBL Tune 230NC TWS با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 40 ساعت با کیس شارژ، این هدفون برای استفاده روزمره مناسب است. طراحی راحت و سبک آن، استفاده طولانی مدت را آسان می‌کند.",
+    "rating": {
+      "average": 2.5,
+      "count": 80
+    },
+    "reviews": [
+      {
+        "user": "Neda",
+        "comment": "بد نیست... ",
+        "rating": 2,
+        "date": "2025-03-10"
+      },
+      {
+        "user": "Taha",
+        "comment": "قیمت مناسب و کیفیت خوب. خیلی راحت و سبک است.",
+        "rating": 3,
+        "date": "2025-01-20"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [19, 20]
+  },
+
+  {
+    "id": 21,
+    "shortName": "هدفون Bose II",
+    "name": "Bose QuietComfort Earbuds II",
+    "connectivity": "Wireless (Bluetooth)",
+    "batteryLife": "18 hours",
+    "color": "white",
+    "brand": "Bose",
+    "category": "audio",
+    "stock": 20,
+    "images": [
+      "assets/images/audio-QuietComfortEarbuds-1.webp",
+      "assets/images/audio-QuietComfortEarbuds-2.webp"
+    ],
+    "price": 299,
+    "currency": "USD",
+    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
+    "longDesc": " هدفون Bose QuietComfort Earbuds II با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 18 ساعت با کیس شارژ، این هدفون برای استفاده روزمره مناسب است. طراحی راحت و سبک آن، استفاده طولانی مدت را آسان می‌کند.",
+    "rating": {
+      "average": 4.6,
+      "count": 60
+    },
+    "reviews": [
+      {
+        "user": "Laleh",
+        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای استفاده روزمره عالی است.",
+        "rating": 5,
+        "date": "2025-02-10"
+      },
+      {
+        "user": "Kaveh",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 4.2,
+        "date": "2025-01-25"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [17, 18]
+  },
+
+ 
+  {
+    "id": 22,
+    "shortName": "ماوس Logitech MX 3S",
+    "name": "Logitech MX Master 3S Wireless Mouse",
+    "type": "Wireless",
+    "connectivity": "Bluetooth and USB receiver",
+    "color": "black",
+    "brand": "Logitech",
+    "category": "accessory",
+    "stock": 50,
+    "images": [
+      "assets/images/accessory-logitechMXMaster3S-1.webp",
+      "assets/images/accessory-logitechMXMaster3S-2.webp",
+      "assets/images/accessory-logitechMXMaster3S-3.webp"
+    ],
+    "price": 100,
+    "currency": "USD",
+    "shortDesc": "ماوس بی‌سیم با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
+    "longDesc": " ماوس Logitech MX Master 3S با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث یا گیرنده USB، این ماوس راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند چرخ اسکرول سریع و دکمه‌های قابل برنامه‌ریزی، بهره‌وری را افزایش می‌دهد.",
+    "rating": {
+      "average": 4.9,
+      "count": 120
+    },
+    "reviews": [
+      {
+        "user": "Parisa",
+        "comment": "ماوس بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "rating": 5,
+        "date": "2025-06-10"
+      },
+      {
+        "user": "Omid",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 4.8,
+        "date": "2025-04-15"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [23, 24]
+  },
+
+  {
+    "id": 23,
+    "shortName": "کیبورد Logitech K380",
+    "name": "K380 MULTI-DEVICE BLUETOOTH KEYBOARD FOR MAC",
+    "type": "Wireless",
+    "connectivity": "Bluetooth",
+    "color": "black",
+    "brand": "Logitech",
+    "category": "accessory",
+    "stock": 40,
+    "images": [
+      "assets/images/accessory-K380MULTI-DEVICE-1.webp",
+      "assets/images/accessory-K380MULTI-DEVICE-2.webp"
+    ],
+    "price": 55,
+    "currency": "USD",
+    "shortDesc": "کیبورد بی‌سیم با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه برای کارهای روزمره و حرفه‌ای.",
+    "longDesc": " کیبورد Logitech K380 با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث، این کیبورد راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند دکمه‌های قابل برنامه‌ریزی و طراحی ارگونومیک، بهره‌وری را افزایش می‌دهد.",
+    "rating": {
+      "average": 4.7,
+      "count": 80
+    },
+    "reviews": [
+      {
+        "user": "Mina",
+        "comment": "کیبورد بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "rating": 4.5,
+        "date": "2025-05-10"
+      },
+      {
+        "user": "Saeed",
+        "comment": "قیمت مناسب و کیفیت خوب. خیلی راحت و سبک است.",
+        "rating": 4.8,
+        "date": "2025-03-15"
+      }
+    ],
+    "specialOffer": true,
+    "offerHours": 24,
+    "bestSeller": false,
+    "relatedProducts": [22, 24]
+  },
+
+  {
+    "id": 24,
+    "shortName": "کیبورد Dell Pro",
+    "name": "Dell Pro Silent Wired Collaboration Keyboard - KB525C",
+    "type": "Wired",
+    "connectivity": "USB",
+    "color": "black",
+    "brand": "Dell",
+    "category": "accessory",
+    "stock": 25,
+    "images": [
+      "assets/images/accessory-DellProSilentWired-1.avif",
+      "assets/images/accessory-DellProSilentWired-2.avif"
+    ],
+    "price": 35,
+    "currency": "USD",
+    "shortDesc": "کیبورد سیمی با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
+    "longDesc": " کیبورد Dell Pro Silent Wired با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال سیمی از طریق USB، این کیبورد راحتی و کنترل بیشتری را ارائه می‌دهد. طراحی ساده و قابل استفاده آن، بهره‌وری را افزایش می‌دهد.",
+    "rating": {
+      "average": 4.4,
+      "count": 50
+    },
+    "reviews": [
+      {
+        "user": "Shirin",
+        "comment": "کیبورد بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "rating": 4.3,
+        "date": "2025-03-10"
+      },
+      {
+        "user": "Kian",
+        "comment": "قیمت مناسب و کیفیت خوب. خیلی راحت و سبک است.",
+        "rating": 4.6,
+        "date": "2025-01-25"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [22, 23]
+  },
+
+  {
+    "id": 25,
+    "shortName": "ماوس سیمی HP 125",
+    "name": "HP 125 Wired Mouse - With Easy Plug And Play USB Connectivity",
+    "type": "Wired",
+    "connectivity": "USB",
+    "color": "black",
+    "brand": "HP",
+    "category": "accessory",
+    "stock": 45,
+    "images": [
+      "assets/images/accessory-HP125WiredMouse-1.avif",
+      "assets/images/accessory-HP125WiredMouse-2.avif"
+    ],
+    "price": 6,
+    "currency": "USD",
+    "shortDesc": "ماوس سیمی با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
+    "longDesc": " ماوس HP 125 با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال سیمی از طریق USB، این ماوس راحتی و کنترل بیشتری را ارائه می‌دهد. طراحی ساده و قابل استفاده آن، بهره‌وری را افزایش می‌دهد.",
+    "rating": {
+      "average": 2.9,
+      "count": 70
+    },
+    "reviews": [
+      {
+        "user": "Roya",
+        "comment": "خیلی راضی نبودم ",
+        "rating": 3,
+        "date": "2025-03-10"
+      },
+      {
+        "user": "Ibrahim",
+        "comment": "قیمت مناسب و کیفیت متوسط. خیلی راحت و سبک است.",
+        "rating": 2.7,
+        "date": "2025-01-25"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [26, 27]
+  },
+
+  {
+    "id": 26,
+    "shortName": "ماوس Dell Pro Premium",
+    "name": "Dell Pro Premium Compact Mouse - MS7421W",
+    "type": "Wireless",
+    "connectivity": "Bluetooth and USB receiver",
+    "color": "white",
+    "brand": "Dell",
+    "category": "accessory",
+    "stock": 30,
+    "images": [
+      "assets/images/accessory-DellProPremiumCompact-1.avif",
+      "assets/images/accessory-DellProPremiumCompact-2.avif"
+    ],
+    "price": 70,
+    "currency": "USD",
+    "shortDesc": "ماوس بی‌سیم با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
+    "longDesc": " ماوس Dell Pro Premium Compact با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث یا گیرنده USB، این ماوس راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند چرخ اسکرول سریع و دکمه‌های قابل برنامه‌ریزی، بهره‌وری را افزایش می‌دهد.",
+    "rating": {
+      "average": 3.2,
+      "count": 60
+    },
+    "reviews": [
+      {
+        "user": "Zahra",
+        "comment": "ماوس بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "rating": 4.6,
+        "date": "2025-05-10"
+      },
+      {
+        "user": "Simin",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 3,
+        "date": "2025-03-15"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": false,
+    "relatedProducts": [25, 27]
+  },
+
+  {
+    "id": 27,
+    "shortName": "کیبورد Alienware Tri-Mode",
+    "name": "Alienware Tri-Mode Wireless Gaming Keyboard - AW920K",
+    "type": "Wireless",
+    "connectivity": "Bluetooth and USB receiver",
+    "color": "black",
+    "brand": "Dell",
+    "category": "accessory",
+    "stock": 20,
+    "images": [
+      "assets/images/accessory-AlienwareTri-ModeWireless-2.avif",
+      "assets/images/accessory-AlienwareTri-ModeWireless-1.avif"
+    ],
+    "price": 200,
+    "currency": "USD",
+    "shortDesc": "کیبورد بی‌سیم با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه برای کارهای روزمره و حرفه‌ای.",
+    "longDesc": " کیبورد Alienware Tri-Mode با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث یا گیرنده USB، این کیبورد راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند دکمه‌های قابل برنامه‌ریزی و طراحی ارگونومیک، بهره‌وری را افزایش می‌دهد.",
+    "rating": {
+      "average": 4.3,
+      "count": 40
+    },
+    "reviews": [
+      {
+        "user": "Ehsan",
+        "comment": "کیبورد بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "rating": 4,
+        "date": "2025-04-10"
+      },
+      {
+        "user": "Negina",
+        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "rating": 4.5,
+        "date": "2025-02-15"
+      }
+    ],
+    "specialOffer": false,
+    "bestSeller": true,
+    "relatedProducts": [25, 26]
+  }
+
+  
+]

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.1.0/dist/font-face.css" rel="stylesheet"
+    type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <link rel="stylesheet" href="assets/css/main.css" />
+
+  <title>NeoTechShop|ارتباط با ما</title>
+</head>
+
+  <body>
+    <header class="header">
+    <nav class="nav">
+      <div class="nav-top">
+        <img class="nav-logo" src="assets/logo/logo-dark-transparent.png"
+          alt="NeoTechShop logo, لوگوی سایت نیوتک شاپ" />
+
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" class="nav-search" placeholder="جستجو..." />
+        </div>
+        <div id="searchResults" class="search-results"></div>
+
+        <div class="left">
+          
+          <span id="welcomeNav" style="display: none"></span>
+          <button class="btn" id="logoutNav" >
+            خروج
+          </button>
+          <button class="login">
+            <a href="auth.html" class="btn-login">
+              <i class="fa-solid fa-user fa-2x"></i><span class="nav-icon-text">ورود / ثبت نام</span>
+            </a>
+          </button>
+
+
+          <div class="position-relative d-inline-block cart-icon">
+            <button id="cartBtn" class="cart-icon">
+              <span id="cartCount"
+                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+              <i class="fas fa-shopping-cart fa-2x"></i><span class="nav-icon-text">سبد خرید</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="nav-bottom">
+        <ul id="nav-links" class="nav-links">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">صفحه اصلی</a>
+          </li>
+          <li class="dropdown">
+            <a href="#">محصولات</a>
+            <div class="dropdown-content">
+              <a href="loptop-products-listing.html">لپ‌تاپ</a>
+              <a href="monitor-products-listing.html">مانیتور</a>
+              <a href="audio-products-listing.html">لوازم صوتی</a>
+              <a href="accessory-products.html">لوازم جانبی</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">ارتباط با ما</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cart-page.html">سبد خرید شما</a>
+          </li>
+        </ul>
+
+        <button class="hamburger" id="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+    <div class="contact-page">
+      <main class="contact-main">
+        <section class="about-section">
+          <h1>درباره نیوتک شاپ</h1>
+          <p>
+            نیوتک شاپ یک فروشگاه اینترنتی معتبر است که در زمینه فروش تجهیزات
+            تکنولوژی فعالیت می‌کند. ما با ارائه محصولات با کیفیت از برندهای
+            معتبر و قیمت‌های رقابتی، تلاش می‌کنیم تا بهترین تجربه خرید آنلاین را
+            برای مشتریان خود فراهم کنیم. تیم پشتیبانی ما همیشه آماده پاسخگویی به
+            سوالات و نیازهای شماست.
+          </p>
+          <p>شماره پشتیبانی: 93123456789+</p>
+        </section>
+        
+        <section class="contact-section">
+          <h2>تماس با ما</h2>
+          <p>
+            اگر سوالی دارید یا نیاز به پشتیبانی دارید، لطفاً از طریق فرم زیر با
+            ما تماس بگیرید. تیم پشتیبانی ما در اسرع وقت پاسخگوی شما خواهد بود.
+            منتظر پیشنهادات و نظرات شما هستیم!
+          </p>
+          <form class="contact-form" id="contactForm">
+            <label for="name">نام کامل:</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">ایمیل:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">پیام شما:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit" class="btn-submit">ارسال پیام</button>
+          </form>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <ul class="footer-section footer-links">
+          <img
+            class="nav-logo"
+            src="assets/logo/logo-light-transparent.png"
+            alt="NeoTechShop logo, لوگوی سایت نیوتک شاپ"
+          />
+          <li><a href="index.html">صفحه اصلی</a></li>
+          <li><a href="product.html">محصولات</a></li>
+          <li><a href="contact.html">تماس با ما</a></li>
+        </ul>
+        <div class="footer-section footer-about">
+          <h3 class="footer-title">درباره ما</h3>
+          <p>
+            نیوتک شاپ، فروشگاه آنلاین تجهیزات تکنولوژی با بهترین قیمت‌ها و خدمات
+            پس از فروش.
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3 class="footer-title">شبکه‌های اجتماعی</h3>
+          <div class="social-icons">
+            <a href="https://facebook.com/neotechshop"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+            <a href="https://x.com/neotechshop"
+              ><i class="fa-brands fa-x"></i
+            ></a>
+            <a href="https://instagram.com/neotechshop"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 NeoTechShop, All rights reserved</p>
+      </div>
+    </footer>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- مودال سبد خرید -->
+    <div id="cartModal" class="cart-modal">
+      <div class="cart-modal-content">
+        <span class="close-modal">&times;</span>
+        <h3>سبد خرید</h3>
+
+        <div class="cart-items" id="cartItems"></div>
+
+        <div class="cart-summary">
+          <p>جمع کل: <span id="cartTotal">۰ افغانی</span></p>
+          <div class="cart-buttons">
+            <a href="cart-page.html" class="btn-view-cart">مشاهده کامل</a>
+            <a href="checkout.html" class="btn-checkout">پرداخت</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/00e2dc1dd2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>

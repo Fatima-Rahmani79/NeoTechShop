@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.1.0/dist/font-face.css" rel="stylesheet"
+    type="text/css" />
+  <title>NeoTechShop|تایید سفارش</title>
+  <style>
+    body { font-family: sans-serif; padding: 1.2rem; line-height: 1.6; color: #111; background:#f7f7f7 }
+    h1 { color: #0b6f6f; }
+    .order-summery, .shipping-info, .payment-info { background: #fff; padding: 1rem; border-radius: 8px; margin-top: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    ul { padding-left: 1rem; }
+    .order-item { display:flex; gap:0.8rem; align-items:center; margin-bottom:0.6rem; }
+    .order-item img { width:56px; height:56px; object-fit:cover; border-radius:6px; }
+    .meta { font-size:0.95rem; color:#333; }
+    .price { font-weight:700; }
+    .actions { margin-top:1rem; display:flex; gap:0.6rem; }
+    button { padding:0.5rem 0.9rem; border-radius:6px; border: none; cursor:pointer }
+    .btn-primary { background:#0b6f6f; color:#fff }
+    .btn-outline { background:#fff; border:1px solid #ddd }
+    .muted { color:#666; font-size:0.95rem; margin-top:0.8rem }
+    @media print {
+      .actions, button { display:none }
+    }
+  </style>
+</head>
+<body>
+  <h1>سفارش شما با موفقیت ثبت شد ✅</h1>
+  <p>از خرید شما متشکریم! شمارهٔ سفارش و خلاصهٔ اطلاعات در زیر نمایش داده شده است.</p>
+
+  <p id="orderId" class="meta"></p>
+  <p id="orderDate" class="meta"></p>
+
+  <div class="order-summery" aria-labelledby="summaryTitle">
+    <h2 id="summaryTitle">خلاصه سفارش</h2>
+    <ul id="orderItems"></ul>
+    <p class="price" id="orderTotal"></p>
+  </div>
+
+  <div class="shipping-info" aria-labelledby="shipTitle">
+    <h2 id="shipTitle">اطلاعات ارسال</h2>
+    <p id="shippingName"></p>
+    <p id="shippingAddress"></p>
+    <p id="shippingMethod"></p>
+  </div>
+
+  <div class="payment-info" aria-labelledby="payTitle">
+    <h2 id="payTitle">روش پرداخت</h2>
+    <p id="paymentMethod"></p>
+  </div>
+
+  <div class="actions">
+    <button class="btn-primary" id="homeBtn">بازگشت به خانه</button>
+    <button class="btn-outline" id="printBtn">چاپ فاکتور</button>
+  </div>
+
+  <p class="muted">در صورت نیاز با پشتیبانی با شماره <strong>077777777</strong> تماس بگیرید.</p>
+
+  <script>
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+if (cart.length === 0) {
+  alert("سبد خرید شما خالی است!");
+  window.location.href = "cart-page.html"; // یا هر صفحه‌ای که لیست محصولاتت هست
+}
+
+    (function () {
+      // --- Helpers ---
+      const toCurrency = n => (typeof n === 'number' ? n.toLocaleString('fa-IR') : n);
+      const el = id => document.getElementById(id);
+
+      // --- داده‌ها از localStorage (یا fallback) ---
+      const cart = JSON.parse(localStorage.getItem('cart')) || [];
+      const checkoutInfo = JSON.parse(localStorage.getItem('checkoutUserInfo')) || null;
+      // اگر بخواهی میتونی قبلاً اطلاعات کاربر رو در checkoutUserInfo ذخیره کرده باشی:
+      // { name, phone, email, address, payment }
+
+      // --- شناسه سفارش و زمان ---
+      const now = new Date();
+      const orderId = 'ORD-' + now.getTime();
+      const orderDate = now.toLocaleString('fa-IR', {
+        year: 'numeric', month: 'long', day: 'numeric',
+        hour: '2-digit', minute: '2-digit'
+      });
+
+      el('orderId').textContent = `شماره سفارش: ${orderId}`;
+      el('orderDate').textContent = `تاریخ: ${orderDate}`;
+
+      // --- نمایش آیتم‌ها ---
+      const orderItemsEl = el('orderItems');
+      let total = 0;
+
+      if (cart.length === 0) {
+        orderItemsEl.innerHTML = '<li>سبد خرید خالی بود یا حذف شده است.</li>';
+      } else {
+        // اگر محصول‌ها دارای id و فقط qty/quantity و قیمت داخل cart باشند، از همان استفاده می‌کنیم.
+        // در غیر اینصورت اگر می‌خواهیم نام/تصویر/قیمت را از products.json بگیریم، می‌توانیم fetch کنیم.
+        // اینجا ابتدا سعی می‌کنیم از داده‌های خود cart استفاده کنیم (پایدارتر).
+        cart.forEach(item => {
+          // هماهنگی با کلیدهای متداول: quantity یا qty
+          const qty = item.quantity ?? item.qty ?? 1;
+          const price = item.price ?? item.unitPrice ?? 0;
+          const name = item.name ?? item.title ?? `محصول (${item.id ?? ''})`;
+          const img = item.image ?? item.img ?? null;
+
+          const itemTotal = price * qty;
+          total += itemTotal;
+
+          const li = document.createElement('li');
+          li.className = 'order-item';
+
+          const inner = [];
+          if (img) {
+            inner.push(`<img src="${img}" alt="${name}">`);
+          }
+          inner.push(`<div>
+                        <div class="meta">${name}</div>
+                        <div class="meta">تعداد: ${toCurrency(qty)} — قیمت واحد: ${toCurrency(price)} افغانی</div>
+                      </div>`);
+          inner.push(`<div style="margin-inline-start:auto; font-weight:700">${toCurrency(itemTotal)} افغانی</div>`);
+
+          li.innerHTML = inner.join('');
+          orderItemsEl.appendChild(li);
+        });
+      }
+
+      el('orderTotal').textContent = `مجموع کل: ${toCurrency(total)} افغانی`;
+
+      // --- اطلاعات ارسال و پرداخت (از checkoutInfo یا fallback نمونه) ---
+      if (checkoutInfo) {
+        el('shippingName').textContent = `نام گیرنده: ${checkoutInfo.name ?? '---'}`;
+        el('shippingAddress').textContent = `آدرس: ${checkoutInfo.address ?? '---'}`;
+        el('shippingMethod').textContent = `شماره تماس: ${checkoutInfo.phone ?? '---'} — ایمیل: ${checkoutInfo.email ?? '---'}`;
+        el('paymentMethod').textContent = (checkoutInfo.payment === 'online') ? 'پرداخت آنلاین' : (checkoutInfo.payment === 'cash' ? 'پرداخت هنگام تحویل' : checkoutInfo.payment ?? '---');
+      } else {
+        // fallback متن نمونه — اگر داده‌ای نداریم، از مقادیر نمونه استفاده می‌کنیم
+        el('shippingName').textContent = 'نام: فاطمه رحمانی';
+        el('shippingAddress').textContent = 'آدرس: کابل، کارته‌سه، کوچهٔ فلان';
+        el('shippingMethod').textContent = 'شماره تماس: 077777777 — ایمیل: example@example.com';
+        el('paymentMethod').textContent = 'پرداخت هنگام تحویل';
+      }
+
+      // --- ذخیرهٔ سوابق (اختیاری) و پاک کردن سبد خرید ---
+      try {
+        // ذخیرهٔ order history
+        const orders = JSON.parse(localStorage.getItem('orders')) || [];
+        orders.push({
+          id: orderId,
+          date: now.toISOString(),
+          items: cart,
+          total,
+          checkout: checkoutInfo
+        });
+        localStorage.setItem('orders', JSON.stringify(orders));
+      } catch (err) { console.warn('Could not save order history', err); }
+
+      // پاک کردن cart (اگر می‌خواهی بعد از پرداخت پاک شود)
+      localStorage.removeItem('cart');
+      // همچنین می‌توانیم checkoutUserInfo نگه داریم تا کاربر بعد از پرداخت بتواند دوباره سفارش دهد.
+
+      // --- دکمه‌ها ---
+      el('homeBtn').addEventListener('click', () => {
+        window.location.href = 'index.html';
+      });
+      el('printBtn').addEventListener('click', () => {
+        window.print();
+      });
+
+      // --- در صورت لزوم: دریافت جزئیات تکمیلی از products.json ---
+      // اگر می‌خواهی نام/قیمت/تصویر را از یک فایل products.json مرجع بگیری، می‌توانم این منطق را اضافه کنم:
+      // 1) fetch('products.json').then(r=>r.json()).then(products => ...) و سپس match بر اساس item.id
+      // اما در این نسخه ترجیح داده‌ام که ابتدا از داده‌های داخل cart استفاده شود (پایدارتر و آفلاین).
+    })();
+  </script>
+</body>
+</html>
