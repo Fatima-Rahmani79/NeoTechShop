@@ -1,9 +1,4 @@
-/* assets/js/cart.js
-   CartAPI - small, dependency-free cart utility.
-   Provides: getCart, saveCart, addToCart, removeFromCart, changeQuantity,
-             clearCart, getCartTotal, getCartCount, updateCartUI
-   Exposes window.CartAPI for legacy pages.
-*/
+
 (function (window, document) {
   'use strict';
 
