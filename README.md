@@ -205,7 +205,7 @@ Expiry Date: Any valid date within the next 10 years
 👩‍💻 Developer
 
 Developed by: Fatima Rahmani
-📧 Email: fatima.rahmnai@gmail.com
+📧 Email: fatima.rahmnai79@gmail.com
 
 📅 Year: 2025
 
