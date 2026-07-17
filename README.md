@@ -80,6 +80,36 @@ Search bar with live product filtering
 
 Accessible and SEO-friendly structure
 
+🎯 Product Listing Page
+
+Users can sort products by:
+
+🏷️ Product name
+
+💰 Price (ascending or descending)
+
+Users can filter products by:
+
+💵 Price range
+
+🏢 Brand name
+
+⭐ Customer rating
+
+Filtering and sorting are fully dynamic — no page reloads required
+
+All product data is fetched from a JSON file
+
+✨ Additional Highlights
+
+Toast messages for all user actions (add to cart, login, logout, etc.)
+
+Swiper.js slider for special offers and featured products
+
+Search bar with live product filtering
+
+Accessible and SEO-friendly structure
+
 🧱 Technologies Used
 Technology	Purpose
 HTML5	Page structure and content
@@ -175,7 +205,7 @@ Expiry Date: Any valid date within the next 10 years
 👩‍💻 Developer
 
 Developed by: Fatima Rahmani
-📧 Email: fatima.rahmnai@gmail.com
+📧 Email: fatima.rahmnai79@gmail.com
 
 📅 Year: 2025
 
