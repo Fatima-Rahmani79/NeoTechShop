@@ -42,7 +42,6 @@ Option to log out anytime
 
 Add, remove, and update item quantities
 
-Realtime total price calculation (converted from USD to AFN)
 
 Persistent cart storage via LocalStorage
 

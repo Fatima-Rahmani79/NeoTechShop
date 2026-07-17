@@ -173,10 +173,10 @@
             }
             inner.push(`<div>
                         <div class="meta">${name}</div>
-                        <div class="meta">Quantity: ${toCurrency(qty)} — Unit Price: ${toCurrency(price)} AFN</div>
+                        <div class="meta">Quantity: ${toCurrency(qty)} — Unit Price: ${toCurrency(price)} $</div>
                       </div>`);
             inner.push(
-              `<div style="margin-inline-start:auto; font-weight:700">${toCurrency(itemTotal)} AFN</div>`,
+              `<div style="margin-inline-start:auto; font-weight:700">${toCurrency(itemTotal)} $</div>`,
             );
 
             li.innerHTML = inner.join("");
@@ -184,7 +184,7 @@
           });
         }
 
-        el("orderTotal").textContent = `Total: ${toCurrency(total)} AFN`;
+        el("orderTotal").textContent = `Total: ${toCurrency(total)} $`;
 
         // --- Shipping and payment info ---
         if (checkoutInfo) {

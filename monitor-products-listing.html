@@ -127,7 +127,7 @@
                 max="200000"
                 step="1000"
               />
-              <span id="priceValue">200,000</span> AFN
+              <span id="priceValue">200,000</span> $
             </div>
 
             <div class="filter-group mb-3">
@@ -223,7 +223,7 @@
         <div class="cart-items" id="cartItems"></div>
 
         <div class="cart-summary">
-          <p>Total: <span id="cartTotal">0 AFN</span></p>
+          <p>Total: <span id="cartTotal">0 $</span></p>
           <div class="cart-buttons">
             <a href="cart-page.html" class="btn-view-cart">View Full Cart</a>
             <a href="checkout.html" class="btn-checkout">Checkout</a>
@@ -278,7 +278,7 @@
           <img src="${p.images[0]}" alt="${p.name}" loading="lazy">
           <h3>${p.shortName}</h3>
           <p>Model: ${p.name}</p>
-          <p class="price">Price: ${(p.price * USD_TO_AFN).toLocaleString()} AFN</p>
+          <p class="price">Price: ${p.price.toLocaleString()} $</p>
           <p>Rating: ${
             p.rating?.average ? p.rating.average.toFixed(1) : "N/A"
           }★</p>
@@ -340,7 +340,7 @@
 
         // Price
         const maxPrice = parseInt(document.getElementById("priceFilter").value);
-        filtered = filtered.filter((p) => p.price * USD_TO_AFN <= maxPrice);
+        filtered = filtered.filter((p) => p.price <= maxPrice);
 
         // Customer rating
         const rating = document.querySelector(".ratingFilter:checked")?.value;
@@ -349,10 +349,9 @@
 
         // Sort
         const sortVal = document.getElementById("sortProducts").value;
-        if (sortVal === "price-asc")
-          filtered.sort((a, b) => a.price * USD_TO_AFN - b.price * USD_TO_AFN);
+        if (sortVal === "price-asc") filtered.sort((a, b) => a.price - b.price);
         else if (sortVal === "price-desc")
-          filtered.sort((a, b) => b.price * USD_TO_AFN - a.price * USD_TO_AFN);
+          filtered.sort((a, b) => b.price - a.price);
         else if (sortVal === "name-asc")
           filtered.sort((a, b) => a.name.localeCompare(b.name));
         else if (sortVal === "name-desc")

@@ -1,7 +1,4 @@
 "use strict";
-
-const USD_TO_AFN = 66; // conversion rate constant
-
 /* --------------------------
    Utility helpers
    -------------------------- */
@@ -17,8 +14,8 @@ function safeParseFloat(v, fallback = 0) {
   const n = parseFloat(v);
   return Number.isNaN(n) ? fallback : n;
 }
-function usdToAfn(usd) {
-  return Math.round(Number(usd) * USD_TO_AFN);
+function usdTo$(usd) {
+  return Math.round(Number(usd));
 }
 function numberToLocaleString(n) {
   if (typeof n !== "number") n = Number(n) || 0;
@@ -193,7 +190,7 @@ function initCartUpdateListeners() {
 */
 
 function addToCart(product) {
-  // product: { id (number), name (string), price (AFN number), image (string), quantity (number) }
+  // product: { id (number), name (string), price  (number), image (string), quantity (number) }
   if (!product || !product.id) return;
   const cart = getCart();
   const existing = cart.find((it) => it.id === product.id);
@@ -233,7 +230,7 @@ function updateCartUI() {
   if (cartItemsContainer) {
     if (cart.length === 0) {
       cartItemsContainer.innerHTML = "<p>Shopping cart is empty.</p>";
-      if (cartTotal) cartTotal.textContent = "0 AFN";
+      if (cartTotal) cartTotal.textContent = "0 $";
     } else {
       cartItemsContainer.innerHTML = cart
         .map(
@@ -245,7 +242,7 @@ function updateCartUI() {
               <div class="cart-item-qty">Quantity: ${it.quantity}</div>
               <div class="cart-item-price">${numberToLocaleString(
                 it.price,
-              )} AFN / unit</div>
+              )} $ / unit</div>
             </div>
             <button class="remove-cart-item" data-id="${it.id}">Remove</button>
           </div>
@@ -254,7 +251,7 @@ function updateCartUI() {
         .join("");
       const total = cart.reduce((s, it) => s + it.price * it.quantity, 0);
       if (cartTotal)
-        cartTotal.textContent = `${numberToLocaleString(total)} AFN`;
+        cartTotal.textContent = `${numberToLocaleString(total)} $`;
     }
   }
 }
@@ -439,14 +436,14 @@ function initSearch() {
     }
     resultsContainer.innerHTML = items
       .map((p) => {
-        const afn = usdToAfn(p.price);
+        const $ = usdTo$(p.price);
         return `
           <a href="product.html?id=${p.id}" class="search-item">
             <img src="${p.images[0]}" alt="${p.name}" />
             <div class="info">
               <h4>${p.shortName}</h4>
               <p class="brand">${p.brand}</p>
-              <p class="price">${numberToLocaleString(afn)} AFN</p>
+              <p class="price">${numberToLocaleString($)} $</p>
             </div>
           </a>`;
       })
@@ -485,7 +482,7 @@ function initSearch() {
 
 /* --------------------------
    Renderers for Featured & Special offers
-   Ensure data-price attributes are AFN (numbers), not locale strings.
+   Ensure data-price attributes are $ (numbers), not locale strings.
    -------------------------- */
 async function renderFeaturedProducts() {
   const container = document.getElementById("ftr-product-container");
@@ -495,13 +492,13 @@ async function renderFeaturedProducts() {
 
   container.innerHTML = bestSeller
     .map((p) => {
-      const afn = usdToAfn(p.price);
-      // data-price is AFN number
+      const $ = usdTo$(p.price);
+      // data-price is $ number
       return `
       <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
         <div class="card h-120 shadow-sm rounded-4 g-3 ftr-product-card" data-id="${
           p.id
-        }" data-name="${p.shortName}" data-price="${afn}" data-image="${
+        }" data-name="${p.shortName}" data-price="${$}" data-image="${
           p.images[0]
         }" style="width: 19rem;">
           <img src="${p.images[0]}" class="card-img-top mx-auto mt-3" alt="${
@@ -510,8 +507,8 @@ async function renderFeaturedProducts() {
           <div class="card-body text-center d-flex flex-column">
             <h5 class="card-title " title="${p.name}">${p.shortName}</h5>
             <p class="card-text text-success fw-bold">Price: ${numberToLocaleString(
-              afn,
-            )} AFN</p>
+              $,
+            )} $</p>
             <a href="product.html?id=${
               p.id
             }" class="CTA btn-outline-primary mb-2">View Product</a>
@@ -534,8 +531,8 @@ async function renderSpecialOffers() {
 
   container.innerHTML = specialOffer
     .map((p) => {
-      const originalAfn = usdToAfn(p.price);
-      const discounted = Math.round((originalAfn * (100 - discount)) / 100);
+      const original$ = usdTo$(p.price);
+      const discounted = Math.round((original$ * (100 - discount)) / 100);
       return `
       <div class="swiper-slide">
         <div class="special-offer-slide" data-id="${p.id}" data-name="${
@@ -545,11 +542,11 @@ async function renderSpecialOffers() {
           <img src="${p.images[0]}" alt="${p.name}">
           <h3>${p.shortName}</h3>
           <p class="product-price">Original Price: ${numberToLocaleString(
-            originalAfn,
-          )} AFN</p>
+            original$,
+          )} $</p>
           <p class="special-offer-price">Discounted Price: ${numberToLocaleString(
             discounted,
-          )} AFN</p>
+          )} $</p>
           <div class="buttons">
             <button class="CTA"><a href="product.html?id=${
               p.id
@@ -585,7 +582,7 @@ async function renderSpecialOffers() {
 
 /* --------------------------
    Product page init (product.html)
-   Renders details and ensures product-info has data-price in AFN
+   Renders details and ensures product-info has data-price in $
    -------------------------- */
 async function initProductPage() {
   const productDetailEl = document.getElementById("productDetail");
@@ -673,10 +670,10 @@ async function initProductPage() {
     <div class="spec"><strong>Stock:</strong> ${product.stock || ""}</div>`;
 
   const discount = product.specialOffer ? 5 : 0;
-  const originalAfn = usdToAfn(product.price);
-  const finalAfn = product.specialOffer
-    ? Math.round((originalAfn * (100 - discount)) / 100)
-    : originalAfn;
+  const original$ = usdTo$(product.price);
+  const final$ = product.specialOffer
+    ? Math.round((original$ * (100 - discount)) / 100)
+    : original$;
 
   productDetailEl.innerHTML = `
     <div class="product-name">
@@ -686,17 +683,17 @@ async function initProductPage() {
     <div class="product-images">${imagesHtml}</div> 
     <div class="product-info" data-id="${product.id}" data-name="${
       product.shortName
-    }" data-price="${finalAfn}" data-image="${product.images[0]}">
+    }" data-price="${final$}" data-image="${product.images[0]}">
       ${
         product.specialOffer
           ? `<p class="discount">${discount}% Special Discount</p>
         <p class="price-dis">Original Price: ${numberToLocaleString(
-          originalAfn,
-        )} AFN</p>
+          original$,
+        )} $</p>
         <p class="price">Discounted Price: ${numberToLocaleString(
-          finalAfn,
-        )} AFN</p>`
-          : `<p class="price">Price: ${numberToLocaleString(finalAfn)} AFN</p>`
+          final$,
+        )} $</p>`
+          : `<p class="price">Price: ${numberToLocaleString(final$)} $</p>`
       }
       <h3>Specifications</h3>
       <div class="product-details">
@@ -742,8 +739,8 @@ async function initProductPage() {
           `<div class="similar-product"><img src="${p.images[0]}" alt="${
             p.name
           }"><h4>${p.shortName}</h4><p>${numberToLocaleString(
-            usdToAfn(p.price),
-          )} AFN</p><a href="product.html?id=${
+            usdTo$(p.price),
+          )} $</p><a href="product.html?id=${
             p.id
           }" class="CTA">View Product</a></div>`,
       )
@@ -779,23 +776,23 @@ function initDelegatedAddToCart() {
       return;
     }
 
-    // data-price is expected to be AFN (we ensured renderers set AFN)
-    let priceAFN = safeParseInt(card.dataset.price, 0);
+    // data-price is expected to be $ (we ensured renderers set $)
+    let price$ = safeParseInt(card.dataset.price, 0);
 
     // fallback: if data-price exists but is float (maybe USD formatted), try parseFloat then convert
-    if (!priceAFN && card.dataset.price) {
+    if (!price$ && card.dataset.price) {
       const floatVal = safeParseFloat(card.dataset.price, 0);
       if (floatVal > 0) {
         // assume original was USD -> convert
-        priceAFN = usdToAfn(floatVal);
+        price$ = usdTo$(floatVal);
       }
     }
 
     // if still 0, attempt to read from product cache (safer)
-    if (!priceAFN) {
+    if (!price$) {
       // look up in products cache for id
       const p = (productsCache || []).find((x) => x.id === id);
-      if (p) priceAFN = usdToAfn(p.price);
+      if (p) price$ = usdTo$(p.price);
     }
 
     const name =
@@ -808,7 +805,7 @@ function initDelegatedAddToCart() {
     const product = {
       id,
       name,
-      price: priceAFN,
+      price: price$,
       image,
       quantity: 1,
     };
@@ -877,7 +874,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   initLogout();
   updateHeaderUser();
 
-  // Render products & features (these will set data-price as AFN)
+  // Render products & features (these will set data-price as $)
   await Promise.all([
     renderFeaturedProducts(),
     renderSpecialOffers(),

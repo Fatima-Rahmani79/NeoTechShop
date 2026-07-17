@@ -24,7 +24,7 @@
       <div id="cartItems" class="cart-items"></div>
 
       <div class="cart-summary">
-        <p>Total: <span id="cartTotal">0 AFN</span></p>
+        <p>Total: <span id="cartTotal">0 $</span></p>
         <div class="cart-buttons">
           <a href="index.html#product" class="btn">Continue Shopping</a>
           <button id="checkoutBtn" class="btn">Checkout</button>
@@ -69,7 +69,7 @@
         cartItemsContainer.innerHTML = "";
         if (cart.length === 0) {
           cartItemsContainer.innerHTML = "<p>Your shopping cart is empty.</p>";
-          cartTotal.textContent = "0 AFN";
+          cartTotal.textContent = "0 $";
           return;
         }
 
@@ -89,14 +89,14 @@
             <span>${item.quantity}</span>
             <button class="qty-btn increase" data-id="${item.id}">+</button>
           </div>
-          <small>${(item.price * item.quantity).toLocaleString()} AFN</small>
+          <small>${(item.price * item.quantity).toLocaleString()} $</small>
         </div>
         <button class="remove-btn" data-id="${item.id}">Remove</button>
       `;
           cartItemsContainer.appendChild(div);
         });
 
-        cartTotal.textContent = total.toLocaleString() + " AFN";
+        cartTotal.textContent = total.toLocaleString() + " $";
 
         // Delete buttons
         document

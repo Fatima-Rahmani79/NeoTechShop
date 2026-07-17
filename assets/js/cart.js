@@ -92,7 +92,7 @@
 
   function formatCurrency(n) {
     if (typeof n !== "number") n = Number(n) || 0;
-    return n.toLocaleString() + " AFN";
+    return n.toLocaleString() + "$";
   }
 
   // Default selectors; pages can still have their own IDs/classes
