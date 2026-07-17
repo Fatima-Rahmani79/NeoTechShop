@@ -42,7 +42,6 @@ Option to log out anytime
 
 Add, remove, and update item quantities
 
-
 Persistent cart storage via LocalStorage
 
 Visual badge counter and cart modal synced across pages
@@ -110,40 +109,40 @@ Search bar with live product filtering
 Accessible and SEO-friendly structure
 
 🧱 Technologies Used
-Technology	Purpose
-HTML5	Page structure and content
-CSS3 / Bootstrap 5	Responsive and modern UI
-JavaScript (ES6+)	Application logic and interactivity
-Swiper.js	Product sliders and carousels
-Font Awesome	Icons and UI elements
-LocalStorage / SessionStorage	Data persistence
-JSON	Product data storage
+Technology Purpose
+HTML5 Page structure and content
+CSS3 / Bootstrap 5 Responsive and modern UI
+JavaScript (ES6+) Application logic and interactivity
+Swiper.js Product sliders and carousels
+Font Awesome Icons and UI elements
+LocalStorage / SessionStorage Data persistence
+JSON Product data storage
 
 🗂️ Project Structure
 NeoTechShop/
 │
 ├── assets/
-│   ├── css/
-│   │   └── main.css
-│   ├── js/
-│   │   ├── script.js        ← Core site logic
-│   │   └── cart.js          ← Cart management API
-│   ├── data/
-│   │   └── products.json     ← Product data source
-│   ├── images/
-│   └── logo/
+│ ├── css/
+│ │ └── main.css
+│ ├── js/
+│ │ ├── script.js ← Core site logic
+│ │ └── cart.js ← Cart management API
+│ ├── data/
+│ │ └── products.json ← Product data source
+│ ├── images/
+│ └── logo/
 │
-├── index.html                      ← Homepage
-├── auth.html                       ← Login / Register
-├── product.html                    ← Product details
-├── cart-page.html                  ← Cart page
-├── checkout.html                   ← Checkout form
-├── confirmation.html               ← Order confirmation
-├── accessory-products.html         ← Products List
-├── audio-products-listing.html     ← Products List
-├── laptop-products-listing.html    ← Products List
-├── monitor-products-listing.html   ← Products List
-├── contact.html                    ← Contact page
+├── index.html ← Homepage
+├── auth.html ← Login / Register
+├── product.html ← Product details
+├── cart-page.html ← Cart page
+├── checkout.html ← Checkout form
+├── confirmation.html ← Order confirmation
+├── accessory-products.html ← Products List
+├── audio-products-listing.html ← Products List
+├── laptop-products-listing.html ← Products List
+├── monitor-products-listing.html ← Products List
+├── contact.html ← Contact page
 └── README.md
 
 ⚙️ How to Run
@@ -152,11 +151,9 @@ Clone the repository
 
 git clone https://github.com/Fatima-Rahmani79/NeoTechShop.git
 
-
 Open the project folder
 
 cd NeoTechShop
-
 
 Run locally
 
@@ -164,7 +161,6 @@ Open index.html directly in your browser,
 or use a local server such as:
 
 npx live-server
-
 
 Explore the store — add products, log in, and test the checkout process.
 
@@ -178,26 +174,26 @@ Expiry Date: Any valid date within the next 10 years
 📸 Screenshots:
 
 🏠 Homepage
-    ![Homepage Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/index-html.png?raw=true)
+![Homepage Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/index-html.jpg
+?raw=true)
 
 🛍️ Product Listing
-    ![Product Listing Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/loptop-products-listing-html.png?raw=true)
+![Product Listing Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/loptop-products-listing-html.jpg?raw=true)
 
 🧾 Product Detail Page
-    ![Product Detail Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/product-html.png?raw=true)
+![Product Detail Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/product-html.jpg?raw=true)
 
 🛒 Cart Page
-    ![Cart Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/cart-page-html.png?raw=true)
+![Cart Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/cart-page-html.jpg?raw=true)
 
 💳 Checkout Page
-    ![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html.png?raw=true)
-    ![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html%20(2).png?raw=true)
+![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html.jpg?raw=true)
+![Checkout Page Screenshot](<https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html%20(2).png?raw=true>)
 
 ✅ auth Page
-    ![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/auth-html.png?raw=true)
+![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/auth-html.jpg?raw=true)
 
-
-🌐 Live Demo  (https://fatima-rahmani79.github.io/NeoTechShop/)
+🌐 Live Demo (https://fatima-rahmani79.github.io/NeoTechShop/)
 
 👉 View NeoTechShop on GitHub Pages
 

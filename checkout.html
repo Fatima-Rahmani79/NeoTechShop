@@ -309,9 +309,14 @@
       }
 
       modal.addEventListener("click", (e) => {
-        const dialog = modal.querySelector(".modal-dialog");
-        if (!dialog.contains(e.target)) hideModal();
+        if (e.target === modal) hideModal();
       });
+
+      const dialog = modal.querySelector(".modal-dialog");
+      if (dialog) {
+        dialog.addEventListener("click", (e) => e.stopPropagation());
+      }
+
       closeModalBtn.addEventListener("click", hideModal);
       cancelBtn.addEventListener("click", hideModal);
       document.addEventListener(
