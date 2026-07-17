@@ -1,96 +1,103 @@
-<!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<!doctype html>
+<html lang="en" dir="ltr">
   <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v27.1.0/dist/font-face.css" rel="stylesheet"
-    type="text/css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
-  <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-  <title>NeoTechShop|لوازم جانبی</title>
-</head>
+    <title>NeoTechShop|Accessories</title>
+  </head>
 
   <body>
     <header class="header">
-    <nav class="nav">
-      <div class="nav-top">
-        <img class="nav-logo" src="assets/logo/logo-dark-transparent.png"
-          alt="NeoTechShop logo, لوگوی سایت نیوتک شاپ" />
+      <nav class="nav">
+        <div class="nav-top">
+          <img
+            class="nav-logo"
+            src="assets/logo/logo-dark-transparent.png"
+            alt="NeoTechShop logo"
+          />
 
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" class="nav-search" placeholder="جستجو..." />
-        </div>
-        <div id="searchResults" class="search-results"></div>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="nav-search" placeholder="Search..." />
+          </div>
+          <div id="searchResults" class="search-results"></div>
 
-        <div class="left">
-          
-          <span id="welcomeNav" style="display: none"></span>
-          <button class="btn" id="logoutNav" >
-            خروج
-          </button>
-          <button class="login">
-            <a href="auth.html" class="btn-login">
-              <i class="fa-solid fa-user fa-2x"></i><span class="nav-icon-text">ورود / ثبت نام</span>
-            </a>
-          </button>
-
-
-          <div class="position-relative d-inline-block cart-icon">
-            <button id="cartBtn" class="cart-icon">
-              <span id="cartCount"
-                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-              <i class="fas fa-shopping-cart fa-2x"></i><span class="nav-icon-text">سبد خرید</span>
+          <div class="left">
+            <span id="welcomeNav" style="display: none"></span>
+            <button class="btn" id="logoutNav">Logout</button>
+            <button class="login">
+              <a href="auth.html" class="btn-login">
+                <i class="fa-solid fa-user fa-2x"></i
+                ><span class="nav-icon-text">Login / Register</span>
+              </a>
             </button>
+
+            <div class="position-relative d-inline-block cart-icon">
+              <button id="cartBtn" class="cart-icon">
+                <span
+                  id="cartCount"
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >0</span
+                >
+                <i class="fas fa-shopping-cart fa-2x"></i
+                ><span class="nav-icon-text">Cart</span>
+              </button>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="nav-bottom">
-        <ul id="nav-links" class="nav-links">
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">صفحه اصلی</a>
-          </li>
-          <li class="dropdown">
-            <a href="#">محصولات</a>
-            <div class="dropdown-content">
-              <a href="loptop-products-listing.html">لپ‌تاپ</a>
-              <a href="monitor-products-listing.html">مانیتور</a>
-              <a href="audio-products-listing.html">لوازم صوتی</a>
-              <a href="accessory-products.html">لوازم جانبی</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">ارتباط با ما</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="cart-page.html">سبد خرید شما</a>
-          </li>
-        </ul>
+        <div class="nav-bottom">
+          <ul id="nav-links" class="nav-links">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+            <li class="dropdown">
+              <a href="#">Products</a>
+              <div class="dropdown-content">
+                <a href="loptop-products-listing.html">Laptops</a>
+                <a href="monitor-products-listing.html">Monitors</a>
+                <a href="audio-products-listing.html">Audio</a>
+                <a href="accessory-products.html">Accessories</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart-page.html">Your Cart</a>
+            </li>
+          </ul>
 
-        <button class="hamburger" id="hamburger">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
-    </nav>
-  </header>
+          <button class="hamburger" id="hamburger">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
 
     <div class="container-fluid PLP-container my-4">
       <div class="row">
-        
         <!-- products -->
         <main class="col-lg-9 col-md-8 col-12">
           <div class="d-flex justify-content-between align-items-center mb-3">
-            <h2 class="section__header">لوازم جانبی</h2>
+            <h2 class="section__header">Accessories</h2>
             <select id="sortProducts" class="form-select w-auto">
-              <option value="">مرتب‌سازی</option>
-              <option value="price-asc">قیمت صعودی</option>
-              <option value="price-desc">قیمت نزولی</option>
-              <option value="name-asc">نام (A-Z)</option>
-              <option value="name-desc">نام (Z-A)</option>
+              <option value="">Sort</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name-asc">Name (A-Z)</option>
+              <option value="name-desc">Name (Z-A)</option>
             </select>
           </div>
 
@@ -101,18 +108,18 @@
             <!--Carts render here-->
           </div>
 
-          <p id="noProducts" style="display: none">محصولی یافت نشد 😔</p>
+          <p id="noProducts" style="display: none">No products found 😔</p>
 
           <div id="pagination" class="mt-3 d-flex flex-wrap"></div>
         </main>
-        
+
         <!-- side bar -->
         <aside class="col-lg-3 col-md-4 col-12 mb-4">
           <div class="aside-container-PLP">
-            <h3 class="aside-title">فیلتر محصولات</h3>
+            <h3 class="aside-title">Filter Products</h3>
 
             <div class="filter-group mb-3">
-              <h5>قیمت (حداکثر)</h5>
+              <h5>Price (max)</h5>
               <input
                 type="range"
                 id="priceFilter"
@@ -120,11 +127,11 @@
                 max="200000"
                 step="1000"
               />
-              <span id="priceValue">200,000</span> افغانی
+              <span id="priceValue">200,000</span> AFN
             </div>
 
             <div class="filter-group mb-3">
-              <h5>برند</h5>
+              <h5>Brand</h5>
               <label
                 ><input type="checkbox" class="brandFilter" value="Logitech" />
                 Logitech</label
@@ -140,7 +147,7 @@
             </div>
 
             <div class="filter-group">
-              <h5>رضایت مشتری</h5>
+              <h5>Customer Rating</h5>
               <label
                 ><input
                   type="radio"
@@ -148,7 +155,7 @@
                   class="ratingFilter"
                   value="4"
                 />
-                ۴★ به بالا</label
+                4★ & up</label
               ><br />
               <label
                 ><input
@@ -157,12 +164,11 @@
                   class="ratingFilter"
                   value="3"
                 />
-                ۳★ به بالا</label
+                3★ & up</label
               >
             </div>
           </div>
         </aside>
-
       </div>
     </div>
 
@@ -173,22 +179,22 @@
             <img
               class="nav-logo"
               src="assets/logo/logo-light-transparent.png"
-              alt="NeoTechShop logo, لوگوی سایت نیوتک شاپ"
+              alt="NeoTechShop logo"
             />
-            <li><a href="index.html">صفحه اصلی</a></li>
-            <li><a href="product.html">محصولات</a></li>
-            <li><a href="contact.html">تماس با ما</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="product.html">Products</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
           </ul>
         </div>
         <div class="footer-section footer-about">
-          <h3 class="footer-title">درباره ما</h3>
+          <h3 class="footer-title">About Us</h3>
           <p>
-            نیوتک شاپ، فروشگاه آنلاین تجهیزات تکنولوژی با بهترین قیمت‌ها و خدمات
-            پس از فروش.
+            NeoTechShop, online tech equipment store with the best prices and
+            after-sales service.
           </p>
         </div>
         <div class="footer-section">
-          <h3 class="footer-title">شبکه‌های اجتماعی</h3>
+          <h3 class="footer-title">Social Media</h3>
           <div class="social-icons">
             <a href="https://facebook.com/neotechshop"
               ><i class="fa-brands fa-facebook-f"></i
@@ -210,19 +216,19 @@
     <!-- Toast -->
     <div id="toast" class="toast"></div>
 
-    <!-- مودال سبد خرید -->
+    <!-- Shopping Cart Modal -->
     <div id="cartModal" class="cart-modal">
       <div class="cart-modal-content">
         <span class="close-modal">&times;</span>
-        <h3>سبد خرید</h3>
+        <h3>Shopping Cart</h3>
 
         <div class="cart-items" id="cartItems"></div>
 
         <div class="cart-summary">
-          <p>جمع کل: <span id="cartTotal">۰ افغانی</span></p>
+          <p>Total: <span id="cartTotal">0 AFN</span></p>
           <div class="cart-buttons">
-            <a href="cart-page.html" class="btn-view-cart">مشاهده کامل</a>
-            <a href="checkout.html" class="btn-checkout">پرداخت</a>
+            <a href="cart-page.html" class="btn-view-cart">View Full Cart</a>
+            <a href="checkout.html" class="btn-checkout">Checkout</a>
           </div>
         </div>
       </div>
@@ -274,14 +280,14 @@
         <div class="product-card h-100 d-flex flex-column justify-content-between">
           <img src="${p.images[0]}" alt="${p.name}" loading="lazy">
           <h3>${p.shortName}</h3>
-          <p>مدل: ${p.name}</p>
-          <p class="price">قیمت: ${p.price * USD_TO_AFN.toLocaleString()} افغانی</p>
-          <p>امتیاز مشتری: ${
+          <p>Model: ${p.name}</p>
+          <p class="price">Price: ${(p.price * USD_TO_AFN).toLocaleString()} AFN</p>
+          <p>Rating: ${
             p.rating?.average ? p.rating.average.toFixed(1) : "N/A"
           }★</p>
           <p>${p.shortDesc}</p>
           <button class="CTA">
-            <a href="product.html?id=${p.id}">مشاهده محصول</a>
+            <a href="product.html?id=${p.id}">View Product</a>
           </button>
         </div>
       </div>
@@ -304,7 +310,7 @@
         if (currentPage > 1)
           html += `<button class="btn btn-sm btn-outline-primary me-1" onclick="gotoPage(${
             currentPage - 1
-          })">قبلی</button>`;
+          })">Previous</button>`;
 
         for (let i = 1; i <= totalPages; i++) {
           html += `<button class="btn btn-sm ${
@@ -315,7 +321,7 @@
         if (currentPage < totalPages)
           html += `<button class="btn btn-sm btn-outline-primary" onclick="gotoPage(${
             currentPage + 1
-          })">بعدی</button>`;
+          })">Next</button>`;
 
         paginationContainer.innerHTML = html;
       }
@@ -328,25 +334,26 @@
       function applyFilters() {
         let filtered = [...allProducts];
 
-        // برند
+        // Brand
         const brands = Array.from(
-          document.querySelectorAll(".brandFilter:checked")
+          document.querySelectorAll(".brandFilter:checked"),
         ).map((b) => b.value);
         if (brands.length)
           filtered = filtered.filter((p) => brands.includes(p.brand));
 
-        // قیمت
+        // Price
         const maxPrice = parseInt(document.getElementById("priceFilter").value);
         filtered = filtered.filter((p) => p.price * USD_TO_AFN <= maxPrice);
 
-        // رضایت مشتری
+        // Customer rating
         const rating = document.querySelector(".ratingFilter:checked")?.value;
         if (rating)
           filtered = filtered.filter((p) => (p.rating?.average || 0) >= rating);
 
-        // مرتب سازی
+        // Sort
         const sortVal = document.getElementById("sortProducts").value;
-        if (sortVal === "price-asc") filtered.sort((a, b) => a.price * USD_TO_AFN - b.price * USD_TO_AFN);
+        if (sortVal === "price-asc")
+          filtered.sort((a, b) => a.price * USD_TO_AFN - b.price * USD_TO_AFN);
         else if (sortVal === "price-desc")
           filtered.sort((a, b) => b.price * USD_TO_AFN - a.price * USD_TO_AFN);
         else if (sortVal === "name-asc")
@@ -360,7 +367,7 @@
       // Event Listeners
       document.getElementById("priceFilter").addEventListener("input", (e) => {
         document.getElementById("priceValue").innerText = parseInt(
-          e.target.value
+          e.target.value,
         ).toLocaleString();
         applyFilters();
       });

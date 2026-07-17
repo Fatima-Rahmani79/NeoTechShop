@@ -1,14 +1,5 @@
 "use strict";
 
-/**
- * Unified and careful refactor to fix badge/modal update delay.
- * - Single source of cart functions (getCart/saveCart/addToCart/updateCartUI/updateCartBadge)
- * - Event delegation for all ".addToCart" clicks
- * - Products cached via loadProducts()
- * - Ensures data-price attributes store AFN values when rendering
- * - All UI text preserved in Persian; comments in English
- */
-
 const USD_TO_AFN = 66; // conversion rate constant
 
 /* --------------------------
@@ -82,19 +73,23 @@ function getCartCount() {
 function updateAnyBadgeElements(count) {
   // list of likely selectors used in different templates/navbars
   const selectors = [
-    "#cart-count",               // original id
-    ".cart-count",               // alternative class
-    "#cartBtn .badge",           // badge inside cart button
-    "#cartBtn span",             // sometimes a span
-    ".nav-cart-badge",           // custom class
-    ".header-cart-badge"         // another common name
+    "#cart-count", // original id
+    ".cart-count", // alternative class
+    "#cartBtn .badge", // badge inside cart button
+    "#cartBtn span", // sometimes a span
+    ".nav-cart-badge", // custom class
+    ".header-cart-badge", // another common name
   ];
 
   selectors.forEach((sel) => {
     const el = document.querySelector(sel);
     if (!el) return;
     // if element contains more content (icon + number), try to set text only
-    if (el.tagName.toLowerCase() === "span" || el.tagName.toLowerCase() === "div" || el.tagName.toLowerCase() === "button") {
+    if (
+      el.tagName.toLowerCase() === "span" ||
+      el.tagName.toLowerCase() === "div" ||
+      el.tagName.toLowerCase() === "button"
+    ) {
       el.textContent = String(count);
     } else {
       // fallback
@@ -108,7 +103,7 @@ function updateAnyBadgeElements(count) {
     try {
       cartBtn.setAttribute("data-count", String(count));
       // optionally update aria label for accessibility
-      const aria = `سبد خرید، ${count} مورد`;
+      const aria = `Shopping cart, ${count} items`;
       cartBtn.setAttribute("aria-label", aria);
     } catch {}
   }
@@ -123,7 +118,10 @@ function saveCart(cart) {
   }
 
   // compute count
-  const count = (cart || []).reduce((s, it) => s + safeParseInt(it.quantity, 0), 0);
+  const count = (cart || []).reduce(
+    (s, it) => s + safeParseInt(it.quantity, 0),
+    0,
+  );
 
   // update internal UI immediately (modal/items/etc.)
   updateCartUI(); // keeps modal list and totals in sync
@@ -132,7 +130,9 @@ function saveCart(cart) {
 
   // dispatch a custom event so any other script can react
   try {
-    document.dispatchEvent(new CustomEvent("cart:updated", { detail: { count } }));
+    document.dispatchEvent(
+      new CustomEvent("cart:updated", { detail: { count } }),
+    );
   } catch (err) {
     // older browsers fallback
     const ev = document.createEvent("CustomEvent");
@@ -156,10 +156,11 @@ function initCartUpdateListeners() {
 
   // 2) If some part of the header/nav is injected after load, observe DOM and patch when badge appears
   const bodyObserver = new MutationObserver((mutations, obs) => {
-    const found = document.querySelector("#cart-count") ||
-                  document.querySelector(".cart-count") ||
-                  document.querySelector("#cartBtn .badge") ||
-                  document.querySelector(".nav-cart-badge");
+    const found =
+      document.querySelector("#cart-count") ||
+      document.querySelector(".cart-count") ||
+      document.querySelector("#cartBtn .badge") ||
+      document.querySelector(".nav-cart-badge");
     if (found) {
       updateAnyBadgeElements(getCartCount());
       obs.disconnect(); // stop observing once we succeeded
@@ -191,7 +192,6 @@ function initCartUpdateListeners() {
    e.g. inside document.addEventListener("DOMContentLoaded", ...) { initCartUpdateListeners(); }
 */
 
-
 function addToCart(product) {
   // product: { id (number), name (string), price (AFN number), image (string), quantity (number) }
   if (!product || !product.id) return;
@@ -203,7 +203,7 @@ function addToCart(product) {
   } else {
     cart.push({
       id: product.id,
-      name: product.name || "محصول",
+      name: product.name || "Product",
       price: safeParseInt(product.price, 0),
       image: product.image || "",
       quantity: safeParseInt(product.quantity, 1),
@@ -217,7 +217,7 @@ function updateCartUI() {
   const cart = getCart();
   const totalCount = cart.reduce(
     (s, it) => s + safeParseInt(it.quantity, 0),
-    0
+    0,
   );
 
   // update any elements with id or class "cart-count" (compatibility)
@@ -232,8 +232,8 @@ function updateCartUI() {
   const cartTotal = document.getElementById("cartTotal");
   if (cartItemsContainer) {
     if (cart.length === 0) {
-      cartItemsContainer.innerHTML = "<p>سبد خرید خالی است.</p>";
-      if (cartTotal) cartTotal.textContent = "0 افغانی";
+      cartItemsContainer.innerHTML = "<p>Shopping cart is empty.</p>";
+      if (cartTotal) cartTotal.textContent = "0 AFN";
     } else {
       cartItemsContainer.innerHTML = cart
         .map(
@@ -242,19 +242,19 @@ function updateCartUI() {
             <img src="${it.image}" alt="${it.name}" width="60" height="60" />
             <div class="cart-item-info">
               <div class="cart-item-name">${it.name}</div>
-              <div class="cart-item-qty">تعداد: ${it.quantity}</div>
+              <div class="cart-item-qty">Quantity: ${it.quantity}</div>
               <div class="cart-item-price">${numberToLocaleString(
-                it.price
-              )} افغانی / واحد</div>
+                it.price,
+              )} AFN / unit</div>
             </div>
-            <button class="remove-cart-item" data-id="${it.id}">حذف</button>
+            <button class="remove-cart-item" data-id="${it.id}">Remove</button>
           </div>
-        `
+        `,
         )
         .join("");
       const total = cart.reduce((s, it) => s + it.price * it.quantity, 0);
       if (cartTotal)
-        cartTotal.textContent = `${numberToLocaleString(total)} افغانی`;
+        cartTotal.textContent = `${numberToLocaleString(total)} AFN`;
     }
   }
 }
@@ -285,7 +285,7 @@ function initMenuToggle() {
 
   if (hamburger && navLinks) {
     hamburger.addEventListener("click", () =>
-      navLinks.classList.toggle("show")
+      navLinks.classList.toggle("show"),
     );
   }
 
@@ -325,7 +325,7 @@ function initCartModal() {
   if (closeModal && cartModal) {
     closeModal.addEventListener(
       "click",
-      () => (cartModal.style.display = "none")
+      () => (cartModal.style.display = "none"),
     );
     window.addEventListener("click", (e) => {
       if (e.target === cartModal) cartModal.style.display = "none";
@@ -340,7 +340,7 @@ function initCartModal() {
     if (!id) return;
     const newCart = getCart().filter((it) => it.id !== id);
     saveCart(newCart);
-    showToast("محصول از سبد حذف شد.");
+    showToast("Product removed from cart.");
   });
 }
 
@@ -419,7 +419,7 @@ function initSlider() {
     dot.addEventListener("click", () => {
       showSlide(i);
       resetInterval();
-    })
+    }),
   );
 
   startInterval();
@@ -433,7 +433,7 @@ function initSearch() {
 
   async function displayResults(items) {
     if (!items || items.length === 0) {
-      resultsContainer.innerHTML = "<p>محصولی یافت نشد</p>";
+      resultsContainer.innerHTML = "<p>No products found</p>";
       resultsContainer.style.display = "block";
       return;
     }
@@ -446,7 +446,7 @@ function initSearch() {
             <div class="info">
               <h4>${p.shortName}</h4>
               <p class="brand">${p.brand}</p>
-              <p class="price">${numberToLocaleString(afn)} افغانی</p>
+              <p class="price">${numberToLocaleString(afn)} AFN</p>
             </div>
           </a>`;
       })
@@ -502,22 +502,22 @@ async function renderFeaturedProducts() {
         <div class="card h-120 shadow-sm rounded-4 g-3 ftr-product-card" data-id="${
           p.id
         }" data-name="${p.shortName}" data-price="${afn}" data-image="${
-        p.images[0]
-      }" style="width: 19rem;">
+          p.images[0]
+        }" style="width: 19rem;">
           <img src="${p.images[0]}" class="card-img-top mx-auto mt-3" alt="${
-        p.name
-      }" style="width: 150px; height: 150px; object-fit: contain;">
+            p.name
+          }" style="width: 150px; height: 150px; object-fit: contain;">
           <div class="card-body text-center d-flex flex-column">
             <h5 class="card-title " title="${p.name}">${p.shortName}</h5>
-            <p class="card-text text-success fw-bold">قیمت: ${numberToLocaleString(
-              afn
-            )} افغانی</p>
+            <p class="card-text text-success fw-bold">Price: ${numberToLocaleString(
+              afn,
+            )} AFN</p>
             <a href="product.html?id=${
               p.id
-            }" class="CTA btn-outline-primary mb-2">مشاهده محصول</a>
+            }" class="CTA btn-outline-primary mb-2">View Product</a>
             <button class="btn-success addToCart" data-id="${
               p.id
-            }">افزودن به سبد خرید</button>
+            }">Add to Cart</button>
           </div>
         </div>
       </div>`;
@@ -539,22 +539,22 @@ async function renderSpecialOffers() {
       return `
       <div class="swiper-slide">
         <div class="special-offer-slide" data-id="${p.id}" data-name="${
-        p.shortName
-      }" data-price="${discounted}" data-image="${p.images[0]}">
-          <span class="special-offer-badge">%${discount} تخفیف</span>
+          p.shortName
+        }" data-price="${discounted}" data-image="${p.images[0]}">
+          <span class="special-offer-badge">${discount}% OFF</span>
           <img src="${p.images[0]}" alt="${p.name}">
           <h3>${p.shortName}</h3>
-          <p class="product-price">قیمت اصلی: ${numberToLocaleString(
-            originalAfn
-          )} افغانی</p>
-          <p class="special-offer-price">قیمت با تخفیف: ${numberToLocaleString(
-            discounted
-          )} افغانی</p>
+          <p class="product-price">Original Price: ${numberToLocaleString(
+            originalAfn,
+          )} AFN</p>
+          <p class="special-offer-price">Discounted Price: ${numberToLocaleString(
+            discounted,
+          )} AFN</p>
           <div class="buttons">
             <button class="CTA"><a href="product.html?id=${
               p.id
-            }">مشاهده محصول</a></button>
-            <button class="addToCart">افزودن به سبد خرید</button>
+            }">View Product</a></button>
+            <button class="addToCart">Add to Cart</button>
           </div>
         </div>
       </div>`;
@@ -600,7 +600,7 @@ async function initProductPage() {
   const product = products.find((p) => p.id === productId);
 
   if (!product) {
-    productDetailEl.innerHTML = `<p>محصول یافت نشد.</p>`;
+    productDetailEl.innerHTML = `<p>Product not found.</p>`;
     return;
   }
 
@@ -608,8 +608,8 @@ async function initProductPage() {
   const imagesHtml = `
     <div class="main-image">
       <img id="mainProductImage" src="${product.images[0]}" alt="${
-    product.name
-  }">
+        product.name
+      }">
     </div>
     <div class="image-gallery">
       ${product.images
@@ -617,7 +617,7 @@ async function initProductPage() {
           (img, i) =>
             `<img src="${img}" class="${
               i === 0 ? "active" : ""
-            }" alt="image-${i}">`
+            }" alt="image-${i}">`,
         )
         .join("")}
     </div>`;
@@ -626,53 +626,51 @@ async function initProductPage() {
   let specsHtml = "";
   if (product.category === "laptop") {
     specsHtml = `
-      <div class="spec"><strong>حافظه:</strong> ${product.memory || ""}</div>
-      <div class="spec"><strong>ذخیره‌سازی:</strong> ${
-        product.storage || ""
-      }</div>
-      <div class="spec"><strong>پردازنده:</strong> ${
+      <div class="spec"><strong>Memory:</strong> ${product.memory || ""}</div>
+      <div class="spec"><strong>Storage:</strong> ${product.storage || ""}</div>
+      <div class="spec"><strong>Processor:</strong> ${
         product.processor || ""
       }</div>
-      <div class="spec"><strong>نمایشگر:</strong> ${product.display || ""}</div>
-      <div class="spec"><strong>گرافیک:</strong> ${product.graphics || ""}</div>
-      <div class="spec"><strong>تاچ اسکرین:</strong> ${
-        product.touchscreen ? "بله" : "خیر"
+      <div class="spec"><strong>Display:</strong> ${product.display || ""}</div>
+      <div class="spec"><strong>Graphics:</strong> ${product.graphics || ""}</div>
+      <div class="spec"><strong>Touchscreen:</strong> ${
+        product.touchscreen ? "Yes" : "No"
       }</div>`;
   } else if (product.category === "monitor") {
     specsHtml = `
-      <div class="spec"><strong>سایز:</strong> ${product.size || ""}</div>
-      <div class="spec"><strong>رزولوشن:</strong> ${
+      <div class="spec"><strong>Size:</strong> ${product.size || ""}</div>
+      <div class="spec"><strong>Resolution:</strong> ${
         product.resolution || ""
       }</div>
-      <div class="spec"><strong>نرخ تازه‌سازی:</strong> ${
+      <div class="spec"><strong>Refresh Rate:</strong> ${
         product.refreshRate || ""
       }</div>
-      <div class="spec"><strong>نوع پنل:</strong> ${
+      <div class="spec"><strong>Panel Type:</strong> ${
         product.panelType || ""
       }</div>
-      <div class="spec"><strong>پورت‌ها:</strong> ${(product.ports || []).join(
-        ", "
+      <div class="spec"><strong>Ports:</strong> ${(product.ports || []).join(
+        ", ",
       )}</div>`;
   } else if (product.category === "audio") {
     specsHtml = `
-      <div class="spec"><strong>اتصال:</strong> ${
+      <div class="spec"><strong>Connectivity:</strong> ${
         product.connectivity || ""
       }</div>
-      <div class="spec"><strong>عمر باتری:</strong> ${
+      <div class="spec"><strong>Battery Life:</strong> ${
         product.batteryLife || ""
       }</div>`;
   } else if (product.category === "accessory") {
     specsHtml = `
-      <div class="spec"><strong>نوع:</strong> ${product.type || ""}</div>
-      <div class="spec"><strong>اتصال:</strong> ${
+      <div class="spec"><strong>Type:</strong> ${product.type || ""}</div>
+      <div class="spec"><strong>Connectivity:</strong> ${
         product.connectivity || ""
       }</div>`;
   }
 
   specsHtml += `
-    <div class="spec"><strong>رنگ:</strong> ${product.color || ""}</div>
-    <div class="spec"><strong>برند:</strong> ${product.brand || ""}</div>
-    <div class="spec"><strong>موجودی:</strong> ${product.stock || ""}</div>`;
+    <div class="spec"><strong>Color:</strong> ${product.color || ""}</div>
+    <div class="spec"><strong>Brand:</strong> ${product.brand || ""}</div>
+    <div class="spec"><strong>Stock:</strong> ${product.stock || ""}</div>`;
 
   const discount = product.specialOffer ? 5 : 0;
   const originalAfn = usdToAfn(product.price);
@@ -687,27 +685,25 @@ async function initProductPage() {
     </div>
     <div class="product-images">${imagesHtml}</div> 
     <div class="product-info" data-id="${product.id}" data-name="${
-    product.shortName
-  }" data-price="${finalAfn}" data-image="${product.images[0]}">
+      product.shortName
+    }" data-price="${finalAfn}" data-image="${product.images[0]}">
       ${
         product.specialOffer
-          ? `<p class="discount">٪${discount} تخفیف ویژه</p>
-        <p class="price-dis">قیمت اصلی: ${numberToLocaleString(
-          originalAfn
-        )} افغانی</p>
-        <p class="price">قیمت با تخفیف: ${numberToLocaleString(
-          finalAfn
-        )} افغانی</p>`
-          : `<p class="price">قیمت: ${numberToLocaleString(
-              finalAfn
-            )} افغانی</p>`
+          ? `<p class="discount">${discount}% Special Discount</p>
+        <p class="price-dis">Original Price: ${numberToLocaleString(
+          originalAfn,
+        )} AFN</p>
+        <p class="price">Discounted Price: ${numberToLocaleString(
+          finalAfn,
+        )} AFN</p>`
+          : `<p class="price">Price: ${numberToLocaleString(finalAfn)} AFN</p>`
       }
-      <h3>مشخصات</h3>
+      <h3>Specifications</h3>
       <div class="product-details">
         <p class="long-desc">${product.longDesc || ""}</p>
       </div>
       <div class="specs">${specsHtml}</div>
-      <button class="addToCart">افزودن به سبد خرید</button>
+      <button class="addToCart">Add to Cart</button>
     </div>`;
 
   // gallery interactions
@@ -718,7 +714,7 @@ async function initProductPage() {
       if (mainImage) mainImage.src = img.src;
       galleryImages.forEach((i) => i.classList.remove("active"));
       img.classList.add("active");
-    })
+    }),
   );
 
   // reviews
@@ -732,13 +728,13 @@ async function initProductPage() {
       })
       .join("");
   } else if (commentsEl) {
-    commentsEl.innerHTML = "<p>هیچ نظری ثبت نشده است.</p>";
+    commentsEl.innerHTML = "<p>No reviews yet.</p>";
   }
 
   // related
   if (product.relatedProducts?.length && similarProductsEl) {
     const related = products.filter((p) =>
-      product.relatedProducts.includes(p.id)
+      product.relatedProducts.includes(p.id),
     );
     similarProductsEl.innerHTML = related
       .map(
@@ -746,10 +742,10 @@ async function initProductPage() {
           `<div class="similar-product"><img src="${p.images[0]}" alt="${
             p.name
           }"><h4>${p.shortName}</h4><p>${numberToLocaleString(
-            usdToAfn(p.price)
-          )} افغانی</p><a href="product.html?id=${
+            usdToAfn(p.price),
+          )} AFN</p><a href="product.html?id=${
             p.id
-          }" class="CTA">مشاهده محصول</a></div>`
+          }" class="CTA">View Product</a></div>`,
       )
       .join("");
   }
@@ -773,13 +769,13 @@ function initDelegatedAddToCart() {
       document.querySelector(".product-info");
 
     if (!card) {
-      showToast("خطا در افزودن محصول.");
+      showToast("Error adding product.");
       return;
     }
 
     const id = safeParseInt(card.dataset.id);
     if (!id) {
-      showToast("شناسهٔ محصول معتبر نیست.");
+      showToast("Invalid product ID.");
       return;
     }
 
@@ -806,7 +802,7 @@ function initDelegatedAddToCart() {
       card.dataset.name ||
       btn.dataset.name ||
       card.querySelector(".card-title")?.textContent?.trim() ||
-      "محصول";
+      "Product";
     const image = card.dataset.image || card.querySelector("img")?.src || "";
 
     const product = {
@@ -820,9 +816,9 @@ function initDelegatedAddToCart() {
     addToCart(product);
 
     // immediate UI feedback
-    showToast("به سبد اضافه شد.");
+    showToast("Added to cart.");
     const originalText = btn.textContent;
-    btn.textContent = "✅ اضافه شد!";
+    btn.textContent = "✅ Added!";
     btn.disabled = true;
     setTimeout(() => {
       btn.textContent = originalText;
@@ -840,7 +836,7 @@ function initLogout() {
     logoutBtn.addEventListener("click", () => {
       sessionStorage.removeItem("loggedIn");
       updateHeaderUser();
-      showToast("شما خارج شدید.");
+      showToast("You have logged out.");
     });
   }
 }
@@ -855,7 +851,7 @@ function updateHeaderUser() {
     const user = JSON.parse(localStorage.getItem("user") || "{}");
     if (welcomeNav) {
       welcomeNav.style.display = "inline-block";
-      welcomeNav.textContent = `خوش آمدی، ${user.username || "کاربر"}!`;
+      welcomeNav.textContent = `Welcome, ${user.username || "User"}!`;
     }
     if (logoutNav) logoutNav.style.display = "inline-block";
     loginBtns.forEach((b) => (b.style.display = "none"));
@@ -901,4 +897,3 @@ document.addEventListener("DOMContentLoaded", async () => {
     updateCartBadge();
   });
 });
-

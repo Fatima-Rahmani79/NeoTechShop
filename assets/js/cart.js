@@ -1,15 +1,14 @@
-
 (function (window, document) {
-  'use strict';
+  "use strict";
 
-  const STORAGE_KEY = 'cart';
+  const STORAGE_KEY = "cart";
 
   function readStorage() {
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       return raw ? JSON.parse(raw) : [];
     } catch (e) {
-      console.error('Cart read error', e);
+      console.error("Cart read error", e);
       return [];
     }
   }
@@ -18,7 +17,7 @@
     try {
       localStorage.setItem(STORAGE_KEY, JSON.stringify(cart));
     } catch (e) {
-      console.error('Cart save error', e);
+      console.error("Cart save error", e);
     }
   }
 
@@ -43,10 +42,10 @@
   }
 
   function addToCart(product = {}) {
-    if (!product || typeof product.id === 'undefined') return;
+    if (!product || typeof product.id === "undefined") return;
     const cart = getCart();
     const id = ensureInt(product.id, product.id); // allow numeric or string ids
-    const existing = cart.find(it => String(it.id) === String(id));
+    const existing = cart.find((it) => String(it.id) === String(id));
     const qty = Math.max(1, ensureInt(product.quantity || 1, 1));
 
     if (existing) {
@@ -55,10 +54,10 @@
       // minimal normalization
       cart.push({
         id: product.id,
-        name: product.name || product.shortName || 'محصول',
-        shortName: product.shortName || product.name || '',
+        name: product.name || product.shortName || "Product",
+        shortName: product.shortName || product.name || "",
         price: ensureInt(product.price || 0, 0),
-        image: product.image || product.images?.[0] || '',
+        image: product.image || product.images?.[0] || "",
         quantity: qty,
       });
     }
@@ -66,13 +65,13 @@
   }
 
   function removeFromCart(id) {
-    const cart = getCart().filter(it => String(it.id) !== String(id));
+    const cart = getCart().filter((it) => String(it.id) !== String(id));
     saveCart(cart);
   }
 
   function changeQuantity(id, delta) {
-    const cart = getCart().map(it => ({ ...it })); // shallow clone
-    const idx = cart.findIndex(it => String(it.id) === String(id));
+    const cart = getCart().map((it) => ({ ...it })); // shallow clone
+    const idx = cart.findIndex((it) => String(it.id) === String(id));
     if (idx === -1) return;
     cart[idx].quantity = ensureInt(cart[idx].quantity, 0) + ensureInt(delta, 0);
     if (cart[idx].quantity <= 0) cart.splice(idx, 1);
@@ -80,7 +79,10 @@
   }
 
   function getCartTotal() {
-    return getCart().reduce((s, it) => s + (ensureInt(it.price, 0) * ensureInt(it.quantity, 0)), 0);
+    return getCart().reduce(
+      (s, it) => s + ensureInt(it.price, 0) * ensureInt(it.quantity, 0),
+      0,
+    );
   }
 
   function getCartCount() {
@@ -89,16 +91,16 @@
   }
 
   function formatCurrency(n) {
-    if (typeof n !== 'number') n = Number(n) || 0;
-    return n.toLocaleString() + ' افغانی';
+    if (typeof n !== "number") n = Number(n) || 0;
+    return n.toLocaleString() + " AFN";
   }
 
   // Default selectors; pages can still have their own IDs/classes
   const DEFAULTS = {
-    itemsContainerId: 'cartItems',
-    totalId: 'cartTotal',
-    countId: 'cartCount',
-    summaryContainerId: 'cartSummary', // optional
+    itemsContainerId: "cartItems",
+    totalId: "cartTotal",
+    countId: "cartCount",
+    summaryContainerId: "cartSummary", // optional
   };
 
   function updateCartUI(opts = {}) {
@@ -114,33 +116,33 @@
     if (!container) return;
 
     // reset
-    container.innerHTML = '';
+    container.innerHTML = "";
 
     if (cart.length === 0) {
-      container.innerHTML = '<p>سبد خرید شما خالی است.</p>';
+      container.innerHTML = "<p>Your shopping cart is empty.</p>";
       if (totalEl) totalEl.textContent = formatCurrency(0);
       return;
     }
 
     let total = 0;
 
-    cart.forEach(item => {
-      total += (ensureInt(item.price, 0) * ensureInt(item.quantity, 0));
+    cart.forEach((item) => {
+      total += ensureInt(item.price, 0) * ensureInt(item.quantity, 0);
 
-      const row = document.createElement('div');
-      row.className = 'cart-item';
+      const row = document.createElement("div");
+      row.className = "cart-item";
       row.innerHTML = `
-        <img src="${item.image || ''}" alt="${escapeHtml(item.name || '')}">
+        <img src="${item.image || ""}" alt="${escapeHtml(item.name || "")}">
         <div class="cart-item-details">
-          <p>${escapeHtml(item.name || item.shortName || '')}</p>
+          <p>${escapeHtml(item.name || item.shortName || "")}</p>
           <div class="cart-qty-controls">
             <button class="qty-btn decrease" data-id="${escapeAttr(item.id)}">−</button>
             <span class="qty-value">${ensureInt(item.quantity, 0)}</span>
             <button class="qty-btn increase" data-id="${escapeAttr(item.id)}">+</button>
           </div>
-          <small class="item-line-price">${formatCurrency(ensureInt(item.price,0) * ensureInt(item.quantity,0))}</small>
+          <small class="item-line-price">${formatCurrency(ensureInt(item.price, 0) * ensureInt(item.quantity, 0))}</small>
         </div>
-        <button class="remove-btn" data-id="${escapeAttr(item.id)}" aria-label="حذف">🗑️</button>
+        <button class="remove-btn" data-id="${escapeAttr(item.id)}" aria-label="Remove">🗑️</button>
       `;
       container.appendChild(row);
     });
@@ -152,15 +154,15 @@
     container.onclick = function (e) {
       const t = e.target;
       // find button with data-id
-      if (t.matches('.increase')) {
+      if (t.matches(".increase")) {
         changeQuantity(t.dataset.id, 1);
         return;
       }
-      if (t.matches('.decrease')) {
+      if (t.matches(".decrease")) {
         changeQuantity(t.dataset.id, -1);
         return;
       }
-      if (t.matches('.remove-btn')) {
+      if (t.matches(".remove-btn")) {
         removeFromCart(t.dataset.id);
         return;
       }
@@ -169,17 +171,17 @@
 
   // small helpers to avoid XSS when injecting names (since content is local project)
   function escapeHtml(s) {
-    if (s === null || s === undefined) return '';
+    if (s === null || s === undefined) return "";
     return String(s)
-      .replaceAll('&', '&amp;')
-      .replaceAll('<', '&lt;')
-      .replaceAll('>', '&gt;')
-      .replaceAll('"', '&quot;')
-      .replaceAll("'", '&#39;');
+      .replaceAll("&", "&")
+      .replaceAll("<", "<")
+      .replaceAll(">", ">")
+      .replaceAll('"', '"')
+      .replaceAll("'", "&#39;");
   }
   function escapeAttr(s) {
-    if (s === null || s === undefined) return '';
-    return String(s).replaceAll('"', '&quot;');
+    if (s === null || s === undefined) return "";
+    return String(s).replaceAll('"', '"');
   }
 
   // expose API
@@ -200,13 +202,13 @@
   if (!window.CartAPI) window.CartAPI = CartAPI;
 
   // auto-update nav badge and any cart container on DOM ready
-  document.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener("DOMContentLoaded", () => {
     CartAPI.updateCartUI();
   });
 
   // make available for module imports if environment supports (optional)
   try {
-    if (typeof window.define === 'function' && window.define.amd) {
+    if (typeof window.define === "function" && window.define.amd) {
       define(() => CartAPI);
     }
   } catch (e) {

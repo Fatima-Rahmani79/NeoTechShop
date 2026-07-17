@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "shortName": "لپ تاپ HP OmniBook 5",
+    "shortName": "HP OmniBook 5 Laptop",
     "name": "Laptop HP OmniBook 5 16- Intel® Core™ i5",
     "memory": "16GB RAM",
     "storage": "512GB SSD",
@@ -20,8 +20,8 @@
     ],
     "price": 400,
     "currency": "USD",
-    "shortDesc": "مناسب برای دانش آموزان و خانواده ها.",
-    "longDesc": "ظاهری زیبا و عملکردی بی‌نظیر با پردازنده Intel® Core™ i5 و حافظه 16 گیگابایت. مناسب برای دانش آموزان و خانواده ها.",
+    "shortDesc": "Great for students and families.",
+    "longDesc": "Beautiful design with unmatched performance featuring Intel® Core™ i5 processor and 16GB memory. Great for students and families.",
     "rating": {
       "average": 4.1,
       "count": 23
@@ -29,13 +29,13 @@
     "reviews": [
       {
         "user": "Ali",
-        "comment": "لپ‌تاپ خیلی عالیه، مخصوصاً برای کارهای دانشجویی.",
+        "comment": "Great laptop, especially for student work.",
         "rating": 5,
         "date": "2025-09-08"
       },
       {
         "user": "Sara",
-        "comment": "باطریش می‌توانست بهتر باشد.",
+        "comment": "The battery could have been better.",
         "rating": 3,
         "date": "2025-09-07"
       }
@@ -47,7 +47,7 @@
 
   {
     "id": 2,
-    "shortName": "لپ تاپ HP OmniBook6",
+    "shortName": "HP OmniBook6 Laptop",
     "name": "Laptop HP OmniBook 5 16- Intel® Core™ i5",
     "memory": "16GB RAM",
     "storage": "512GB SSD",
@@ -66,8 +66,8 @@
     ],
     "price": 890,
     "currency": "USD",
-    "shortDesc": "بهره‌وری روزمره. امنیت، عملکرد و دوام برای کار روزانه شما. مناسب برای کار های روزانه و استفاده‌های چندرسانه‌ای.",
-    "longDesc": " بهره‌وری روزمره. امنیت، عملکرد و دوام برای کار روزانه شما. با پردازنده Intel® Core™ i5 و حافظه 16 گیگابایت، این لپ‌تاپ مناسب برای کارهای روزمره و استفاده‌های چندرسانه‌ای است.",
+    "shortDesc": "Everyday productivity. Security, performance and durability for your daily work. Suitable for daily tasks and multimedia use.",
+    "longDesc": "Everyday productivity. Security, performance and durability for your daily work. With Intel® Core™ i5 processor and 16GB memory, this laptop is suitable for daily work and multimedia use.",
     "rating": {
       "average": 4.5,
       "count": 128
@@ -75,13 +75,13 @@
     "reviews": [
       {
         "user": "Taheri",
-        "comment": "بسیار عالی و سریع",
+        "comment": "Excellent and fast",
         "rating": 5,
         "date": "2025-02-21"
       },
       {
         "user": "Ehsan",
-        "comment": " کاش قیمت پایین تر برای این مشخصات بود",
+        "comment": "Wish the price was lower for these specs",
         "rating": 3.8,
         "date": "2025-07-07"
       }
@@ -93,7 +93,7 @@
 
   {
     "id": 3,
-    "shortName": "لپ تاپ HP OmniBook",
+    "shortName": "HP OmniBook Laptop",
     "name": "HP Pavilion 14 x360 Laptop - Intel® Core™ i5, 8GB, Touchscreen",
     "memory": "8GB RAM",
     "storage": "512GB SSD",
@@ -113,8 +113,8 @@
     ],
     "price": 600,
     "currency": "USD",
-    "shortDesc": " تعادل بین کار و تفریح",
-    "longDesc": " لپ‌تاپ HP Pavilion x360 برای انعطاف‌پذیری طراحی شده است. با چرخاندن 360 درجه صفحه نمایش، زاویه ایده‌آل خود را پیدا کنید، به علاوه با بلندگوهای باکیفیت و تنظیم‌شده سفارشی، خود را در سرگرمی غرق کنید. با پردازنده Intel® و HP Network Booster دستگاه خود، به طور قابل اعتماد و قدرتمندی متصل بمانید. علاوه بر این، این لپ‌تاپ با مواد بازیافتی ساخته شده است.",
+    "shortDesc": "Balance between work and play",
+    "longDesc": "The HP Pavilion x360 is designed for flexibility. With 360-degree display rotation, find your ideal viewing angle, plus immerse yourself in entertainment with custom-tuned high-quality speakers. Stay reliably and powerfully connected with Intel® processor and HP Network Booster. Plus, this laptop is made with recycled materials.",
     "rating": {
       "average": 4.4,
       "count": 42
@@ -122,13 +122,13 @@
     "reviews": [
       {
         "user": "Narges",
-        "comment": "صفحه نمایش لمسی خیلی خوبه، مخصوصاً برای طراحی.",
+        "comment": "Touchscreen is great, especially for design.",
         "rating": 4.5,
         "date": "2024-12-21"
       },
       {
         "user": "Masoud",
-        "comment": "من این لپ‌تاپ را یک ماه پیش خریدم و تا الان از خریدم خیلی راضی بوده‌ام. تنظیمات لپ‌تاپ خیلی ساده بود و خود لپ‌تاپ کاملاً برای نیازهای من عالی است. صفحه لمسی کاملاً کار می‌کند. دکمه پاور حالا دسترسی راحت‌تری دارد.",
+        "comment": "I bought this laptop a month ago and have been very satisfied with my purchase. The setup was very simple and the laptop is perfect for my needs. The touchscreen works perfectly. The power button is now more accessible.",
         "rating": 4,
         "date": "2025-05-18"
       }
@@ -140,7 +140,7 @@
 
   {
     "id": 4,
-    "shortName": "لپ تاپ HP OMEN Gaming",
+    "shortName": "HP OMEN Gaming Laptop",
     "name": "OMEN Gaming Laptop 17-db0012na - NVIDIA® GeForce RTX™ 4070",
     "memory": "16GB RAM",
     "storage": "1TB SSD",
@@ -159,8 +159,8 @@
     ],
     "price": 1499,
     "currency": "USD",
-    "shortDesc": "بازی در سطح دسکتاپ در لپ‌تاپی با نمایشگر بزرگ برای فراگیرترین تجربه بازی",
-    "longDesc": "با جدیدترین لپ‌تاپ گیمینگ OMEN 17.3 اینچی، بازی خود را ارتقا دهید و از هر کجا با بهترین کیفیت بازی کنید. آینده بازی با پردازنده‌های جدید سری AMD Ryzen™ 8040 مجهز به هوش مصنوعی و پردازنده‌های گرافیکی سری NVIDIA® RTX™ 40 از راه رسیده است. با یک صفحه نمایش IPS چشمگیر ۱۷.۳ اینچی با VRR و ۱۰۰٪ sRGB، این تمام صفحه نمایشی است که نیاز دارید. با یک کیبورد عددی با نور پس زمینه RGB تک ناحیه‌ای، OMEN 17 جدید برای هر کاری آماده است.",
+    "shortDesc": "Desktop-level gaming in a laptop with a large display for the most immersive gaming experience",
+    "longDesc": "Upgrade your gaming with the latest OMEN 17.3-inch gaming laptop and play anywhere with the best quality. The future of gaming is here with new AMD Ryzen™ 8040 series processors featuring AI and NVIDIA® RTX™ 40 series graphics. With an impressive 17.3-inch IPS display with VRR and 100% sRGB, this is all the screen you need. With a single-zone RGB backlit numeric keyboard, the new OMEN 17 is ready for anything.",
     "rating": {
       "average": 3.2,
       "count": 6
@@ -168,13 +168,13 @@
     "reviews": [
       {
         "user": "Baran",
-        "comment": "۴ ستاره به جای ۵ ستاره برای باتری. اچ‌پی = لطفاً باتری با عمر طولانی‌تر دارید؟ جدا از این، یک لپ‌تاپ عالی. با قدرت و ویژگی‌هایی که نیاز دارم.",
+        "comment": "4 stars instead of 5 for battery. HP = please make longer-lasting battery? Apart from that, a great laptop with the power and features I need.",
         "rating": 3,
         "date": "2025-03-10"
       },
       {
         "user": "Temor",
-        "comment": "نه خیلی، وقتی پردازنده حداقل اشغال را دارد، فن خیلی پر سر و صدا است. مشکل مشابهی در لپ‌تاپ قبلی شرکت شما وجود داشت.",
+        "comment": "Not great. When the processor has minimal load, the fan is too noisy. Had a similar issue with your previous laptop.",
         "rating": 2.5,
         "date": "2025-05-16"
       }
@@ -186,7 +186,7 @@
 
   {
     "id": 5,
-    "shortName": "لپ تاپ Dell 14",
+    "shortName": "Dell 14 Laptop",
     "name": "Dell 14 Premium Laptop",
     "memory": "32 GB LPDDR5X",
     "storage": "1TB SSD",
@@ -205,8 +205,8 @@
     ],
     "price": 1400,
     "currency": "USD",
-    "shortDesc": " لپ‌تاپ باریک و سبک برای کار و بازی در هر کجا",
-    "longDesc": " لپ‌تاپ Dell 14 اینچی با طراحی باریک و سبک خود، برای کار و بازی در هر کجا که می‌روید ایده‌آل است. با پردازنده Intel® Core™ i7 نسل دوازدهم و حافظه 16 گیگابایت، این لپ‌تاپ عملکرد سریع و چندوظیفه‌ای را ارائه می‌دهد. همچنین با گرافیک Intel Iris Xe، تجربه بصری بی‌نظیری را ارائه می‌دهد. این لپ‌تاپ با دوام و قابل حمل، انتخابی عالی برای دانشجویان و حرفه‌ای‌ها است.",
+    "shortDesc": "Slim and light laptop for work and play anywhere",
+    "longDesc": "The Dell 14-inch laptop with its slim and light design is ideal for work and play wherever you go. With 12th Gen Intel® Core™ i7 processor and 16GB memory, this laptop delivers fast performance and multitasking. Also with Intel Iris Xe graphics, it provides an unparalleled visual experience. This durable and portable laptop is an excellent choice for students and professionals.",
     "rating": {
       "average": 3.8,
       "count": 14
@@ -214,13 +214,13 @@
     "reviews": [
       {
         "user": "Mansor",
-        "comment": " با توجه به قیمت، این لپ‌تاپ ارزش خرید دارد.",
+        "comment": "Considering the price, this laptop offers good value.",
         "rating": 4,
         "date": "2025-06-01"
       },
       {
         "user": "Zahra",
-        "comment": " صفحه نمایش OLED کیفیت تصویر فوق‌العاده‌ای دارد. اما باتری می‌توانست بهتر باشد.",
+        "comment": "The OLED display has amazing image quality. But the battery could be better.",
         "rating": 3.5,
         "date": "2025-01-07"
       }
@@ -232,7 +232,7 @@
 
   {
     "id": 6,
-    "shortName": "لپ تاپ Dell 15",
+    "shortName": "Dell 15 Laptop",
     "name": "Dell 15 Laptop",
     "memory": "8GB RAM",
     "storage": "512GB SSD",
@@ -251,8 +251,8 @@
     ],
     "price": 330,
     "currency": "USD",
-    "shortDesc": "یک لپ‌تاپ ۱۵ اینچی با دوربین داخلی تا کیفیت FHD، صفحه‌کلید ارگونومیک بزرگ و پردازنده‌های Intel®.",
-    "longDesc": " یک لپ‌تاپ ۱۵ اینچی با دوربین داخلی تا کیفیت FHD، صفحه‌کلید ارگونومیک بزرگ و پردازنده‌های Intel®. با پردازنده Intel® Core™ i3 و حافظه 8 گیگابایت، این لپ‌تاپ برای کارهای روزمره و استفاده‌های چندرسانه‌ای مناسب است. طراحی باریک و سبک آن، حمل و نقل را آسان می‌کند.",
+    "shortDesc": "A 15-inch laptop with built-in camera up to FHD quality, large ergonomic keyboard and Intel® processors.",
+    "longDesc": "A 15-inch laptop with built-in camera up to FHD quality, large ergonomic keyboard and Intel® processors. With Intel® Core™ i3 processor and 8GB memory, this laptop is suitable for daily tasks and multimedia use. Its slim and light design makes it easy to carry.",
     "rating": {
       "average": 4.6,
       "count": 52
@@ -260,13 +260,13 @@
     "reviews": [
       {
         "user": "Faez",
-        "comment": " صفحه نمایش بزرگ و کیفیت ساخت خوب.",
+        "comment": "Large screen and good build quality.",
         "rating": 4.5,
         "date": "2025-08-21"
       },
       {
         "user": "Tamana",
-        "comment": " قیمت مناسب برای مشخصات ارائه شده.",
+        "comment": "Great price for the specs offered.",
         "rating": 4,
         "date": "2025-07-11"
       }
@@ -278,7 +278,7 @@
 
   {
     "id": 7,
-    "shortName": "لپ تاپ Dell 16",
+    "shortName": "Dell 16 Laptop",
     "name": "Dell 16 Laptop",
     "memory": "16GB RAM DDR5",
     "storage": "1TB SSD",
@@ -297,8 +297,8 @@
     ],
     "price": 550,
     "currency": "USD",
-    "shortDesc": "لپ‌تاپ  ۱۶ اینچی با طراحی مدرن و پردازنده‌ها و گرافیک Intel® Core™ که بهره‌وری آسان و سرگرمی‌های جذاب  ",
-    "longDesc": " لپ‌تاپ جمع‌وجور ۱۶ اینچی با طراحی مدرن و پردازنده‌ها و گرافیک Intel® Core™ که بهره‌وری آسان و سرگرمی‌های جذاب را ارائه می‌دهد. با پردازنده Intel® Core™ i7 و حافظه 16 گیگابایت، این لپ‌تاپ برای کارهای چندوظیفه‌ای و استفاده‌های چندرسانه‌ای مناسب است. صفحه نمایش لمسی آن تجربه کاربری بهتری را فراهم می‌کند.",
+    "shortDesc": "16-inch laptop with modern design and Intel® Core™ processors and graphics for easy productivity and exciting entertainment",
+    "longDesc": "Compact 16-inch laptop with modern design and Intel® Core™ processors and graphics that deliver easy productivity and exciting entertainment. With Intel® Core™ i7 processor and 16GB memory, this laptop is ideal for multitasking and multimedia use. The touchscreen provides a better user experience.",
     "rating": {
       "average": 2.9,
       "count": 22
@@ -306,7 +306,7 @@
     "reviews": [
       {
         "user": "Nahid",
-        "comment": " صفحه نمایش لمسی خیلی خوب کار نمی‌کند.  ",
+        "comment": "The touchscreen doesn't work very well.",
         "rating": 2.7,
         "date": "2025-07-21"
       }
@@ -319,7 +319,7 @@
 
   {
     "id": 8,
-    "shortName": "لپ تاپ Asus",
+    "shortName": "Asus Laptop",
     "name": "Asus ProArt PZ13 (HT5306)",
     "memory": "16GB RAM",
     "storage": "1TB SSD",
@@ -339,8 +339,8 @@
     ],
     "price": 1200,
     "currency": "USD",
-    "shortDesc": " لپ‌تاپ ۱۳ اینچی با صفحه نمایش OLED 3K برای خلاقیت در حرکت",
-    "longDesc": " لپ‌تاپ Asus ProArt PZ13 با صفحه نمایش OLED 3K و نسبت تصویر 16:10، برای خلاقیت در حرکت طراحی شده است. با پردازنده Snapdragon® و حافظه 16 گیگابایت، این لپ‌تاپ عملکرد سریع و چندوظیفه‌ای را ارائه می‌دهد. صفحه نمایش لمسی آن تجربه بصری بی‌نظیری را ارائه می‌دهد و برای طراحان و هنرمندان دیجیتال ایده‌آل است.",
+    "shortDesc": "13-inch laptop with 3K OLED display for creativity on the go",
+    "longDesc": "The Asus ProArt PZ13 with 3K OLED display and 16:10 aspect ratio is designed for creativity on the go. With Snapdragon® processor and 16GB memory, this laptop delivers fast performance and multitasking. The touchscreen provides an unparalleled visual experience and is ideal for designers and digital artists.",
     "rating": {
       "average": 4,
       "count": 10
@@ -348,13 +348,13 @@
     "reviews": [
       {
         "user": "Sina",
-        "comment": " صفحه نمایش OLED کیفیت تصویر فوق‌العاده‌ای دارد. برای ویرایش عکس عالی است.",
+        "comment": "The OLED display has amazing image quality. Great for photo editing.",
         "rating": 4,
         "date": "2024-12-21"
       },
       {
         "user": "Ehsan",
-        "comment": " لپ‌تاپ سبک و قابل حمل است. برای کارهای روزمره مناسب است.",
+        "comment": "Lightweight and portable laptop. Great for daily tasks.",
         "rating": 4,
         "date": "2025-04-07"
       }
@@ -366,8 +366,8 @@
 
   {
     "id": 9,
-    "shortName": "لپ تاپ Lenovo 3i",
-    "name": "Lenovo 3i Chromebook (15” Intel) ",
+    "shortName": "Lenovo 3i Laptop",
+    "name": "Lenovo 3i Chromebook (15\" Intel) ",
     "memory": "8GB RAM",
     "storage": "128GB SSD",
     "processor": "Intel® Celeron® N4500 Processor",
@@ -385,8 +385,8 @@
     ],
     "price": 250,
     "currency": "USD",
-    "shortDesc": "یک کروم‌بوک ۱۵ اینچی با طراحی باریک و سبک برای کارهای روزمره و استفاده‌های چندرسانه‌ای.",
-    "longDesc": " یک کروم‌بوک ۱۵ اینچی با طراحی باریک و سبک برای کارهای روزمره و استفاده‌های چندرسانه‌ای. با پردازنده Intel® Celeron® و حافظه 8 گیگابایت، این کروم‌بوک برای مرور وب، کارهای اداری و استفاده از برنامه‌های اندروید مناسب است. صفحه نمایش بزرگ آن تجربه بصری بهتری را فراهم می‌کند.",
+    "shortDesc": "A 15-inch Chromebook with slim and light design for daily tasks and multimedia use.",
+    "longDesc": "A 15-inch Chromebook with slim and light design for daily tasks and multimedia use. With Intel® Celeron® processor and 8GB memory, this Chromebook is suitable for web browsing, office work and Android apps. Its large screen provides a better visual experience.",
     "rating": {
       "average": 4.5,
       "count": 44
@@ -394,13 +394,13 @@
     "reviews": [
       {
         "user": "Sana",
-        "comment": "خیلی خوشحالم از خرید این کروم‌بوک. برای کارهای روزمره عالی است.",
+        "comment": "Very happy with this Chromebook purchase. Great for daily tasks.",
         "rating": 5,
         "date": "2025-09-11"
       },
       {
         "user": "Reza",
-        "comment": " قیمت مناسب برای مشخصات ارائه شده. فقط حافظه می‌توانست بیشتر باشد.",
+        "comment": "Great price for the specs. Just wish the storage was larger.",
         "rating": 3.8,
         "date": "2025-02-01"
       }
@@ -410,10 +410,9 @@
     "relatedProducts": [7, 8]
   },
 
-
   {
     "id": 10,
-    "shortName": "مانیتور Dell 32 Curved",
+    "shortName": "Dell 32 Curved Monitor",
     "name": "Dell 32 Curved Gaming Monitor – S3222DGM",
     "size": "32 inch",
     "resolution": "QHD 2560 x 1440",
@@ -431,8 +430,8 @@
     ],
     "price": 330,
     "currency": "USD",
-    "shortDesc": "مانیتور ۲۴ اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز.",
-    "longDesc": " مانیتور Dell 24 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز، برای کارهای روزمره و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "shortDesc": "24-inch monitor with Full HD image quality and 75Hz refresh rate.",
+    "longDesc": "The Dell 24-inch monitor with Full HD image quality and 75Hz refresh rate is suitable for daily tasks and multimedia use. With IPS panel, it offers wide viewing angles and vivid colors. This monitor provides easy connection to various devices with HDMI and VGA ports.",
     "rating": {
       "average": 4.7,
       "count": 48
@@ -440,13 +439,13 @@
     "reviews": [
       {
         "user": "Hamed",
-        "comment": "مانیتور خوبی برای کارهای روزمره. کیفیت تصویر عالی است.",
+        "comment": "Good monitor for daily use. Great image quality.",
         "rating": 4,
         "date": "2025-06-15"
       },
       {
         "user": "Lina",
-        "comment": "قیمت مناسب برای مشخصات ارائه شده. فقط پایه می‌توانست بهتر باشد.",
+        "comment": "Good price for the specs. Just the stand could be better.",
         "rating": 3.5,
         "date": "2025-03-22"
       }
@@ -458,7 +457,7 @@
 
   {
     "id": 11,
-    "shortName": "مانیتور Dell 34 Curved",
+    "shortName": "Dell 34 Curved Monitor",
     "name": "Dell UltraSharp 34 Curved Thunderbolt™ Hub Monitor - U3425WE",
     "size": "34 inch",
     "resolution": "3440 x 1440 at 120 Hz",
@@ -476,8 +475,8 @@
     ],
     "price": 890,
     "currency": "USD",
-    "shortDesc": "مانیتور ۲۴ اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز.",
-    "longDesc": " مانیتور Dell 24 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی ۷۵ هرتز، برای کارهای روزمره و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "shortDesc": "24-inch monitor with Full HD image quality and 75Hz refresh rate.",
+    "longDesc": "The Dell 24-inch monitor with Full HD image quality and 75Hz refresh rate is suitable for daily tasks and multimedia use. With IPS panel, it offers wide viewing angles and vivid colors. This monitor provides easy connection to various devices with HDMI and VGA ports.",
     "rating": {
       "average": 3.1,
       "count": 20
@@ -485,13 +484,13 @@
     "reviews": [
       {
         "user": "Amir",
-        "comment": "میتوانست بهتر باشد",
+        "comment": "Could have been better",
         "rating": 2,
         "date": "2025-07-15"
       },
       {
         "user": "Ali",
-        "comment": "قیمت بالا ولی ارزشش رو داره.",
+        "comment": "High price but worth it.",
         "rating": 4.2,
         "date": "2025-03-22"
       }
@@ -504,8 +503,8 @@
 
   {
     "id": 12,
-    "shortName": "مانیتور Samsung Neo G7",
-    "name": "Samsung  Odyssey Neo G7 - Quantum HDR2000 Curved Gaming Monitor",
+    "shortName": "Samsung Neo G7 Monitor",
+    "name": "Samsung Odyssey Neo G7 - Quantum HDR2000 Curved Gaming Monitor",
     "size": "32 inch",
     "resolution": "3840 x 2160 (UHD)",
     "refreshRate": "165Hz",
@@ -522,8 +521,8 @@
     ],
     "price": 649,
     "currency": "USD",
-    "shortDesc": " مانیتور 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز.",
-    "longDesc": " مانیتور Samsung 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز، برای بازی و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "shortDesc": "32-inch monitor with Full HD image quality and 165Hz refresh rate.",
+    "longDesc": "The Samsung 32-inch monitor with Full HD image quality and 165Hz refresh rate is suitable for gaming and multimedia use. With IPS panel, it offers wide viewing angles and vivid colors. This monitor provides easy connection to various devices with HDMI and VGA ports.",
     "rating": {
       "average": 4.6,
       "count": 18
@@ -531,13 +530,13 @@
     "reviews": [
       {
         "user": "Aslan",
-        "comment": "مانیتور خیلی خوبه، مخصوصاً برای بازی.",
+        "comment": "Great monitor, especially for gaming.",
         "rating": 4.5,
         "date": "2025-08-10"
       },
       {
         "user": "Hesam",
-        "comment": "کیفیت تصویر عالیه، مخصوصاً با HDR2000.",
+        "comment": "Amazing image quality, especially with HDR2000.",
         "rating": 4,
         "date": "2025-01-22"
       }
@@ -549,7 +548,7 @@
 
   {
     "id": 13,
-    "shortName": "مانیتور Samsung S8",
+    "shortName": "Samsung S8 Monitor",
     "name": "ViewFinity S8 (S80UD) 4K UHD HDR10 Monitor",
     "size": "37 inch",
     "resolution": "3840 x 2160 (UHD)",
@@ -567,8 +566,8 @@
     ],
     "price": 430,
     "currency": "USD",
-    "shortDesc": " مانیتور 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز.",
-    "longDesc": " مانیتور Samsung 32 اینچی با کیفیت تصویر Full HD و نرخ تازه‌سازی 165 هرتز، برای بازی و استفاده‌های چندرسانه‌ای مناسب است. با پنل IPS، زاویه دید گسترده و رنگ‌های زنده را ارائه می‌دهد. این مانیتور با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "shortDesc": "32-inch monitor with Full HD image quality and 165Hz refresh rate.",
+    "longDesc": "The Samsung 32-inch monitor with Full HD image quality and 165Hz refresh rate is suitable for gaming and multimedia use. With IPS panel, it offers wide viewing angles and vivid colors. This monitor provides easy connection to various devices with HDMI and VGA ports.",
     "rating": {
       "average": 4.6,
       "count": 18
@@ -576,13 +575,13 @@
     "reviews": [
       {
         "user": "Mohammad",
-        "comment": "سوئیچ KVM یکپارچه + حالت‌های PBP/PIP به من این امکان را می‌دهد که دو کامپیوتر را با یک کیبورد و ماوس کنترل کنم. این برای تنظیمات کار از راه دور من ایده‌آل است.",
+        "comment": "The built-in KVM switch + PBP/PIP modes allow me to control two computers with one keyboard and mouse. This is ideal for my work-from-home setup.",
         "rating": 5,
         "date": "2025-09-10"
       },
       {
         "user": "Hesam",
-        "comment": "مثل همه محصولات سامسونگ من بی‌عیب و نقص. مستقیماً از جعبه خارج کنید و استفاده کنید",
+        "comment": "Perfect like all Samsung products. Take it out of the box and use it.",
         "rating": 5,
         "date": "2025-06-22"
       }
@@ -594,7 +593,7 @@
 
   {
     "id": 14,
-    "shortName": "مانیتور HP Series 5",
+    "shortName": "HP Series 5 Monitor",
     "name": "HP Series 5 23.8 Inch FHD White Monitor - 524sw",
     "size": "23.8 inch",
     "resolution": "1920 x 1080 (FHD)",
@@ -612,8 +611,8 @@
     ],
     "price": 110,
     "currency": "USD",
-    "shortDesc": "طراحی شده برای کسانی که می‌خواهند افق دید خود را گسترش دهند و از روزهای خود نهایت استفاده را ببرند.",
-    "longDesc": " طراحی شده برای کسانی که می‌خواهند افق دید خود را گسترش دهند و از روزهای خود نهایت استفاده را ببرند. با صفحه نمایش بزرگ ۲۳.۸ اینچی، کیفیت تصویر Full HD و طراحی باریک و مدرن، این مانیتور تجربه بصری بی‌نظیری را ارائه می‌دهد. ویژگی‌های اضافی مانند تنظیم ارتفاع، چرخش و شیب، راحتی بیشتری را برای استفاده طولانی مدت فراهم می‌کند. با پورت‌های HDMI و VGA، اتصال آسان به دستگاه‌های مختلف را فراهم می‌کند.",
+    "shortDesc": "Designed for those who want to expand their horizons and make the most of their days.",
+    "longDesc": "Designed for those who want to expand their horizons and make the most of their days. With a large 23.8-inch display, Full HD image quality and slim modern design, this monitor offers an unparalleled visual experience. Additional features like height adjustment, tilt and swivel provide more comfort for extended use. It offers easy connection to various devices with HDMI and VGA ports.",
     "rating": {
       "average": 4.7,
       "count": 20
@@ -621,13 +620,13 @@
     "reviews": [
       {
         "user": "Mahsa",
-        "comment": "می‌خواهم بگویم که صفحه نمایش جدیدم در کل خیلی خوب است و از خریدش خوشحالم.",
+        "comment": "I have to say my new display is really good overall and I'm happy with my purchase.",
         "rating": 4.5,
         "date": "2025-08-18"
       },
       {
         "user": "Farhad",
-        "comment": " نصب آسان. کیفیت تصویر عالی با توجه به قیمت. من از خرید این مانیتور بسیار راضی هستم. ",
+        "comment": "Easy setup. Excellent image quality for the price. I am very satisfied with this monitor.",
         "rating": 5,
         "date": "2025-06-22"
       }
@@ -639,7 +638,7 @@
 
   {
     "id": 15,
-    "shortName": "هدفون Sony WH-1000XM5",
+    "shortName": "Sony WH-1000XM5 Headphones",
     "name": "Sony WH-1000XM5 Wireless Noise-Canceling Overhead Headphones",
     "connectivity": "Wireless (Bluetooth)",
     "batteryLife": "30 hours",
@@ -654,8 +653,8 @@
     ],
     "price": 350,
     "currency": "USD",
-    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
-    "longDesc": " هدفون Sony WH-1000XM5 با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 30 ساعت، این هدفون برای استفاده طولانی مدت مناسب است. طراحی راحت و سبک آن، استفاده روزمره را آسان می‌کند.",
+    "shortDesc": "Wireless headphones with active noise cancellation for an unparalleled audio experience.",
+    "longDesc": "Sony WH-1000XM5 headphones with active noise cancellation technology provide an unparalleled audio experience. With wireless connection via Bluetooth and battery life up to 30 hours, these headphones are suitable for extended use. The comfortable and lightweight design makes daily use easy.",
     "rating": {
       "average": 4.8,
       "count": 150
@@ -663,13 +662,13 @@
     "reviews": [
       {
         "user": "Reza",
-        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای سفرهای طولانی عالی است.",
+        "comment": "Excellent sound quality and very good noise cancellation. Great for long trips.",
         "rating": 5,
         "date": "2025-05-10"
       },
       {
         "user": "Nina",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 4.5,
         "date": "2025-03-15"
       }
@@ -681,7 +680,7 @@
 
   {
     "id": 16,
-    "shortName": "هدفون HP Stereo G2",
+    "shortName": "HP Stereo G2 Headset",
     "name": "HP Stereo USB Headset G2",
     "type": "Overhead",
     "connectivity": "Wireless (Bluetooth)",
@@ -696,8 +695,8 @@
     ],
     "price": 20,
     "currency": "USD",
-    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
-    "longDesc": " هدفون Sony WH-1000XM5 با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 30 ساعت، این هدفون برای استفاده طولانی مدت مناسب است. طراحی راحت و سبک آن، استفاده روزمره را آسان می‌کند.",
+    "shortDesc": "Wireless headphones with active noise cancellation for an unparalleled audio experience.",
+    "longDesc": "Sony WH-1000XM5 headphones with active noise cancellation technology provide an unparalleled audio experience. With wireless connection via Bluetooth and battery life up to 30 hours, these headphones are suitable for extended use. The comfortable and lightweight design makes daily use easy.",
     "rating": {
       "average": 4.8,
       "count": 150
@@ -705,13 +704,13 @@
     "reviews": [
       {
         "user": "hasib",
-        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای سفرهای طولانی عالی است.",
+        "comment": "Excellent sound quality and very good noise cancellation. Great for long trips.",
         "rating": 5,
         "date": "2025-05-10"
       },
       {
         "user": "Ahmad",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 4.5,
         "date": "2025-03-15"
       }
@@ -723,7 +722,7 @@
 
   {
     "id": 17,
-    "shortName": "هدفون HyperX MIX 2",
+    "shortName": "HyperX MIX 2 Headphones",
     "name": "HyperX Cloud MIX 2 - Gaming Headset",
     "connectivity": ["Wireless (Bluetooth)", "Wired (3.5mm)"],
     "batteryLife": "30 hours",
@@ -739,8 +738,8 @@
     ],
     "price": 100,
     "currency": "USD",
-    "shortDesc": "هدفون نسل بعدی، با عمر باتری بهبود یافته برای بازی، موسیقی و تماس، تطبیق‌پذیری را از نو تعریف می‌کند.",
-    "longDesc": " هدفون HyperX Cloud MIX 2 با عمر باتری بهبود یافته، برای بازی، موسیقی و تماس طراحی شده است. با اتصال بی‌سیم از طریق بلوتوث یا اتصال سیمی با جک 3.5 میلی‌متری، این هدفون تطبیق‌پذیری بالایی را ارائه می‌دهد. کیفیت صدای عالی و طراحی راحت آن، تجربه صوتی بی‌نظیری را فراهم می‌کند.",
+    "shortDesc": "Next-generation headset with improved battery life for gaming, music and calls, redefining versatility.",
+    "longDesc": "The HyperX Cloud MIX 2 with improved battery life is designed for gaming, music and calls. With wireless connection via Bluetooth or wired connection with 3.5mm jack, this headset offers high versatility. Excellent sound quality and comfortable design provide an unparalleled audio experience.",
     "rating": {
       "average": 3,
       "count": 40
@@ -748,7 +747,7 @@
     "reviews": [
       {
         "user": "Hadya",
-        "comment": "قیمت بالا داره اما کیفیت خوب.",
+        "comment": "High price but good quality.",
         "rating": 3,
         "date": "2025-05-10"
       }
@@ -760,7 +759,7 @@
 
   {
     "id": 18,
-    "shortName": "هدفون Poly Voyager",
+    "shortName": "Poly Voyager Earbuds",
     "name": "Poly Voyager Free 60 Earbuds",
     "connectivity": "Wireless (Bluetooth)",
     "batteryLife": "50 hours",
@@ -775,8 +774,8 @@
     ],
     "price": 139,
     "currency": "USD",
-    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
-    "longDesc": " چه در حال مکالمه ویدیویی باشید و چه در حال گوش دادن به لیست پخش خود، این هدفون‌های بی‌سیم طوری طراحی شده‌اند که شما را پربار، متصل و سرگرم نگه دارند. با عمر باتری تا 50 ساعت، می‌توانید بدون نگرانی از شارژ مجدد، از موسیقی و تماس‌های خود لذت ببرید. طراحی راحت و سبک آن، استفاده روزمره را آسان می‌کند.",
+    "shortDesc": "Wireless headphones with active noise cancellation for an unparalleled audio experience.",
+    "longDesc": "Whether you're on a video call or listening to your playlist, these wireless earbuds are designed to keep you productive, connected and entertained. With battery life up to 50 hours, you can enjoy music and calls without worrying about recharging. The comfortable and lightweight design makes daily use easy.",
     "rating": {
       "average": 4.9,
       "count": 14
@@ -784,13 +783,13 @@
     "reviews": [
       {
         "user": "Madina",
-        "comment": " کیفیت صدا و میکروفون عالی. با چندین لپ‌تاپ و تلفن من به خوبی کار می‌کند. آنها همچنین بادوام هستند، من به طور تصادفی یکی از آنها را در سینک پر از آب ظرفشویی انداختم و کمی طول کشید تا آن را پیدا کنم، اما بعداً هیچ مشکلی پیش نیامد. ",
+        "comment": "Excellent sound and microphone quality. Works well with multiple laptops and phones. They are also durable - I accidentally dropped one in a sink full of dishwater and it took a while to find it, but no issues afterwards.",
         "rating": 5,
         "date": "2025-08-10"
       },
       {
         "user": "Kiana",
-        "comment": "میکروفون افتضاح، صدا قابل قبول است ",
+        "comment": "Terrible microphone, sound is acceptable.",
         "rating": 2,
         "date": "2025-06-15"
       }
@@ -802,7 +801,7 @@
 
   {
     "id": 19,
-    "shortName": "ایرپاد Pro 2",
+    "shortName": "Airpods Pro 2",
     "name": "Airpods Pro 2",
     "connectivity": "Wireless (Bluetooth)",
     "batteryLife": "24 hours",
@@ -816,8 +815,8 @@
     ],
     "price": 249,
     "currency": "USD",
-    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
-    "longDesc": " هدفون Apple AirPods Pro 2 با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 24 ساعت با کیس شارژ، این هدفون برای استفاده روزمره مناسب است. طراحی راحت و سبک آن، استفاده طولانی مدت را آسان می‌کند.",
+    "shortDesc": "Wireless headphones with active noise cancellation for an unparalleled audio experience.",
+    "longDesc": "Apple AirPods Pro 2 with active noise cancellation technology provide an unparalleled audio experience. With wireless connection via Bluetooth and battery life up to 24 hours with charging case, these headphones are suitable for daily use. The comfortable and lightweight design makes extended use easy.",
     "rating": {
       "average": 4.5,
       "count": 200
@@ -825,13 +824,13 @@
     "reviews": [
       {
         "user": "Sara",
-        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای استفاده روزمره عالی است.",
+        "comment": "Excellent sound quality and very good noise cancellation. Great for daily use.",
         "rating": 5,
         "date": "2025-04-10"
       },
       {
         "user": "Ali",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 4,
         "date": "2025-02-15"
       }
@@ -843,7 +842,7 @@
 
   {
     "id": 20,
-    "shortName": "هدفون JBL 230NC",
+    "shortName": "JBL 230NC Headphones",
     "name": "JBL Tune 230NC TWS - True Wireless Noise Cancelling Earbuds",
     "connectivity": "Wireless (Bluetooth)",
     "batteryLife": "40 hours",
@@ -857,8 +856,8 @@
     ],
     "price": 100,
     "currency": "USD",
-    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
-    "longDesc": " هدفون JBL Tune 230NC TWS با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 40 ساعت با کیس شارژ، این هدفون برای استفاده روزمره مناسب است. طراحی راحت و سبک آن، استفاده طولانی مدت را آسان می‌کند.",
+    "shortDesc": "Wireless headphones with active noise cancellation for an unparalleled audio experience.",
+    "longDesc": "JBL Tune 230NC TWS with active noise cancellation technology provide an unparalleled audio experience. With wireless connection via Bluetooth and battery life up to 40 hours with charging case, these headphones are suitable for daily use. The comfortable and lightweight design makes extended use easy.",
     "rating": {
       "average": 2.5,
       "count": 80
@@ -866,13 +865,13 @@
     "reviews": [
       {
         "user": "Neda",
-        "comment": "بد نیست... ",
+        "comment": "Not bad...",
         "rating": 2,
         "date": "2025-03-10"
       },
       {
         "user": "Taha",
-        "comment": "قیمت مناسب و کیفیت خوب. خیلی راحت و سبک است.",
+        "comment": "Good price and quality. Very comfortable and lightweight.",
         "rating": 3,
         "date": "2025-01-20"
       }
@@ -884,7 +883,7 @@
 
   {
     "id": 21,
-    "shortName": "هدفون Bose II",
+    "shortName": "Bose II Headphones",
     "name": "Bose QuietComfort Earbuds II",
     "connectivity": "Wireless (Bluetooth)",
     "batteryLife": "18 hours",
@@ -898,8 +897,8 @@
     ],
     "price": 299,
     "currency": "USD",
-    "shortDesc": "هدفون بی‌سیم با حذف نویز فعال برای تجربه صوتی بی‌نظیر.",
-    "longDesc": " هدفون Bose QuietComfort Earbuds II با فناوری حذف نویز فعال، تجربه صوتی بی‌نظیری را ارائه می‌دهد. با اتصال بی‌سیم از طریق بلوتوث و عمر باتری تا 18 ساعت با کیس شارژ، این هدفون برای استفاده روزمره مناسب است. طراحی راحت و سبک آن، استفاده طولانی مدت را آسان می‌کند.",
+    "shortDesc": "Wireless headphones with active noise cancellation for an unparalleled audio experience.",
+    "longDesc": "Bose QuietComfort Earbuds II with active noise cancellation technology provide an unparalleled audio experience. With wireless connection via Bluetooth and battery life up to 18 hours with charging case, these headphones are suitable for daily use. The comfortable and lightweight design makes extended use easy.",
     "rating": {
       "average": 4.6,
       "count": 60
@@ -907,13 +906,13 @@
     "reviews": [
       {
         "user": "Laleh",
-        "comment": "کیفیت صدای عالی و حذف نویز بسیار خوب. برای استفاده روزمره عالی است.",
+        "comment": "Excellent sound quality and very good noise cancellation. Great for daily use.",
         "rating": 5,
         "date": "2025-02-10"
       },
       {
         "user": "Kaveh",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 4.2,
         "date": "2025-01-25"
       }
@@ -923,10 +922,9 @@
     "relatedProducts": [17, 18]
   },
 
- 
   {
     "id": 22,
-    "shortName": "ماوس Logitech MX 3S",
+    "shortName": "Logitech MX 3S Mouse",
     "name": "Logitech MX Master 3S Wireless Mouse",
     "type": "Wireless",
     "connectivity": "Bluetooth and USB receiver",
@@ -941,8 +939,8 @@
     ],
     "price": 100,
     "currency": "USD",
-    "shortDesc": "ماوس بی‌سیم با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
-    "longDesc": " ماوس Logitech MX Master 3S با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث یا گیرنده USB، این ماوس راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند چرخ اسکرول سریع و دکمه‌های قابل برنامه‌ریزی، بهره‌وری را افزایش می‌دهد.",
+    "shortDesc": "Wireless mouse with ergonomic design and high precision for daily and professional use.",
+    "longDesc": "The Logitech MX Master 3S with ergonomic design and high precision is suitable for daily and professional use. With wireless connection via Bluetooth or USB receiver, this mouse offers more comfort and control. Additional features like fast scroll wheel and programmable buttons increase productivity.",
     "rating": {
       "average": 4.9,
       "count": 120
@@ -950,13 +948,13 @@
     "reviews": [
       {
         "user": "Parisa",
-        "comment": "ماوس بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "comment": "Very comfortable and precise mouse. Great for long work sessions.",
         "rating": 5,
         "date": "2025-06-10"
       },
       {
         "user": "Omid",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 4.8,
         "date": "2025-04-15"
       }
@@ -968,7 +966,7 @@
 
   {
     "id": 23,
-    "shortName": "کیبورد Logitech K380",
+    "shortName": "Logitech K380 Keyboard",
     "name": "K380 MULTI-DEVICE BLUETOOTH KEYBOARD FOR MAC",
     "type": "Wireless",
     "connectivity": "Bluetooth",
@@ -982,8 +980,8 @@
     ],
     "price": 55,
     "currency": "USD",
-    "shortDesc": "کیبورد بی‌سیم با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه برای کارهای روزمره و حرفه‌ای.",
-    "longDesc": " کیبورد Logitech K380 با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث، این کیبورد راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند دکمه‌های قابل برنامه‌ریزی و طراحی ارگونومیک، بهره‌وری را افزایش می‌دهد.",
+    "shortDesc": "Wireless keyboard with compact design and multi-device connectivity for daily and professional use.",
+    "longDesc": "The Logitech K380 with compact design and multi-device connectivity is suitable for daily and professional use. With wireless connection via Bluetooth, this keyboard offers more comfort and control. Additional features like programmable buttons and ergonomic design increase productivity.",
     "rating": {
       "average": 4.7,
       "count": 80
@@ -991,13 +989,13 @@
     "reviews": [
       {
         "user": "Mina",
-        "comment": "کیبورد بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "comment": "Very comfortable and precise keyboard. Great for long work sessions.",
         "rating": 4.5,
         "date": "2025-05-10"
       },
       {
         "user": "Saeed",
-        "comment": "قیمت مناسب و کیفیت خوب. خیلی راحت و سبک است.",
+        "comment": "Great price and quality. Very comfortable and lightweight.",
         "rating": 4.8,
         "date": "2025-03-15"
       }
@@ -1010,7 +1008,7 @@
 
   {
     "id": 24,
-    "shortName": "کیبورد Dell Pro",
+    "shortName": "Dell Pro Keyboard",
     "name": "Dell Pro Silent Wired Collaboration Keyboard - KB525C",
     "type": "Wired",
     "connectivity": "USB",
@@ -1024,8 +1022,8 @@
     ],
     "price": 35,
     "currency": "USD",
-    "shortDesc": "کیبورد سیمی با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
-    "longDesc": " کیبورد Dell Pro Silent Wired با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال سیمی از طریق USB، این کیبورد راحتی و کنترل بیشتری را ارائه می‌دهد. طراحی ساده و قابل استفاده آن، بهره‌وری را افزایش می‌دهد.",
+    "shortDesc": "Wired keyboard with ergonomic design and high precision for daily and professional use.",
+    "longDesc": "The Dell Pro Silent Wired keyboard with ergonomic design and high precision is suitable for daily and professional use. With wired connection via USB, this keyboard offers more comfort and control. Its simple and easy-to-use design increases productivity.",
     "rating": {
       "average": 4.4,
       "count": 50
@@ -1033,13 +1031,13 @@
     "reviews": [
       {
         "user": "Shirin",
-        "comment": "کیبورد بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "comment": "Very comfortable and precise keyboard. Great for long work sessions.",
         "rating": 4.3,
         "date": "2025-03-10"
       },
       {
         "user": "Kian",
-        "comment": "قیمت مناسب و کیفیت خوب. خیلی راحت و سبک است.",
+        "comment": "Great price and quality. Very comfortable and lightweight.",
         "rating": 4.6,
         "date": "2025-01-25"
       }
@@ -1051,7 +1049,7 @@
 
   {
     "id": 25,
-    "shortName": "ماوس سیمی HP 125",
+    "shortName": "HP 125 Wired Mouse",
     "name": "HP 125 Wired Mouse - With Easy Plug And Play USB Connectivity",
     "type": "Wired",
     "connectivity": "USB",
@@ -1065,8 +1063,8 @@
     ],
     "price": 6,
     "currency": "USD",
-    "shortDesc": "ماوس سیمی با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
-    "longDesc": " ماوس HP 125 با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال سیمی از طریق USB، این ماوس راحتی و کنترل بیشتری را ارائه می‌دهد. طراحی ساده و قابل استفاده آن، بهره‌وری را افزایش می‌دهد.",
+    "shortDesc": "Wired mouse with ergonomic design and high precision for daily and professional use.",
+    "longDesc": "The HP 125 mouse with ergonomic design and high precision is suitable for daily and professional use. With wired connection via USB, this mouse offers more comfort and control. Its simple and easy-to-use design increases productivity.",
     "rating": {
       "average": 2.9,
       "count": 70
@@ -1074,13 +1072,13 @@
     "reviews": [
       {
         "user": "Roya",
-        "comment": "خیلی راضی نبودم ",
+        "comment": "Wasn't very satisfied.",
         "rating": 3,
         "date": "2025-03-10"
       },
       {
         "user": "Ibrahim",
-        "comment": "قیمت مناسب و کیفیت متوسط. خیلی راحت و سبک است.",
+        "comment": "Good price and average quality. Very comfortable and lightweight.",
         "rating": 2.7,
         "date": "2025-01-25"
       }
@@ -1092,7 +1090,7 @@
 
   {
     "id": 26,
-    "shortName": "ماوس Dell Pro Premium",
+    "shortName": "Dell Pro Premium Mouse",
     "name": "Dell Pro Premium Compact Mouse - MS7421W",
     "type": "Wireless",
     "connectivity": "Bluetooth and USB receiver",
@@ -1106,8 +1104,8 @@
     ],
     "price": 70,
     "currency": "USD",
-    "shortDesc": "ماوس بی‌سیم با طراحی ارگونومیک و دقت بالا برای کارهای روزمره و حرفه‌ای.",
-    "longDesc": " ماوس Dell Pro Premium Compact با طراحی ارگونومیک و دقت بالا، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث یا گیرنده USB، این ماوس راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند چرخ اسکرول سریع و دکمه‌های قابل برنامه‌ریزی، بهره‌وری را افزایش می‌دهد.",
+    "shortDesc": "Wireless mouse with ergonomic design and high precision for daily and professional use.",
+    "longDesc": "The Dell Pro Premium Compact mouse with ergonomic design and high precision is suitable for daily and professional use. With wireless connection via Bluetooth or USB receiver, this mouse offers more comfort and control. Additional features like fast scroll wheel and programmable buttons increase productivity.",
     "rating": {
       "average": 3.2,
       "count": 60
@@ -1115,13 +1113,13 @@
     "reviews": [
       {
         "user": "Zahra",
-        "comment": "ماوس بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "comment": "Very comfortable and precise mouse. Great for long work sessions.",
         "rating": 4.6,
         "date": "2025-05-10"
       },
       {
         "user": "Simin",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 3,
         "date": "2025-03-15"
       }
@@ -1133,7 +1131,7 @@
 
   {
     "id": 27,
-    "shortName": "کیبورد Alienware Tri-Mode",
+    "shortName": "Alienware Tri-Mode Keyboard",
     "name": "Alienware Tri-Mode Wireless Gaming Keyboard - AW920K",
     "type": "Wireless",
     "connectivity": "Bluetooth and USB receiver",
@@ -1147,8 +1145,8 @@
     ],
     "price": 200,
     "currency": "USD",
-    "shortDesc": "کیبورد بی‌سیم با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه برای کارهای روزمره و حرفه‌ای.",
-    "longDesc": " کیبورد Alienware Tri-Mode با طراحی جمع‌وجور و قابلیت اتصال به چند دستگاه، برای کارهای روزمره و حرفه‌ای مناسب است. با اتصال بی‌سیم از طریق بلوتوث یا گیرنده USB، این کیبورد راحتی و کنترل بیشتری را ارائه می‌دهد. ویژگی‌های اضافی مانند دکمه‌های قابل برنامه‌ریزی و طراحی ارگونومیک، بهره‌وری را افزایش می‌دهد.",
+    "shortDesc": "Wireless keyboard with compact design and multi-device connectivity for daily and professional use.",
+    "longDesc": "The Alienware Tri-Mode keyboard with compact design and multi-device connectivity is suitable for daily and professional use. With wireless connection via Bluetooth or USB receiver, this keyboard offers more comfort and control. Additional features like programmable buttons and ergonomic design increase productivity.",
     "rating": {
       "average": 4.3,
       "count": 40
@@ -1156,13 +1154,13 @@
     "reviews": [
       {
         "user": "Ehsan",
-        "comment": "کیبورد بسیار راحت و دقیق است. برای کارهای طولانی عالی است.",
+        "comment": "Very comfortable and precise keyboard. Great for long work sessions.",
         "rating": 4,
         "date": "2025-04-10"
       },
       {
         "user": "Negina",
-        "comment": "قیمت بالا ولی ارزشش رو داره. خیلی راحت و سبک است.",
+        "comment": "High price but worth it. Very comfortable and lightweight.",
         "rating": 4.5,
         "date": "2025-02-15"
       }
@@ -1171,6 +1169,4 @@
     "bestSeller": true,
     "relatedProducts": [25, 26]
   }
-
-  
 ]
