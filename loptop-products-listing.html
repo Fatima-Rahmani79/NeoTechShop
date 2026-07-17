@@ -275,25 +275,38 @@
 
         let html = "";
         paginatedProducts.forEach((p) => {
+          const ratingText = p.rating?.average
+            ? `${p.rating.average.toFixed(1)}★`
+            : "N/A";
+
           html += `
-            <div class="col">
-              <div class="product-card">
-                <img src="${p.images[0]}" alt="${
-                  p.name
-                }" loading="lazy" class="img-fluid mb-2">
-                <h3>${p.shortName}</h3>
-                <p>Model: ${p.name}</p>
-                <p class="price">Price: ${p.price.toLocaleString()} $</p>
-                <p>Rating: ${
-                  p.rating?.average ? p.rating.average.toFixed(1) : "N/A"
-                }★</p>
-                <p>${p.shortDesc}</p>
-                <button class="CTA">
-                  <a href="product.html?id=${p.id}">View Product</a>
-                </button>
-              </div>
+      <div class="col">
+        <article class="listing-product-card h-100 d-flex flex-column">
+          <div class="listing-product-card__image-wrap">
+            <img src="${p.images[0]}" alt="${p.name}" loading="lazy">
+            <span class="listing-product-card__badge">${p.brand}</span>
+          </div>
+
+          <div class="listing-product-card__body d-flex flex-column flex-grow-1">
+            <div class="d-flex justify-content-between align-items-start gap-2">
+              <h3>${p.shortName}</h3>
+              <span class="listing-product-card__rating">${ratingText}</span>
             </div>
-          `;
+
+            <p class="listing-product-card__model">Model: ${p.name}</p>
+            <p class="listing-product-card__desc">${p.shortDesc}</p>
+
+            <div class="mt-auto">
+              <div class="listing-product-card__price-row">
+                <span class="listing-product-card__price">${p.price.toLocaleString()} $</span>
+                <span class="listing-product-card__label">Free shipping</span>
+              </div>
+              <a class="listing-product-card__btn" href="product.html?id=${p.id}">View Product</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    `;
         });
 
         container.innerHTML = html;
