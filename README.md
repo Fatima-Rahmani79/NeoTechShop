@@ -190,8 +190,11 @@ Expiry Date: Any valid date within the next 10 years
 ![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html.jpg?raw=true)
 ![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html-2.png?raw=true)
 
-✅ auth Page
+✅ Auth Page
 ![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/auth-html.jpg?raw=true)
+
+✅ Confirmation Page
+![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/confirmation.jpg?raw=true)
 
 🌐 Live Demo (https://fatima-rahmani79.github.io/NeoTechShop/)
 
