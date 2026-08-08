@@ -493,7 +493,7 @@ button.cart-icon i {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 50%;
+  
   right: 20px;
   transform: translateY(-50%);
   color: var(--color-text-light);
