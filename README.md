@@ -174,8 +174,7 @@ Expiry Date: Any valid date within the next 10 years
 📸 Screenshots:
 
 🏠 Homepage
-![Homepage Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/index-html.jpg
-?raw=true)
+![Homepage Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/index-html.jpg?raw=true)
 
 🛍️ Product Listing
 ![Product Listing Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/loptop-products-listing-html.jpg?raw=true)
