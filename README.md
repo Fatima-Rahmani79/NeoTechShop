@@ -56,41 +56,51 @@ Main files:
 - `assets/js/cart.js` — cart management
 - `assets/data/products.json` — product data
 
-## Screenshots
+## Screenshots (grid)
 
 Below are screenshots from the demo site (located in `assets/screenShots/`). Click any image to view the full-size file.
 
-- Home page
+<div style="display:flex;flex-wrap:wrap;gap:12px;">
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/index-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/index-html.jpg" alt="Home page screenshot" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Home</div>
+  </a>
 
-![Home page screenshot](assets/screenShots/index-html.jpg)
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/loptop-products-listing-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/loptop-products-listing-html.jpg" alt="Laptop products listing" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Laptop products listing</div>
+  </a>
 
-- Laptop products listing
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/product-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/product-html.jpg" alt="Product detail" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Product detail</div>
+  </a>
 
-![Laptop products listing](assets/screenShots/loptop-products-listing-html.jpg)
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/auth-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/auth-html.jpg" alt="Auth page" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Auth / Login</div>
+  </a>
 
-- Product detail
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/cart-page-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/cart-page-html.jpg" alt="Cart page" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Cart</div>
+  </a>
 
-![Product detail](assets/screenShots/product-html.jpg)
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/checkout-html.jpg" alt="Checkout page" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Checkout</div>
+  </a>
 
-- Auth / Login page
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html-2.png" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/checkout-html-2.png" alt="Checkout alternate" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Checkout (alt)</div>
+  </a>
 
-![Auth page](assets/screenShots/auth-html.jpg)
-
-- Cart page
-
-![Cart page](assets/screenShots/cart-page-html.jpg)
-
-- Checkout (main)
-
-![Checkout page](assets/screenShots/checkout-html.jpg)
-
-- Checkout (alternate)
-
-![Checkout page 2](assets/screenShots/checkout-html-2.png)
-
-- Order confirmation
-
-![Order confirmation](assets/screenShots/confirmation.jpg)
+  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/confirmation.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
+    <img src="assets/screenShots/confirmation.jpg" alt="Order confirmation" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
+    <div style="padding:6px 0;font-size:90%;">Confirmation</div>
+  </a>
+</div>
 
 
 ## Getting started
@@ -147,4 +157,4 @@ No license file is included. Add a `LICENSE` (for example MIT) if you want to ma
 Fatima Rahmani — fatima.rahmnai79@gmail.com
 
 
-*Updated README to add screenshot gallery.*
+*Updated README to show screenshots in a responsive grid.*
