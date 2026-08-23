@@ -2,7 +2,7 @@
 
 A responsive, front-end e-commerce demo for technology products (laptops, monitors, audio, accessories) built with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
-This project is a client-side implementation of an online store. It demonstrates dynamic product rendering from JSON, a persistent shopping cart, a local authentication flow (LocalStorage / SessionStorage), and a checkout process including client-side credit-card validation (Luhn algorithm). The UI uses a right-to-left Persian layout with the Vazir font.
+This project is a client-side implementation of an online store. It demonstrates dynamic product rendering from JSON, a persistent shopping cart, a local authentication flow (LocalStorage / SessionStorage) and client-side checkout flow.
 
 Demo: https://fatima-rahmani79.github.io/NeoTechShop/
 
@@ -55,6 +55,43 @@ Main files:
 - `assets/js/script.js` — core logic
 - `assets/js/cart.js` — cart management
 - `assets/data/products.json` — product data
+
+## Screenshots
+
+Below are screenshots from the demo site (located in `assets/screenShots/`). Click any image to view the full-size file.
+
+- Home page
+
+![Home page screenshot](assets/screenShots/index-html.jpg)
+
+- Laptop products listing
+
+![Laptop products listing](assets/screenShots/loptop-products-listing-html.jpg)
+
+- Product detail
+
+![Product detail](assets/screenShots/product-html.jpg)
+
+- Auth / Login page
+
+![Auth page](assets/screenShots/auth-html.jpg)
+
+- Cart page
+
+![Cart page](assets/screenShots/cart-page-html.jpg)
+
+- Checkout (main)
+
+![Checkout page](assets/screenShots/checkout-html.jpg)
+
+- Checkout (alternate)
+
+![Checkout page 2](assets/screenShots/checkout-html-2.png)
+
+- Order confirmation
+
+![Order confirmation](assets/screenShots/confirmation.jpg)
+
 
 ## Getting started
 
@@ -110,4 +147,4 @@ No license file is included. Add a `LICENSE` (for example MIT) if you want to ma
 Fatima Rahmani — fatima.rahmnai79@gmail.com
 
 
-*Updated README to be concise and actionable.*
+*Updated README to add screenshot gallery.*
