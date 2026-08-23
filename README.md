@@ -1,211 +1,113 @@
-💻 NeoTechShop — Modern Online Tech Store
+# NeoTechShop
 
-NeoTechShop is a fully functional and responsive e-commerce website built using HTML, CSS, Bootstrap, and Vanilla JavaScript.
-It offers a complete online shopping experience for technology products such as laptops, monitors, audio devices, and accessories, each with its own dedicated listing page and detailed product view.
+A responsive, front-end e-commerce demo for technology products (laptops, monitors, audio, accessories) built with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
-🛍️ Project Overview
+This project is a client-side implementation of an online store. It demonstrates dynamic product rendering from JSON, a persistent shopping cart, a local authentication flow (LocalStorage / SessionStorage), and a checkout process including client-side credit-card validation (Luhn algorithm). The UI uses a right-to-left Persian layout with the Vazir font.
 
-NeoTechShop allows users to:
+Demo: https://fatima-rahmani79.github.io/NeoTechShop/
 
-Browse and search for tech products dynamically loaded from a JSON file.
+## Features
 
-Add and manage items in their shopping cart (data stored persistently in LocalStorage).
+- Multi-page site: Home, product listings, product detail, cart, checkout, auth, contact
+- Responsive design (desktop/tablet/mobile)
+- RTL Persian layout using Vazir font
+- Products loaded from `assets/data/products.json`
+- Local user registration and login (LocalStorage / SessionStorage)
+- Persistent shopping cart (LocalStorage) with add/remove/update and badge counter
+- Client-side search, filtering, and sorting (no page reloads)
+- Checkout form validation and Luhn card check (test mode only)
+- Two payment options: Online (test) and Cash on Delivery
+- Toast notifications and Swiper.js carousels for promotions
 
-Create an account, log in/out, and place orders only after authentication.
+## Tech stack
 
-Complete a checkout process with form validation, including credit card verification using the Luhn algorithm.
+- HTML5, CSS3, Bootstrap 5
+- JavaScript (ES6+)
+- Swiper.js (carousel)
+- Font Awesome
+- LocalStorage / SessionStorage
+- JSON product data
 
-View an order confirmation page displaying personal and purchase details after successful checkout.
+## Project structure
 
-🚀 Main Features
-🧾 General
-
-Multi-page structure (Home, Product Listings, Product Details, Cart, Checkout, Auth)
-
-Fully responsive design for desktop, tablet, and mobile
-
-Right-to-left (RTL) Persian layout with the Vazir font
-
-Dynamic product rendering from products.json
-
-💡 User & Auth
-
-Local user registration and login system using LocalStorage & SessionStorage
-
-Persistent session even after closing the browser
-
-Mandatory authentication before placing an order
-
-Option to log out anytime
-
-🛒 Shopping Cart
-
-Add, remove, and update item quantities
-
-Persistent cart storage via LocalStorage
-
-Visual badge counter and cart modal synced across pages
-
-💳 Checkout & Payment
-
-Users fill out a detailed checkout form (name, address, etc.)
-
-Two payment options: Online Payment and Cash on Delivery
-
-For online payment, card validation follows:
-
-Must start with 4 (test Visa pattern)
-
-Must pass the Luhn Algorithm
-
-Expiration date limited to a maximum of 10 years
-
-Upon valid form submission, users are redirected to a confirmation page showing:
-
-Their order details
-
-Customer information
-
-Payment method
-
-🎯 Additional Highlights
-
-Toast messages for all user actions (add to cart, login, logout, etc.)
-
-Swiper.js slider for special offers and featured products
-
-Search bar with live product filtering
-
-Accessible and SEO-friendly structure
-
-🎯 Product Listing Page
-
-Users can sort products by:
-
-🏷️ Product name
-
-💰 Price (ascending or descending)
-
-Users can filter products by:
-
-💵 Price range
-
-🏢 Brand name
-
-⭐ Customer rating
-
-Filtering and sorting are fully dynamic — no page reloads required
-
-All product data is fetched from a JSON file
-
-✨ Additional Highlights
-
-Toast messages for all user actions (add to cart, login, logout, etc.)
-
-Swiper.js slider for special offers and featured products
-
-Search bar with live product filtering
-
-Accessible and SEO-friendly structure
-
-🧱 Technologies Used
-Technology Purpose
-HTML5 Page structure and content
-CSS3 / Bootstrap 5 Responsive and modern UI
-JavaScript (ES6+) Application logic and interactivity
-Swiper.js Product sliders and carousels
-Font Awesome Icons and UI elements
-LocalStorage / SessionStorage Data persistence
-JSON Product data storage
-
-🗂️ Project Structure
 NeoTechShop/
-│
-├── assets/
-│ ├── css/
-│ │ └── main.css
-│ ├── js/
-│ │ ├── script.js ← Core site logic
-│ │ └── cart.js ← Cart management API
-│ ├── data/
-│ │ └── products.json ← Product data source
-│ ├── images/
-│ └── logo/
-│
-├── index.html ← Homepage
-├── auth.html ← Login / Register
-├── product.html ← Product details
-├── cart-page.html ← Cart page
-├── checkout.html ← Checkout form
-├── confirmation.html ← Order confirmation
-├── accessory-products.html ← Products List
-├── audio-products-listing.html ← Products List
-├── laptop-products-listing.html ← Products List
-├── monitor-products-listing.html ← Products List
-├── contact.html ← Contact page
-└── README.md
 
-⚙️ How to Run
+- assets/
+  - css/
+  - js/
+  - data/
+  - images/
+  - screenShots/
+- index.html
+- auth.html
+- product.html
+- cart-page.html
+- checkout.html
+- confirmation.html
+- accessory-products.html
+- audio-products-listing.html
+- laptop-products-listing.html
+- monitor-products-listing.html
+- contact.html
+- README.md
 
-Clone the repository
+Main files:
+- `assets/js/script.js` — core logic
+- `assets/js/cart.js` — cart management
+- `assets/data/products.json` — product data
 
+## Getting started
+
+Requirements: modern browser. Optional: Node.js for local server.
+
+Clone the repository:
+
+```bash
 git clone https://github.com/Fatima-Rahmani79/NeoTechShop.git
-
-Open the project folder
-
 cd NeoTechShop
+```
 
-Run locally
+Run locally:
 
-Open index.html directly in your browser,
-or use a local server such as:
+- Open `index.html` directly in your browser, or
+- Use a simple server (recommended):
 
+```bash
 npx live-server
+# or
+npx http-server -c-1
+```
 
-Explore the store — add products, log in, and test the checkout process.
+## Usage
 
-🧮 Payment Example (Test Mode)
+- Browse and filter products, add items to the cart.
+- Register and log in on the Auth page to enable checkout.
+- Complete the checkout form to place an order (client-side only).
 
-Use the following test card number for validation during checkout:
+Test payment (online test mode):
 
-Card Number: 4444 3333 2222 1111
-Expiry Date: Any valid date within the next 10 years
+- Card number: `4444 3333 2222 1111` (test)
+- Use an expiry date within the next 10 years
 
-📸 Screenshots:
+Notes: All data and authentication are client-side only; no real payments or server processing are performed.
 
-🏠 Homepage
-![Homepage Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/index-html.jpg?raw=true)
+## Customize
 
-🛍️ Product Listing
-![Product Listing Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/loptop-products-listing-html.jpg?raw=true)
+- Edit `assets/data/products.json` to change product data.
+- Update styles in `assets/css/main.css`.
+- Modify behavior in `assets/js/*.js`.
 
-🧾 Product Detail Page
-![Product Detail Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/product-html.jpg?raw=true)
+## Contributing
 
-🛒 Cart Page
-![Cart Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/cart-page-html.jpg?raw=true)
+Issues and pull requests are welcome. For code changes, please open a PR with a clear description and screenshots if applicable.
 
-💳 Checkout Page
-![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html.jpg?raw=true)
-![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/checkout-html-2.png?raw=true)
+## License
 
-✅ Auth Page
-![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/auth-html.jpg?raw=true)
+No license file is included. Add a `LICENSE` (for example MIT) if you want to make this project open source.
 
-✅ Confirmation Page
-![Checkout Page Screenshot](https://github.com/Fatima-Rahmani79/NeoTechShop/blob/main/assets/screenShots/confirmation.jpg?raw=true)
+## Author
 
-🌐 Live Demo (https://fatima-rahmani79.github.io/NeoTechShop/)
+Fatima Rahmani — fatima.rahmnai79@gmail.com
 
-👉 View NeoTechShop on GitHub Pages
 
-👩‍💻 Developer
-
-Developed by: Fatima Rahmani
-📧 Email: fatima.rahmnai79@gmail.com
-
-📅 Year: 2025
-
-🏁 Summary
-
-NeoTechShop demonstrates a fully front-end e-commerce system with realistic functionality, user authentication, cart persistence, product data management, and client-side payment validation — all built with clean, organized code and modern web standards.
+*Updated README to be concise and actionable.*
