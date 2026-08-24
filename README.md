@@ -56,14 +56,14 @@ Main files:
 - `assets/js/cart.js` — cart management
 - `assets/data/products.json` — product data
 
-## Screenshots (grid)
+## Screenshots (two per row)
 
 Below are screenshots from the demo site (located in `assets/screenShots/`). Click any image to view the full-size file.
 
-<!-- Responsive table layout: each column contains two stacked images -->
+<!-- Responsive table layout: two images per row on wide screens, single column on narrow screens -->
 <style>
   .screenshots-table { width: 100%; border-collapse: collapse; }
-  .screenshots-table td { padding: 8px; vertical-align: top; width: 25%; }
+  .screenshots-table td { padding: 8px; vertical-align: top; width: 50%; }
   .screenshot-figure { margin: 0; text-align: center; }
   .screenshot-figure img { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; display: block; }
   .screenshot-caption { padding: 6px 0; font-size: 90%; }
@@ -82,15 +82,18 @@ Below are screenshots from the demo site (located in `assets/screenShots/`). Cli
           <figcaption class="screenshot-caption">Home</figcaption>
         </figure>
       </a>
-
+    </td>
+    <td>
       <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/loptop-products-listing-html.jpg">
-        <figure class="screenshot-figure" style="margin-top:12px;">
+        <figure class="screenshot-figure">
           <img src="assets/screenShots/loptop-products-listing-html.jpg" alt="Laptop products listing">
           <figcaption class="screenshot-caption">Laptop products listing</figcaption>
         </figure>
       </a>
     </td>
+  </tr>
 
+  <tr>
     <td>
       <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/product-html.jpg">
         <figure class="screenshot-figure">
@@ -98,15 +101,18 @@ Below are screenshots from the demo site (located in `assets/screenShots/`). Cli
           <figcaption class="screenshot-caption">Product detail</figcaption>
         </figure>
       </a>
-
+    </td>
+    <td>
       <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/auth-html.jpg">
-        <figure class="screenshot-figure" style="margin-top:12px;">
+        <figure class="screenshot-figure">
           <img src="assets/screenShots/auth-html.jpg" alt="Auth page">
           <figcaption class="screenshot-caption">Auth / Login</figcaption>
         </figure>
       </a>
     </td>
+  </tr>
 
+  <tr>
     <td>
       <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/cart-page-html.jpg">
         <figure class="screenshot-figure">
@@ -114,15 +120,18 @@ Below are screenshots from the demo site (located in `assets/screenShots/`). Cli
           <figcaption class="screenshot-caption">Cart</figcaption>
         </figure>
       </a>
-
-      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html.jpg" style="margin-top:12px;display:block;">
+    </td>
+    <td>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html.jpg">
         <figure class="screenshot-figure">
           <img src="assets/screenShots/checkout-html.jpg" alt="Checkout page">
           <figcaption class="screenshot-caption">Checkout</figcaption>
         </figure>
       </a>
     </td>
+  </tr>
 
+  <tr>
     <td>
       <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html-2.png">
         <figure class="screenshot-figure">
@@ -130,8 +139,9 @@ Below are screenshots from the demo site (located in `assets/screenShots/`). Cli
           <figcaption class="screenshot-caption">Checkout (alt)</figcaption>
         </figure>
       </a>
-
-      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/confirmation.jpg" style="margin-top:12px;display:block;">
+    </td>
+    <td>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/confirmation.jpg">
         <figure class="screenshot-figure">
           <img src="assets/screenShots/confirmation.jpg" alt="Order confirmation">
           <figcaption class="screenshot-caption">Confirmation</figcaption>
@@ -196,4 +206,4 @@ No license file is included. Add a `LICENSE` (for example MIT) if you want to ma
 Fatima Rahmani — fatima.rahmnai79@gmail.com
 
 
-*Updated README to show screenshots in a responsive table (2 images per column).*
+*Updated README to show screenshots two images per row.*
