@@ -2,7 +2,7 @@
 
 A responsive, front-end e-commerce demo for technology products (laptops, monitors, audio, accessories) built with HTML, CSS, Bootstrap 5, and vanilla JavaScript.
 
-This project is a client-side implementation of an online store. It demonstrates dynamic product rendering from JSON, a persistent shopping cart, a local authentication flow (LocalStorage / SessionStorage) and client-side checkout flow.
+This project is a client-side implementation of an online store. It demonstrates dynamic product rendering from JSON, a persistent shopping cart, a local authentication flow (LocalStorage / SessionStorage), and client-side UX features.
 
 Demo: https://fatima-rahmani79.github.io/NeoTechShop/
 
@@ -60,47 +60,86 @@ Main files:
 
 Below are screenshots from the demo site (located in `assets/screenShots/`). Click any image to view the full-size file.
 
-<div style="display:flex;flex-wrap:wrap;gap:12px;">
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/index-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/index-html.jpg" alt="Home page screenshot" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Home</div>
-  </a>
+<!-- Responsive table layout: each column contains two stacked images -->
+<style>
+  .screenshots-table { width: 100%; border-collapse: collapse; }
+  .screenshots-table td { padding: 8px; vertical-align: top; width: 25%; }
+  .screenshot-figure { margin: 0; text-align: center; }
+  .screenshot-figure img { width: 100%; height: auto; border: 1px solid #ddd; border-radius: 4px; display: block; }
+  .screenshot-caption { padding: 6px 0; font-size: 90%; }
+  @media (max-width: 800px) {
+    .screenshots-table, .screenshots-table tbody, .screenshots-table tr, .screenshots-table td { display: block; width: 100%; }
+    .screenshots-table td { padding: 6px 0; }
+  }
+</style>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/loptop-products-listing-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/loptop-products-listing-html.jpg" alt="Laptop products listing" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Laptop products listing</div>
-  </a>
+<table class="screenshots-table">
+  <tr>
+    <td>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/index-html.jpg">
+        <figure class="screenshot-figure">
+          <img src="assets/screenShots/index-html.jpg" alt="Home page screenshot">
+          <figcaption class="screenshot-caption">Home</figcaption>
+        </figure>
+      </a>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/product-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/product-html.jpg" alt="Product detail" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Product detail</div>
-  </a>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/loptop-products-listing-html.jpg">
+        <figure class="screenshot-figure" style="margin-top:12px;">
+          <img src="assets/screenShots/loptop-products-listing-html.jpg" alt="Laptop products listing">
+          <figcaption class="screenshot-caption">Laptop products listing</figcaption>
+        </figure>
+      </a>
+    </td>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/auth-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/auth-html.jpg" alt="Auth page" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Auth / Login</div>
-  </a>
+    <td>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/product-html.jpg">
+        <figure class="screenshot-figure">
+          <img src="assets/screenShots/product-html.jpg" alt="Product detail">
+          <figcaption class="screenshot-caption">Product detail</figcaption>
+        </figure>
+      </a>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/cart-page-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/cart-page-html.jpg" alt="Cart page" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Cart</div>
-  </a>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/auth-html.jpg">
+        <figure class="screenshot-figure" style="margin-top:12px;">
+          <img src="assets/screenShots/auth-html.jpg" alt="Auth page">
+          <figcaption class="screenshot-caption">Auth / Login</figcaption>
+        </figure>
+      </a>
+    </td>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/checkout-html.jpg" alt="Checkout page" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Checkout</div>
-  </a>
+    <td>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/cart-page-html.jpg">
+        <figure class="screenshot-figure">
+          <img src="assets/screenShots/cart-page-html.jpg" alt="Cart page">
+          <figcaption class="screenshot-caption">Cart</figcaption>
+        </figure>
+      </a>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html-2.png" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/checkout-html-2.png" alt="Checkout alternate" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Checkout (alt)</div>
-  </a>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html.jpg" style="margin-top:12px;display:block;">
+        <figure class="screenshot-figure">
+          <img src="assets/screenShots/checkout-html.jpg" alt="Checkout page">
+          <figcaption class="screenshot-caption">Checkout</figcaption>
+        </figure>
+      </a>
+    </td>
 
-  <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/confirmation.jpg" style="flex:1 1 calc(33% - 12px);max-width:calc(33% - 12px);text-align:center;">
-    <img src="assets/screenShots/confirmation.jpg" alt="Order confirmation" style="width:100%;height:auto;border:1px solid #ddd;border-radius:4px;">
-    <div style="padding:6px 0;font-size:90%;">Confirmation</div>
-  </a>
-</div>
+    <td>
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/checkout-html-2.png">
+        <figure class="screenshot-figure">
+          <img src="assets/screenShots/checkout-html-2.png" alt="Checkout alternate">
+          <figcaption class="screenshot-caption">Checkout (alt)</figcaption>
+        </figure>
+      </a>
+
+      <a href="https://raw.githubusercontent.com/Fatima-Rahmani79/NeoTechShop/main/assets/screenShots/confirmation.jpg" style="margin-top:12px;display:block;">
+        <figure class="screenshot-figure">
+          <img src="assets/screenShots/confirmation.jpg" alt="Order confirmation">
+          <figcaption class="screenshot-caption">Confirmation</figcaption>
+        </figure>
+      </a>
+    </td>
+  </tr>
+</table>
 
 
 ## Getting started
@@ -157,4 +196,4 @@ No license file is included. Add a `LICENSE` (for example MIT) if you want to ma
 Fatima Rahmani — fatima.rahmnai79@gmail.com
 
 
-*Updated README to show screenshots in a responsive grid.*
+*Updated README to show screenshots in a responsive table (2 images per column).*
